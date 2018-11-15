@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Thu Nov 15 16:07:47 2018
+| Date         : Thu Nov 15 16:34:04 2018
 | Host         : Owner-VAIO running 64-bit major release  (build 9200)
 | Command      : report_drc -file vga_module_drc_routed.rpt -pb vga_module_drc_routed.pb -rpx vga_module_drc_routed.rpx
 | Design       : vga_module
