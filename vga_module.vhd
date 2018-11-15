@@ -108,11 +108,11 @@ end component;
       );
 end component;
 
-component Player_Display is
+component Player1_Display is
     Generic ( 	--display_height: integer:= 10;
             --display_width: integer:= 10;
-            display_x_offset: integer:= 50;
-            display_y_offset: integer:= 50);
+            p1_x_offset: integer:= 50;
+            p1_y_offset: integer:= 50);
 Port (     clk : in  STD_LOGIC;
     reset : in  STD_LOGIC;
     scan_line_x: in STD_LOGIC_VECTOR(10 downto 0);
@@ -228,10 +228,10 @@ Rectangle: Growing_Rectangle
            );
 -- END ADDED
 
-Player: Player_Display
+Player: Player1_Display
       Generic Map(     
-                  display_x_offset  => 300,
-                  display_y_offset  => 200
+                  p1_x_offset  => 300,
+                  p1_y_offset  => 200
                   )
       Port Map(     
                   clk             => clk,

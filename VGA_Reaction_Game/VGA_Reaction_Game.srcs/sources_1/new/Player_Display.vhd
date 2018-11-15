@@ -147,8 +147,8 @@ signal i_red4, i_green4, i_blue4: std_logic_vector(3 downto 0);
 signal i_red5, i_green5, i_blue5: std_logic_vector(3 downto 0);
 signal i_red6, i_green6, i_blue6: std_logic_vector(3 downto 0);
 --signal i_red7, i_green7, i_blue7: std_logic_vector(3 downto 0);
---constant long: integer:= 10;
-constant space: integer:= 5;
+constant long: integer:= 10;
+constant space: integer:= long + 5;
 
 begin
 
