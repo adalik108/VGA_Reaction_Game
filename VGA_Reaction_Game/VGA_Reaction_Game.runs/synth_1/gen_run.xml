@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1542324717">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1542325464">
   <File Type="RDS-PROPCONSTRS" Name="vga_module_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="vga_module.tcl"/>
   <File Type="RDS-RDS" Name="vga_module.vds"/>

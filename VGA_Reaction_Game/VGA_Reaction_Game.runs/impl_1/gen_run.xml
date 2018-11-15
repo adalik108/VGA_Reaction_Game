@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1542324775">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1542325517">
   <File Type="PWROPT-DRC" Name="vga_module_drc_pwropted.rpt"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="vga_module_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="vga_module_timing_summary_init.rpt"/>

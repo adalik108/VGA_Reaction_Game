@@ -65,6 +65,8 @@ red   <= pixel_color(11 downto 8);
 green <= pixel_color(7 downto 4);
 blue  <= pixel_color(3 downto 0);
 
+rect_height <= rectangle_height;
+
 --box_move_dir_x <= '1' and '1';
 
 
