@@ -16,7 +16,7 @@ set_property target_language VHDL [current_project]
 set_property ip_output_repo c:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/bouncing_box.vhd
+  C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Growing_Rectangle.vhd
   C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/clock_divider.vhd
   C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/downcounter.vhd
   C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/sync_signal_generator.vhd

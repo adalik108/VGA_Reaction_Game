@@ -31,7 +31,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity vga_module is
     Port (  clk : in  STD_LOGIC;
-            buttons: in STD_LOGIC_VECTOR(1 downto 0);
+            buttons: in STD_LOGIC_VECTOR(2 downto 0);
             --switches: in STD_LOGIC_VECTOR(13 downto 0);
             red: out STD_LOGIC_VECTOR(3 downto 0);
             green: out STD_LOGIC_VECTOR(3 downto 0);
@@ -92,17 +92,19 @@ end component;
 --         );
 -- end component;
  
- component bouncing_box is
- Port (  clk : in  STD_LOGIC;
-         reset : in  STD_LOGIC;
-         scan_line_x: in STD_LOGIC_VECTOR(10 downto 0);
-         scan_line_y: in STD_LOGIC_VECTOR(10 downto 0);
-         box_color: in STD_LOGIC_VECTOR(11 downto 0);
-         box_width: in STD_LOGIC_VECTOR(8 downto 0);
-         kHz: in STD_LOGIC;
-         red: out STD_LOGIC_VECTOR(3 downto 0);
-         blue: out STD_LOGIC_VECTOR(3 downto 0);
-         green: out std_logic_vector(3 downto 0)
+ component Growing_Rectangle is
+    Generic ( 	box_width: integer:= 10;
+                x_offset: integer:= 50);
+    Port ( 	clk : in  STD_LOGIC;
+        reset : in  STD_LOGIC;
+        scan_line_x: in STD_LOGIC_VECTOR(10 downto 0);
+        scan_line_y: in STD_LOGIC_VECTOR(10 downto 0);
+        rectangle_color: in STD_LOGIC_VECTOR(11 downto 0);
+        rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+        kHz: in STD_LOGIC;
+        red: out STD_LOGIC_VECTOR(3 downto 0);
+        blue: out STD_LOGIC_VECTOR(3 downto 0);
+        green: out std_logic_vector(3 downto 0)
       );
 end component;
 -- END ADDED
@@ -125,20 +127,20 @@ signal i_kHz, i_hHz, i_pixel_clk: std_logic;
 signal vga_blank : std_logic;
 signal scan_line_x, scan_line_y: STD_LOGIC_VECTOR(10 downto 0);
 
--- Box size signals:
-signal inc_box, dec_box: std_logic;
-signal box_size: std_logic_vector(8 downto 0);
+-- Rectangle size signals:
+signal inc_rectangle, dec_rectangle: std_logic;
+signal rectangle_size: std_logic_vector(8 downto 0);
 
 -- Bouncing box signals:
-signal box_color: std_logic_vector(11 downto 0);
-signal box_red: std_logic_vector(3 downto 0);
-signal box_green: std_logic_vector(3 downto 0);
-signal box_blue: std_logic_vector(3 downto 0);
+signal rectangle_color: std_logic_vector(11 downto 0);
+signal rectangle_red: std_logic_vector(3 downto 0);
+signal rectangle_green: std_logic_vector(3 downto 0);
+signal rectangle_blue: std_logic_vector(3 downto 0);
 
 -- ADDED
-signal stripe_red: std_logic_vector(3 downto 0);
-signal stripe_green: std_logic_vector(3 downto 0);
-signal stripe_blue: std_logic_vector(3 downto 0);
+--signal stripe_red: std_logic_vector(3 downto 0);
+--signal stripe_green: std_logic_vector(3 downto 0);
+--signal stripe_blue: std_logic_vector(3 downto 0);
 
 begin
 
@@ -152,15 +154,15 @@ VGA_SYNC: sync_signals_generator
                 scan_line_y => scan_line_y
 			  );
 
-CHANGE_BOX_SIZE: up_down_counter
+CHANGE_Rectangle_Height: up_down_counter
 	Generic map( 	WIDTH => 9)
 	Port map(
-					up 	   => inc_box,
-					down   => dec_box,
+					up 	   => inc_rectangle,
+					down   => dec_rectangle,
 					clk	   => clk,
 					reset  => reset,
 					enable => i_hHz,
-                    val    => box_size
+                    val    => rectangle_size
 	);
 
 -- ADDED	
@@ -187,17 +189,17 @@ DIVIDER: clock_divider
 --               R          => stripe_red
 --             );
              
-BOX: bouncing_box
+Rectangle: Growing_Rectangle
     Port map ( clk         => clk,
                reset       => reset,
                scan_line_x => scan_line_x,
                scan_line_y => scan_line_y,
-               box_color   => box_color,
-               box_width   => box_size,
+               rectangle_color   => rectangle_color,
+               rectangle_height   => rectangle_size,
                kHz         => i_kHz,
-               red         => box_red,
-               blue        => box_blue,
-               green       => box_green
+               red         => rectangle_red,
+               blue        => rectangle_blue,
+               green       => rectangle_green
            );
 -- END ADDED
 
@@ -216,8 +218,8 @@ green <= "0000" when (vga_blank = '1') else disp_green;
 reset <= buttons(0);
 --box_color <= switches(13 downto 2);
 --vga_select <= switches(1);
-inc_box <= buttons(1);
---dec_box <= buttons(2);
+inc_rectangle <= buttons(1);
+dec_rectangle <= buttons(2);
 
 -----------------------------------------------------------------------------
 -- OUTPUT SELECTOR:
@@ -228,7 +230,7 @@ inc_box <= buttons(1);
 --		-- Select which input gets written to disp_red, disp_blue and disp_green
 --		-- ADDED
 --		when '0' => 
-		disp_red <= box_red; disp_blue <= box_blue; disp_green <= box_green;
+		disp_red <= rectangle_red; disp_blue <= rectangle_blue; disp_green <= rectangle_green;
 --		when '1' => disp_red <= stripe_red; disp_blue <= stripe_blue; disp_green <= stripe_green;
 --		when others => disp_red <= "0000"; disp_blue <= "0000"; disp_green <= "0000";
 --	end case;
