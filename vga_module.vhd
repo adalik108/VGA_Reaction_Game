@@ -131,8 +131,8 @@ signal scan_line_x, scan_line_y: STD_LOGIC_VECTOR(10 downto 0);
 signal inc_rectangle, dec_rectangle: std_logic;
 signal rectangle_size: std_logic_vector(8 downto 0);
 
--- Bouncing box signals:
-signal rectangle_color: std_logic_vector(11 downto 0);
+-- Rectangle signals:
+signal rectangle_color: std_logic_vector(11 downto 0) := (11 downto 4 => '0', others => '1');
 signal rectangle_red: std_logic_vector(3 downto 0);
 signal rectangle_green: std_logic_vector(3 downto 0);
 signal rectangle_blue: std_logic_vector(3 downto 0);
@@ -238,5 +238,3 @@ dec_rectangle <= buttons(2);
 -----------------------------------------------------------------------------
 
 end Behavioral;
-
--- git test
