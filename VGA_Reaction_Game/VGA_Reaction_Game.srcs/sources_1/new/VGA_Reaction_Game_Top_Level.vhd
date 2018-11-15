@@ -32,7 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity VGA_Reaction_Game_Top_Level is
---  Port ( );
+  --Port ( );
 end VGA_Reaction_Game_Top_Level;
 
 architecture Behavioral of VGA_Reaction_Game_Top_Level is
