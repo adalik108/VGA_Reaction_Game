@@ -107,6 +107,24 @@ end component;
         green: out std_logic_vector(3 downto 0)
       );
 end component;
+
+component Player_Display is
+    Generic ( 	--display_height: integer:= 10;
+            --display_width: integer:= 10;
+            display_x_offset: integer:= 50;
+            display_y_offset: integer:= 50);
+Port (     clk : in  STD_LOGIC;
+    reset : in  STD_LOGIC;
+    scan_line_x: in STD_LOGIC_VECTOR(10 downto 0);
+    scan_line_y: in STD_LOGIC_VECTOR(10 downto 0);
+    rectangle_color: in STD_LOGIC_VECTOR(11 downto 0);
+    --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+    kHz: in STD_LOGIC;
+    red: out STD_LOGIC_VECTOR(3 downto 0);
+    blue: out STD_LOGIC_VECTOR(3 downto 0);
+    green: out std_logic_vector(3 downto 0)
+  );
+end component;
 -- END ADDED
 
 -- Signals:
@@ -137,10 +155,17 @@ signal rectangle_red: std_logic_vector(3 downto 0);
 signal rectangle_green: std_logic_vector(3 downto 0);
 signal rectangle_blue: std_logic_vector(3 downto 0);
 
+-- Letter signals:
+signal letter_color: std_logic_vector(11 downto 0);
+signal letter_red: std_logic_vector(3 downto 0);
+signal letter_green: std_logic_vector(3 downto 0);
+signal letter_blue: std_logic_vector(3 downto 0);
 -- ADDED
 --signal stripe_red: std_logic_vector(3 downto 0);
 --signal stripe_green: std_logic_vector(3 downto 0);
 --signal stripe_blue: std_logic_vector(3 downto 0);
+
+
 
 begin
 
@@ -203,6 +228,25 @@ Rectangle: Growing_Rectangle
            );
 -- END ADDED
 
+Player: Player_Display
+      Generic Map(     
+                  display_x_offset  => 300,
+                  display_y_offset  => 200
+                  )
+      Port Map(     
+                  clk             => clk,
+                  reset           => reset,
+                  scan_line_x     => scan_line_x,
+                  scan_line_y     => scan_line_y,
+                  rectangle_color => letter_color,
+                  --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+                  kHz             => i_kHz,
+                  red             => letter_red,
+                  blue            => letter_blue,
+                  green           => letter_green
+        );
+            
+
 show_stripe <= not vga_blank;
 
 -- BLANKING:
@@ -230,7 +274,7 @@ dec_rectangle <= buttons(2);
 --		-- Select which input gets written to disp_red, disp_blue and disp_green
 --		-- ADDED
 --		when '0' => 
-		disp_red <= rectangle_red; disp_blue <= rectangle_blue; disp_green <= rectangle_green;
+		disp_red <= rectangle_red and letter_red; disp_blue <= rectangle_blue and letter_blue; disp_green <= rectangle_green and letter_green;
 --		when '1' => disp_red <= stripe_red; disp_blue <= stripe_blue; disp_green <= stripe_green;
 --		when others => disp_red <= "0000"; disp_blue <= "0000"; disp_green <= "0000";
 --	end case;

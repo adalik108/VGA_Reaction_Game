@@ -2,8 +2,8 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Thu Nov 15 00:14:43 2018
-# Process ID: 22072
+# Start of session at: Thu Nov 15 02:37:12 2018
+# Process ID: 21096
 # Current directory: C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.runs/synth_1
 # Command line: vivado.exe -log vga_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_module.tcl
 # Log file: C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.runs/synth_1/vga_module.vds
@@ -15,20 +15,20 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 8832 
+INFO: Helper process launched with PID 12308 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 296.914 ; gain = 75.844
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 296.617 ; gain = 76.156
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'vga_module' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:44]
-INFO: [Synth 8-3491] module 'sync_signals_generator' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/sync_signal_generator.vhd:7' bound to instance 'VGA_SYNC' of component 'sync_signals_generator' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:147]
+INFO: [Synth 8-3491] module 'sync_signals_generator' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/sync_signal_generator.vhd:7' bound to instance 'VGA_SYNC' of component 'sync_signals_generator' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:172]
 INFO: [Synth 8-638] synthesizing module 'sync_signals_generator' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/sync_signal_generator.vhd:18]
 INFO: [Synth 8-256] done synthesizing module 'sync_signals_generator' (1#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/sync_signal_generator.vhd:18]
 	Parameter WIDTH bound to: 9 - type: integer 
-INFO: [Synth 8-3491] module 'up_down_counter' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/up_down_counter.vhd:6' bound to instance 'CHANGE_Rectangle_Height' of component 'up_down_counter' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:157]
+INFO: [Synth 8-3491] module 'up_down_counter' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/up_down_counter.vhd:6' bound to instance 'CHANGE_Rectangle_Height' of component 'up_down_counter' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:182]
 INFO: [Synth 8-638] synthesizing module 'up_down_counter' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/up_down_counter.vhd:18]
 	Parameter WIDTH bound to: 9 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'up_down_counter' (2#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/up_down_counter.vhd:18]
-INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/clock_divider.vhd:4' bound to instance 'DIVIDER' of component 'clock_divider' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:169]
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/clock_divider.vhd:4' bound to instance 'DIVIDER' of component 'clock_divider' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:194]
 INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/clock_divider.vhd:20]
 	Parameter period bound to: 3 - type: integer 
 	Parameter WIDTH bound to: 2 - type: integer 
@@ -76,12 +76,281 @@ INFO: [Synth 8-3491] module 'downcounter' declared at 'C:/Users/Owner/Documents/
 INFO: [Synth 8-256] done synthesizing module 'clock_divider' (4#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/clock_divider.vhd:20]
 	Parameter box_width bound to: 10 - type: integer 
 	Parameter x_offset bound to: 50 - type: integer 
-INFO: [Synth 8-3491] module 'Growing_Rectangle' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Growing_Rectangle.vhd:15' bound to instance 'Rectangle' of component 'Growing_Rectangle' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:192]
+INFO: [Synth 8-3491] module 'Growing_Rectangle' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Growing_Rectangle.vhd:15' bound to instance 'Rectangle' of component 'Growing_Rectangle' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:217]
 INFO: [Synth 8-638] synthesizing module 'Growing_Rectangle' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Growing_Rectangle.vhd:31]
 	Parameter box_width bound to: 10 - type: integer 
 	Parameter x_offset bound to: 50 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'Growing_Rectangle' (5#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Growing_Rectangle.vhd:31]
-INFO: [Synth 8-256] done synthesizing module 'vga_module' (6#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:44]
+	Parameter display_x_offset bound to: 300 - type: integer 
+	Parameter display_y_offset bound to: 200 - type: integer 
+INFO: [Synth 8-3491] module 'Player_Display' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Player_Display.vhd:15' bound to instance 'Player' of component 'Player_Display' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:231]
+INFO: [Synth 8-638] synthesizing module 'Player_Display' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Player_Display.vhd:33]
+	Parameter display_x_offset bound to: 300 - type: integer 
+	Parameter display_y_offset bound to: 200 - type: integer 
+	Parameter px_offset bound to: 300 - type: integer 
+	Parameter py_offset bound to: 200 - type: integer 
+INFO: [Synth 8-3491] module 'P' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/P.vhd:15' bound to instance 'Letter_P' of component 'P' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Player_Display.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'P' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/P.vhd:33]
+	Parameter px_offset bound to: 300 - type: integer 
+	Parameter py_offset bound to: 200 - type: integer 
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 10 - type: integer 
+	Parameter x_offset bound to: 300 - type: integer 
+	Parameter y_offset bound to: 200 - type: integer 
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Top' of component 'Rectangle' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/P.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'Rectangle' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 10 - type: integer 
+	Parameter x_offset bound to: 300 - type: integer 
+	Parameter y_offset bound to: 200 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Rectangle' (6#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 20 - type: integer 
+	Parameter rectangle_width bound to: 2 - type: integer 
+	Parameter x_offset bound to: 300 - type: integer 
+	Parameter y_offset bound to: 200 - type: integer 
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Left' of component 'Rectangle' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/P.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized1' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 20 - type: integer 
+	Parameter rectangle_width bound to: 2 - type: integer 
+	Parameter x_offset bound to: 300 - type: integer 
+	Parameter y_offset bound to: 200 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized1' (6#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 10 - type: integer 
+	Parameter rectangle_width bound to: 2 - type: integer 
+	Parameter x_offset bound to: 310 - type: integer 
+	Parameter y_offset bound to: 200 - type: integer 
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Right' of component 'Rectangle' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/P.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized3' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 10 - type: integer 
+	Parameter rectangle_width bound to: 2 - type: integer 
+	Parameter x_offset bound to: 310 - type: integer 
+	Parameter y_offset bound to: 200 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized3' (6#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 10 - type: integer 
+	Parameter x_offset bound to: 300 - type: integer 
+	Parameter y_offset bound to: 210 - type: integer 
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Middle' of component 'Rectangle' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/P.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized5' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 10 - type: integer 
+	Parameter x_offset bound to: 300 - type: integer 
+	Parameter y_offset bound to: 210 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized5' (6#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'P' (7#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/P.vhd:33]
+	Parameter px_offset bound to: 305 - type: integer 
+	Parameter py_offset bound to: 200 - type: integer 
+INFO: [Synth 8-3491] module 'L' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/L.vhd:15' bound to instance 'Letter_L' of component 'L' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Player_Display.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'L' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/L.vhd:33]
+	Parameter px_offset bound to: 305 - type: integer 
+	Parameter py_offset bound to: 200 - type: integer 
+	Parameter rectangle_height bound to: 20 - type: integer 
+	Parameter rectangle_width bound to: 2 - type: integer 
+	Parameter x_offset bound to: 305 - type: integer 
+	Parameter y_offset bound to: 200 - type: integer 
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Full_Left' of component 'Rectangle' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/L.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized7' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 20 - type: integer 
+	Parameter rectangle_width bound to: 2 - type: integer 
+	Parameter x_offset bound to: 305 - type: integer 
+	Parameter y_offset bound to: 200 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized7' (7#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 10 - type: integer 
+	Parameter x_offset bound to: 305 - type: integer 
+	Parameter y_offset bound to: 220 - type: integer 
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Bottom' of component 'Rectangle' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/L.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized9' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 10 - type: integer 
+	Parameter x_offset bound to: 305 - type: integer 
+	Parameter y_offset bound to: 220 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized9' (7#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'L' (8#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/L.vhd:33]
+	Parameter px_offset bound to: 310 - type: integer 
+	Parameter py_offset bound to: 200 - type: integer 
+INFO: [Synth 8-3491] module 'A' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/A.vhd:15' bound to instance 'Letter_A' of component 'A' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Player_Display.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'A' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/A.vhd:33]
+	Parameter px_offset bound to: 310 - type: integer 
+	Parameter py_offset bound to: 200 - type: integer 
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 10 - type: integer 
+	Parameter x_offset bound to: 310 - type: integer 
+	Parameter y_offset bound to: 200 - type: integer 
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Top' of component 'Rectangle' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/A.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized11' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 10 - type: integer 
+	Parameter x_offset bound to: 310 - type: integer 
+	Parameter y_offset bound to: 200 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized11' (8#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 20 - type: integer 
+	Parameter rectangle_width bound to: 2 - type: integer 
+	Parameter x_offset bound to: 310 - type: integer 
+	Parameter y_offset bound to: 200 - type: integer 
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Full_Left' of component 'Rectangle' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/A.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized13' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 20 - type: integer 
+	Parameter rectangle_width bound to: 2 - type: integer 
+	Parameter x_offset bound to: 310 - type: integer 
+	Parameter y_offset bound to: 200 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized13' (8#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 20 - type: integer 
+	Parameter rectangle_width bound to: 2 - type: integer 
+	Parameter x_offset bound to: 320 - type: integer 
+	Parameter y_offset bound to: 200 - type: integer 
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Full_Right' of component 'Rectangle' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/A.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized15' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 20 - type: integer 
+	Parameter rectangle_width bound to: 2 - type: integer 
+	Parameter x_offset bound to: 320 - type: integer 
+	Parameter y_offset bound to: 200 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized15' (8#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 10 - type: integer 
+	Parameter x_offset bound to: 310 - type: integer 
+	Parameter y_offset bound to: 210 - type: integer 
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Middle' of component 'Rectangle' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/A.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized17' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 10 - type: integer 
+	Parameter x_offset bound to: 310 - type: integer 
+	Parameter y_offset bound to: 210 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized17' (8#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'A' (9#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/A.vhd:33]
+	Parameter px_offset bound to: 315 - type: integer 
+	Parameter py_offset bound to: 200 - type: integer 
+INFO: [Synth 8-3491] module 'Y' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Y.vhd:15' bound to instance 'Letter_Y' of component 'Y' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Player_Display.vhd:191]
+INFO: [Synth 8-638] synthesizing module 'Y' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Y.vhd:33]
+	Parameter px_offset bound to: 315 - type: integer 
+	Parameter py_offset bound to: 200 - type: integer 
+	Parameter rectangle_height bound to: 10 - type: integer 
+	Parameter rectangle_width bound to: 2 - type: integer 
+	Parameter x_offset bound to: 315 - type: integer 
+	Parameter y_offset bound to: 200 - type: integer 
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Left' of component 'Rectangle' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Y.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized19' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 10 - type: integer 
+	Parameter rectangle_width bound to: 2 - type: integer 
+	Parameter x_offset bound to: 315 - type: integer 
+	Parameter y_offset bound to: 200 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized19' (9#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 10 - type: integer 
+	Parameter rectangle_width bound to: 2 - type: integer 
+	Parameter x_offset bound to: 325 - type: integer 
+	Parameter y_offset bound to: 200 - type: integer 
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Right' of component 'Rectangle' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Y.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized21' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 10 - type: integer 
+	Parameter rectangle_width bound to: 2 - type: integer 
+	Parameter x_offset bound to: 325 - type: integer 
+	Parameter y_offset bound to: 200 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized21' (9#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 10 - type: integer 
+	Parameter x_offset bound to: 315 - type: integer 
+	Parameter y_offset bound to: 210 - type: integer 
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Middle' of component 'Rectangle' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Y.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized23' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 10 - type: integer 
+	Parameter x_offset bound to: 315 - type: integer 
+	Parameter y_offset bound to: 210 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized23' (9#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 10 - type: integer 
+	Parameter rectangle_width bound to: 2 - type: integer 
+	Parameter x_offset bound to: 320 - type: integer 
+	Parameter y_offset bound to: 210 - type: integer 
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Y_middle' of component 'Rectangle' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Y.vhd:205]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized25' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 10 - type: integer 
+	Parameter rectangle_width bound to: 2 - type: integer 
+	Parameter x_offset bound to: 320 - type: integer 
+	Parameter y_offset bound to: 210 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized25' (9#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Y' (10#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Y.vhd:33]
+	Parameter px_offset bound to: 320 - type: integer 
+	Parameter py_offset bound to: 200 - type: integer 
+INFO: [Synth 8-3491] module 'E' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/E.vhd:15' bound to instance 'Letter_E' of component 'E' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Player_Display.vhd:209]
+INFO: [Synth 8-638] synthesizing module 'E' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/E.vhd:33]
+	Parameter px_offset bound to: 320 - type: integer 
+	Parameter py_offset bound to: 200 - type: integer 
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 10 - type: integer 
+	Parameter x_offset bound to: 320 - type: integer 
+	Parameter y_offset bound to: 200 - type: integer 
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Top' of component 'Rectangle' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/E.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized27' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 10 - type: integer 
+	Parameter x_offset bound to: 320 - type: integer 
+	Parameter y_offset bound to: 200 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized27' (10#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 20 - type: integer 
+	Parameter rectangle_width bound to: 2 - type: integer 
+	Parameter x_offset bound to: 320 - type: integer 
+	Parameter y_offset bound to: 200 - type: integer 
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Full_Left' of component 'Rectangle' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/E.vhd:85]
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 10 - type: integer 
+	Parameter x_offset bound to: 320 - type: integer 
+	Parameter y_offset bound to: 210 - type: integer 
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Middle' of component 'Rectangle' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/E.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized29' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 10 - type: integer 
+	Parameter x_offset bound to: 320 - type: integer 
+	Parameter y_offset bound to: 210 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized29' (10#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 10 - type: integer 
+	Parameter x_offset bound to: 320 - type: integer 
+	Parameter y_offset bound to: 220 - type: integer 
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Bottom' of component 'Rectangle' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/E.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized31' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 10 - type: integer 
+	Parameter x_offset bound to: 320 - type: integer 
+	Parameter y_offset bound to: 220 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized31' (10#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'E' (11#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/E.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Player_Display' (12#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Player_Display.vhd:33]
+WARNING: [Synth 8-3848] Net letter_color in module/entity vga_module does not have driver. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:159]
+INFO: [Synth 8-256] done synthesizing module 'vga_module' (13#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:44]
+WARNING: [Synth 8-3331] design Rectangle__parameterized31 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized31 has unconnected port kHz
+WARNING: [Synth 8-3331] design Rectangle__parameterized29 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized29 has unconnected port kHz
+WARNING: [Synth 8-3331] design Rectangle__parameterized15 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized15 has unconnected port kHz
+WARNING: [Synth 8-3331] design Rectangle__parameterized27 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized27 has unconnected port kHz
+WARNING: [Synth 8-3331] design Rectangle__parameterized25 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized25 has unconnected port kHz
+WARNING: [Synth 8-3331] design Rectangle__parameterized23 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized23 has unconnected port kHz
+WARNING: [Synth 8-3331] design Rectangle__parameterized21 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized21 has unconnected port kHz
+WARNING: [Synth 8-3331] design Rectangle__parameterized19 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized19 has unconnected port kHz
+WARNING: [Synth 8-3331] design Rectangle__parameterized17 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized17 has unconnected port kHz
+WARNING: [Synth 8-3331] design Rectangle__parameterized13 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized13 has unconnected port kHz
+WARNING: [Synth 8-3331] design Rectangle__parameterized11 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized11 has unconnected port kHz
+WARNING: [Synth 8-3331] design Rectangle__parameterized9 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized9 has unconnected port kHz
+WARNING: [Synth 8-3331] design Rectangle__parameterized7 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized7 has unconnected port kHz
+WARNING: [Synth 8-3331] design Rectangle__parameterized5 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized5 has unconnected port kHz
+WARNING: [Synth 8-3331] design Rectangle__parameterized3 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized3 has unconnected port kHz
+WARNING: [Synth 8-3331] design Rectangle__parameterized1 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized1 has unconnected port kHz
+WARNING: [Synth 8-3331] design Rectangle has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle has unconnected port kHz
 WARNING: [Synth 8-3331] design Growing_Rectangle has unconnected port clk
 WARNING: [Synth 8-3331] design Growing_Rectangle has unconnected port rectangle_height[8]
 WARNING: [Synth 8-3331] design Growing_Rectangle has unconnected port rectangle_height[7]
@@ -94,7 +363,7 @@ WARNING: [Synth 8-3331] design Growing_Rectangle has unconnected port rectangle_
 WARNING: [Synth 8-3331] design Growing_Rectangle has unconnected port rectangle_height[0]
 WARNING: [Synth 8-3331] design Growing_Rectangle has unconnected port kHz
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 335.992 ; gain = 114.922
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 336.695 ; gain = 116.234
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -103,8 +372,20 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Player:rectangle_color[11] to constant 0 [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:231]
+WARNING: [Synth 8-3295] tying undriven pin Player:rectangle_color[10] to constant 0 [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:231]
+WARNING: [Synth 8-3295] tying undriven pin Player:rectangle_color[9] to constant 0 [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:231]
+WARNING: [Synth 8-3295] tying undriven pin Player:rectangle_color[8] to constant 0 [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:231]
+WARNING: [Synth 8-3295] tying undriven pin Player:rectangle_color[7] to constant 0 [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:231]
+WARNING: [Synth 8-3295] tying undriven pin Player:rectangle_color[6] to constant 0 [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:231]
+WARNING: [Synth 8-3295] tying undriven pin Player:rectangle_color[5] to constant 0 [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:231]
+WARNING: [Synth 8-3295] tying undriven pin Player:rectangle_color[4] to constant 0 [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:231]
+WARNING: [Synth 8-3295] tying undriven pin Player:rectangle_color[3] to constant 0 [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:231]
+WARNING: [Synth 8-3295] tying undriven pin Player:rectangle_color[2] to constant 0 [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:231]
+WARNING: [Synth 8-3295] tying undriven pin Player:rectangle_color[1] to constant 0 [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:231]
+WARNING: [Synth 8-3295] tying undriven pin Player:rectangle_color[0] to constant 0 [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:231]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 335.992 ; gain = 114.922
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 336.695 ; gain = 116.234
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -120,22 +401,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 636.953 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 640.656 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 636.953 ; gain = 415.883
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 640.656 ; gain = 420.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 636.953 ; gain = 415.883
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 640.656 ; gain = 420.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 636.953 ; gain = 415.883
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 640.656 ; gain = 420.195
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6014] Unused sequential element current_hor_pos_reg was removed.  [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/sync_signal_generator.vhd:43]
 WARNING: [Synth 8-6014] Unused sequential element current_ver_pos_reg was removed.  [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/sync_signal_generator.vhd:44]
@@ -146,10 +427,142 @@ WARNING: [Synth 8-6014] Unused sequential element current_count_reg was removed.
 INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Growing_Rectangle.vhd:59]
 INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Growing_Rectangle.vhd:59]
 INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Growing_Rectangle.vhd:59]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
+INFO: [Common 17-14] Message 'Synth 8-41' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-327] inferring latch for variable 'rect_height_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Growing_Rectangle.vhd:49]
 WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Growing_Rectangle.vhd:48]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 636.953 ; gain = 415.883
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 640.656 ; gain = 420.195
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -162,9 +575,9 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input     12 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 37    
 	   2 Input     11 Bit       Adders := 4     
-	   2 Input     10 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 38    
 	   2 Input      9 Bit       Adders := 1     
 	   2 Input      4 Bit       Adders := 5     
 	   2 Input      3 Bit       Adders := 2     
@@ -177,7 +590,7 @@ Detailed RTL Component Info :
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 9     
 +---Muxes : 
-	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 19    
 	   2 Input     11 Bit        Muxes := 4     
 	   2 Input      4 Bit        Muxes := 8     
 	   2 Input      3 Bit        Muxes := 2     
@@ -249,6 +662,125 @@ Detailed RTL Component Info :
 	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
+Module Rectangle 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module Rectangle__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module Rectangle__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module Rectangle__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module Rectangle__parameterized7 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module Rectangle__parameterized9 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module Rectangle__parameterized11 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module Rectangle__parameterized13 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module Rectangle__parameterized15 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module Rectangle__parameterized17 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module Rectangle__parameterized19 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module Rectangle__parameterized21 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module Rectangle__parameterized23 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module Rectangle__parameterized25 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module Rectangle__parameterized27 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module Rectangle__parameterized29 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module Rectangle__parameterized31 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -275,27 +807,119 @@ WARNING: [Synth 8-6014] Unused sequential element DIVIDER/oneHzClock/current_cou
 WARNING: [Synth 8-6014] Unused sequential element DIVIDER/singleSecondsClock/current_count_reg was removed.  [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/downcounter.vhd:30]
 WARNING: [Synth 8-6014] Unused sequential element DIVIDER/singleMinutesClock/current_count_reg was removed.  [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/downcounter.vhd:30]
 WARNING: [Synth 8-6014] Unused sequential element DIVIDER/kiloHzClock/current_count_reg was removed.  [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/downcounter.vhd:30]
-INFO: [Synth 8-3886] merging instance 'Rectangle/rect_height_reg[0]' (LD) to 'Rectangle/rect_pos_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'Rectangle/rect_height_reg[1]' (LD) to 'Rectangle/rect_pos_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'Rectangle/rect_pos_x_reg[0]' (LD) to 'Rectangle/rect_pos_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'Rectangle/rect_height_reg[2]' (LD) to 'Rectangle/rect_pos_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'Rectangle/rect_height_reg[3]' (LD) to 'Rectangle/rect_pos_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'Rectangle/rect_height_reg[4]' (LD) to 'Rectangle/rect_pos_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'Rectangle/rect_height_reg[5]' (LD) to 'Rectangle/rect_pos_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'Rectangle/rect_height_reg[6]' (LD) to 'Rectangle/rect_pos_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'Rectangle/rect_height_reg[7]' (LD) to 'Rectangle/rect_pos_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'Rectangle/rect_height_reg[8]' (LD) to 'Rectangle/rect_pos_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'Rectangle/rect_height_reg[9]' (LD) to 'Rectangle/rect_pos_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'Rectangle/rect_pos_x_reg[1]' (LD) to 'Rectangle/rect_pos_x_reg[5]'
-INFO: [Synth 8-3886] merging instance 'Rectangle/rect_pos_x_reg[2]' (LD) to 'Rectangle/rect_pos_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'Rectangle/rect_pos_x_reg[3]' (LD) to 'Rectangle/rect_pos_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'Rectangle/rect_pos_x_reg[4]' (LD) to 'Rectangle/rect_pos_x_reg[5]'
+WARNING: [Synth 8-3331] design E has unconnected port clk
+WARNING: [Synth 8-3331] design E has unconnected port kHz
+WARNING: [Synth 8-3331] design Y has unconnected port clk
+WARNING: [Synth 8-3331] design Y has unconnected port kHz
+WARNING: [Synth 8-3331] design A has unconnected port clk
+WARNING: [Synth 8-3331] design A has unconnected port kHz
+WARNING: [Synth 8-3331] design L has unconnected port clk
+WARNING: [Synth 8-3331] design L has unconnected port kHz
+WARNING: [Synth 8-3331] design P has unconnected port clk
+WARNING: [Synth 8-3331] design P has unconnected port kHz
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Top/rect_pos_y_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Top/rect_pos_x_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Middle/rect_pos_y_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Middle/rect_pos_x_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Left/rect_pos_y_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Left/rect_pos_x_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Right/rect_pos_y_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Right/rect_pos_x_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_L/Full_Left/rect_pos_y_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_L/Full_Left/rect_pos_x_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_L/Bottom/rect_pos_y_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_L/Bottom/rect_pos_x_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_Y/Left/rect_pos_y_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_Y/Left/rect_pos_x_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_Y/Middle/rect_pos_y_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_Y/Middle/rect_pos_x_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_Y/Y_middle/rect_pos_y_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_Y/Y_middle/rect_pos_x_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_Y/Right/rect_pos_y_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_Y/Right/rect_pos_x_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_E/Top/rect_pos_y_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_E/Top/rect_pos_x_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_E/Bottom/rect_pos_y_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_E/Bottom/rect_pos_x_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_E/Full_Left/rect_pos_y_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_E/Full_Left/rect_pos_x_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_E/Middle/rect_pos_y_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_E/Middle/rect_pos_x_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_P/Top/rect_pos_y_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_P/Top/rect_pos_x_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_P/Middle/rect_pos_y_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_P/Middle/rect_pos_x_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_P/Left/rect_pos_y_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_P/Left/rect_pos_x_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_P/Right/rect_pos_y_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_P/Right/rect_pos_x_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Rectangle/rect_height_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Rectangle/rect_height_reg[1]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Rectangle/rect_pos_x_reg[0]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Top/rect_pos_y_reg[1]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Top/rect_pos_y_reg[2]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Top/rect_pos_y_reg[3]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Top/rect_pos_y_reg[4]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Top/rect_pos_y_reg[5]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Top/rect_pos_y_reg[6]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Top/rect_pos_y_reg[7]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Top/rect_pos_y_reg[8]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Top/rect_pos_y_reg[9]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Top/rect_pos_x_reg[8]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Top/rect_pos_x_reg[7]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Top/rect_pos_x_reg[6]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Top/rect_pos_x_reg[5]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Top/rect_pos_x_reg[4]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Top/rect_pos_x_reg[2]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Top/rect_pos_x_reg[1]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Top/rect_pos_x_reg[3]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Top/rect_pos_x_reg[9]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Middle/rect_pos_y_reg[1]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Middle/rect_pos_y_reg[2]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Middle/rect_pos_y_reg[3]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Middle/rect_pos_y_reg[4]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Middle/rect_pos_y_reg[5]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Middle/rect_pos_y_reg[6]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Middle/rect_pos_y_reg[7]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Middle/rect_pos_y_reg[8]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Middle/rect_pos_y_reg[9]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Middle/rect_pos_x_reg[8]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Middle/rect_pos_x_reg[7]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Middle/rect_pos_x_reg[6]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Middle/rect_pos_x_reg[5]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Middle/rect_pos_x_reg[4]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Middle/rect_pos_x_reg[2]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Middle/rect_pos_x_reg[1]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Middle/rect_pos_x_reg[3]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Middle/rect_pos_x_reg[9]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Left/rect_pos_y_reg[1]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Left/rect_pos_y_reg[2]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Left/rect_pos_y_reg[3]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Left/rect_pos_y_reg[4]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Left/rect_pos_y_reg[5]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Left/rect_pos_y_reg[6]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Left/rect_pos_y_reg[7]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Left/rect_pos_y_reg[8]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Left/rect_pos_y_reg[9]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Left/rect_pos_x_reg[8]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Left/rect_pos_x_reg[7]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Left/rect_pos_x_reg[6]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Left/rect_pos_x_reg[5]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Left/rect_pos_x_reg[4]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Left/rect_pos_x_reg[3]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Left/rect_pos_x_reg[2]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Left/rect_pos_x_reg[1]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Left/rect_pos_x_reg[9]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Right/rect_pos_x_reg[1]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Right/rect_pos_y_reg[1]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Right/rect_pos_y_reg[8]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Right/rect_pos_y_reg[7]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Right/rect_pos_y_reg[6]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Right/rect_pos_y_reg[5]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/Letter_A/Full_Right/rect_pos_y_reg[3]' (LD) to 'Player/Letter_E/Full_Left/rect_pos_y_reg[3]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Rectangle/rect_pos_x_reg[5] )
-INFO: [Synth 8-3886] merging instance 'Rectangle/rect_pos_x_reg[6]' (LD) to 'Rectangle/rect_pos_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'Rectangle/rect_pos_x_reg[7]' (LD) to 'Rectangle/rect_pos_x_reg[9]'
-INFO: [Synth 8-3886] merging instance 'Rectangle/rect_pos_x_reg[8]' (LD) to 'Rectangle/rect_pos_x_reg[9]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Rectangle/rect_pos_x_reg[9] )
-WARNING: [Synth 8-3332] Sequential element (Rectangle/rect_pos_x_reg[5]) is unused and will be removed from module vga_module.
 WARNING: [Synth 8-3332] Sequential element (DIVIDER/hundredHzClock/current_count_reg[3]) is unused and will be removed from module vga_module.
 WARNING: [Synth 8-3332] Sequential element (DIVIDER/hundredHzClock/current_count_reg[2]) is unused and will be removed from module vga_module.
 WARNING: [Synth 8-3332] Sequential element (DIVIDER/hundredHzClock/current_count_reg[1]) is unused and will be removed from module vga_module.
@@ -346,9 +970,10 @@ WARNING: [Synth 8-3332] Sequential element (DIVIDER/kiloHzClock/current_count_re
 WARNING: [Synth 8-3332] Sequential element (DIVIDER/kiloHzClock/current_count_reg[15]) is unused and will be removed from module vga_module.
 WARNING: [Synth 8-3332] Sequential element (DIVIDER/kiloHzClock/current_count_reg[16]) is unused and will be removed from module vga_module.
 WARNING: [Synth 8-3332] Sequential element (DIVIDER/kiloHzClock/i_zero_reg) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (Rectangle/rect_pos_x_reg[5]) is unused and will be removed from module vga_module.
 WARNING: [Synth 8-3332] Sequential element (Rectangle/rect_pos_x_reg[9]) is unused and will be removed from module vga_module.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 636.953 ; gain = 415.883
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 640.656 ; gain = 420.195
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -360,13 +985,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 636.953 ; gain = 415.883
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 640.656 ; gain = 420.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 636.953 ; gain = 415.883
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 640.656 ; gain = 420.195
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -378,7 +1003,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 636.953 ; gain = 415.883
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 640.656 ; gain = 420.195
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -402,7 +1027,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 636.953 ; gain = 415.883
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 640.656 ; gain = 420.195
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -415,7 +1040,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 636.953 ; gain = 415.883
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 640.656 ; gain = 420.195
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -427,25 +1052,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 636.953 ; gain = 415.883
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 640.656 ; gain = 420.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 636.953 ; gain = 415.883
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 640.656 ; gain = 420.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 636.953 ; gain = 415.883
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 640.656 ; gain = 420.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 636.953 ; gain = 415.883
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 640.656 ; gain = 420.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -462,46 +1087,71 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |    11|
-|3     |LUT1   |     7|
-|4     |LUT2   |    29|
-|5     |LUT3   |    17|
-|6     |LUT4   |     8|
-|7     |LUT5   |    17|
-|8     |LUT6   |    19|
-|9     |FDCE   |    23|
+|2     |CARRY4 |   191|
+|3     |LUT1   |    26|
+|4     |LUT2   |   221|
+|5     |LUT3   |   284|
+|6     |LUT4   |    73|
+|7     |LUT5   |   162|
+|8     |LUT6   |   169|
+|9     |FDCE   |    26|
 |10    |FDPE   |     2|
 |11    |IBUF   |     2|
 |12    |OBUF   |    14|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+----------------------+-----------------------+------+
-|      |Instance              |Module                 |Cells |
-+------+----------------------+-----------------------+------+
-|1     |top                   |                       |   150|
-|2     |  Rectangle           |Growing_Rectangle      |     8|
-|3     |  DIVIDER             |clock_divider          |     6|
-|4     |    megaHzClock_25MHz |downcounter            |     6|
-|5     |  VGA_SYNC            |sync_signals_generator |   119|
-+------+----------------------+-----------------------+------+
++------+----------------------+-----------------------------+------+
+|      |Instance              |Module                       |Cells |
++------+----------------------+-----------------------------+------+
+|1     |top                   |                             |  1171|
+|2     |  Player              |Player_Display               |   134|
+|3     |    Letter_A          |A                            |    28|
+|4     |      Full_Left       |Rectangle__parameterized13   |     7|
+|5     |      Full_Right      |Rectangle__parameterized15_0 |     7|
+|6     |      Middle          |Rectangle__parameterized17   |     7|
+|7     |      Top             |Rectangle__parameterized11   |     7|
+|8     |    Letter_E          |E                            |    32|
+|9     |      Bottom          |Rectangle__parameterized31   |     8|
+|10    |      Full_Left       |Rectangle__parameterized15   |     8|
+|11    |      Middle          |Rectangle__parameterized29   |     9|
+|12    |      Top             |Rectangle__parameterized27   |     7|
+|13    |    Letter_L          |L                            |    14|
+|14    |      Bottom          |Rectangle__parameterized9    |     7|
+|15    |      Full_Left       |Rectangle__parameterized7    |     7|
+|16    |    Letter_P          |P                            |    29|
+|17    |      Left            |Rectangle__parameterized1    |     7|
+|18    |      Middle          |Rectangle__parameterized5    |     7|
+|19    |      Right           |Rectangle__parameterized3    |     8|
+|20    |      Top             |Rectangle                    |     7|
+|21    |    Letter_Y          |Y                            |    31|
+|22    |      Left            |Rectangle__parameterized19   |     8|
+|23    |      Middle          |Rectangle__parameterized23   |     9|
+|24    |      Right           |Rectangle__parameterized21   |     7|
+|25    |      Y_middle        |Rectangle__parameterized25   |     7|
+|26    |  Rectangle           |Growing_Rectangle            |     6|
+|27    |  DIVIDER             |clock_divider                |     6|
+|28    |    megaHzClock_25MHz |downcounter                  |     6|
+|29    |  VGA_SYNC            |sync_signals_generator       |  1008|
++------+----------------------+-----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 636.953 ; gain = 415.883
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 640.656 ; gain = 420.195
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 70 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 636.953 ; gain = 114.922
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 636.953 ; gain = 415.883
+Synthesis finished with 0 errors, 0 critical warnings and 114 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 640.656 ; gain = 116.234
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 640.656 ; gain = 420.195
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 193 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'vga_module' is not ideal for floorplanning, since the cellview 'sync_signals_generator' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-66 Infos, 81 Warnings, 0 Critical Warnings and 0 Errors encountered.
+317 Infos, 173 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 636.953 ; gain = 416.934
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 640.656 ; gain = 421.223
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.runs/synth_1/vga_module.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.095 . Memory (MB): peak = 636.953 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Nov 15 00:15:32 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 640.656 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 15 02:37:58 2018...
