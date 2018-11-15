@@ -31,8 +31,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity vga_module is
     Port (  clk : in  STD_LOGIC;
-            buttons: in STD_LOGIC_VECTOR(2 downto 0);
-            switches: in STD_LOGIC_VECTOR(13 downto 0);
+            buttons: in STD_LOGIC_VECTOR(1 downto 0);
+            --switches: in STD_LOGIC_VECTOR(13 downto 0);
             red: out STD_LOGIC_VECTOR(3 downto 0);
             green: out STD_LOGIC_VECTOR(3 downto 0);
             blue: out STD_LOGIC_VECTOR(3 downto 0);
@@ -81,16 +81,16 @@ Port (  clk : in  STD_LOGIC;
 	  );
 end component;
 
-component vga_stripes_dff2 is
-    Port ( pixel_clk : in  STD_LOGIC;
-           reset : in  STD_LOGIC;
-           next_pixel : in  STD_LOGIC;
-		   mode: in STD_LOGIC;
-           B : out  STD_LOGIC_VECTOR (3 downto 0);
-           G : out  STD_LOGIC_VECTOR (3 downto 0);
-           R : out  STD_LOGIC_VECTOR (3 downto 0)
-         );
- end component;
+--component vga_stripes_dff2 is
+--    Port ( pixel_clk : in  STD_LOGIC;
+--           reset : in  STD_LOGIC;
+--           next_pixel : in  STD_LOGIC;
+--		   mode: in STD_LOGIC;
+--           B : out  STD_LOGIC_VECTOR (3 downto 0);
+--           G : out  STD_LOGIC_VECTOR (3 downto 0);
+--           R : out  STD_LOGIC_VECTOR (3 downto 0)
+--         );
+-- end component;
  
  component bouncing_box is
  Port (  clk : in  STD_LOGIC;
@@ -177,15 +177,15 @@ DIVIDER: clock_divider
                 hHz              => i_hHz
 		  );
 		  
-STRIPES_DFF: vga_stripes_dff2
-	Port map ( pixel_clk  => i_pixel_clk,
-               reset      => reset,
-               next_pixel => show_stripe,
-               mode       => switches(0), -- can be a different switch
-               B          => stripe_blue,
-               G          => stripe_green,
-               R          => stripe_red
-             );
+--STRIPES_DFF: vga_stripes_dff2
+--	Port map ( pixel_clk  => i_pixel_clk,
+--               reset      => reset,
+--               next_pixel => show_stripe,
+--               mode       => switches(0), -- can be a different switch
+--               B          => stripe_blue,
+--               G          => stripe_green,
+--               R          => stripe_red
+--             );
              
 BOX: bouncing_box
     Port map ( clk         => clk,
@@ -214,24 +214,25 @@ green <= "0000" when (vga_blank = '1') else disp_green;
 -- ADDED
 -- These can be assigned to different switches/buttons
 reset <= buttons(0);
-box_color <= switches(13 downto 2);
-vga_select <= switches(1);
+--box_color <= switches(13 downto 2);
+--vga_select <= switches(1);
 inc_box <= buttons(1);
-dec_box <= buttons(2);
+--dec_box <= buttons(2);
 
 -----------------------------------------------------------------------------
 -- OUTPUT SELECTOR:
 -- Select which component to display - stripes or bouncing box
-selectOutput: process(box_red, box_blue, box_green, stripe_blue, stripe_red, stripe_green, vga_select)
-begin
-	case (vga_select) is
-		-- Select which input gets written to disp_red, disp_blue and disp_green
-		-- ADDED
-		when '0' => disp_red <= box_red; disp_blue <= box_blue; disp_green <= box_green;
-		when '1' => disp_red <= stripe_red; disp_blue <= stripe_blue; disp_green <= stripe_green;
-		when others => disp_red <= "0000"; disp_blue <= "0000"; disp_green <= "0000";
-	end case;
-end process selectOutput;
+--selectOutput: process(box_red, box_blue, box_green, stripe_blue, stripe_red, stripe_green, vga_select)
+--begin
+--	case (vga_select) is
+--		-- Select which input gets written to disp_red, disp_blue and disp_green
+--		-- ADDED
+--		when '0' => 
+		disp_red <= box_red; disp_blue <= box_blue; disp_green <= box_green;
+--		when '1' => disp_red <= stripe_red; disp_blue <= stripe_blue; disp_green <= stripe_green;
+--		when others => disp_red <= "0000"; disp_blue <= "0000"; disp_green <= "0000";
+--	end case;
+--end process selectOutput;
 -----------------------------------------------------------------------------
 
 end Behavioral;
