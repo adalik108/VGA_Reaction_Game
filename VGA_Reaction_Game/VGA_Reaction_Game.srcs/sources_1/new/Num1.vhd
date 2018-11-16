@@ -119,9 +119,9 @@ Head: Rectangle
                     rectangle_color => rectangle_color,
                     --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
                     kHz             => kHz,
-                    red             => i_red2,
-                    blue            => i_blue2,
-                    green           => i_green2
+                    red             => i_red1,
+                    blue            => i_blue1,
+                    green           => i_green1
           );
               
 Middle: Rectangle
