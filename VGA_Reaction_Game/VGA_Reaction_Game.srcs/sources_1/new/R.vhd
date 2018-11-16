@@ -76,7 +76,7 @@ signal i_red5, i_green5, i_blue5: std_logic_vector(3 downto 0);
 signal i_red6, i_green6, i_blue6: std_logic_vector(3 downto 0);
 
 constant tail_height: integer:= 2;
-constant tail_width: integer:= 1;
+constant tail_width: integer:= 2;
 constant long: integer:= 10;
 constant half_length: integer:= 5;
 constant narrow: integer:= 2;
@@ -150,7 +150,7 @@ Middle: Rectangle
                   rectangle_height    => narrow,
                   rectangle_width     => long + narrow,
                   x_offset            => px_offset,
-                  y_offset            => py_offset + long
+                  y_offset            => py_offset + long - narrow
                   )
       Port Map(     
                   clk             => clk,
@@ -169,7 +169,7 @@ Tail_1: Rectangle
       Generic Map(     
                   rectangle_height    => tail_height,
                   rectangle_width     => tail_width,
-                  x_offset            => px_offset + half_length + tail_width + tail_width,
+                  x_offset            => px_offset + half_length + tail_width,
                   y_offset            => py_offset + long + tail_height
                   )
       Port Map(     
@@ -189,7 +189,7 @@ Tail_2: Diagonal4
             Generic Map(     
                         d4_height    => tail_height,
                         d4_width     => tail_width,
-                        d4_x_offset  => px_offset + half_length + tail_width + tail_width + tail_width,
+                        d4_x_offset  => px_offset + half_length + tail_width + tail_width,
                         d4_y_offset  => py_offset + long + tail_height + tail_height
                         )
             Port Map(     
