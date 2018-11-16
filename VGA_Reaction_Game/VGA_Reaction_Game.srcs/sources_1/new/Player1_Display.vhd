@@ -9,7 +9,7 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity Player1_Display is
     Generic ( 	--p1_height: integer:= 10;
-                p1_width: integer:= 10;
+                p1_width: integer:= 100;
                 p1_x_offset: integer:= 50;
                 p1_y_offset: integer:= 50);
                 
@@ -117,7 +117,7 @@ Player: Player_Display
                 reset           => reset,
                 scan_line_x     => scan_line_x,
                 scan_line_y     => scan_line_y,
-                rectangle_colour => rectangle_colour,
+                rectangle_colour => char_colour,
                 --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
                 kHz             => kHz,
                 red             => i_red1,
@@ -135,7 +135,7 @@ Number: Num1
                   reset           => reset,
                   scan_line_x     => scan_line_x,
                   scan_line_y     => scan_line_y,
-                  rectangle_color => rectangle_colour,
+                  rectangle_color => char_colour,
                   --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
                   kHz             => kHz,
                   red             => i_red2,
