@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 33316 
+INFO: Helper process launched with PID 28072 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 296.281 ; gain = 75.840
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 296.410 ; gain = 76.012
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'vga_module' [C:/Vivado_Git/VGA_Reaction_Game/vga_module.vhd:44]
 INFO: [Synth 8-3491] module 'sync_signals_generator' declared at 'C:/Vivado_Git/VGA_Reaction_Game/sync_signal_generator.vhd:7' bound to instance 'VGA_SYNC' of component 'sync_signals_generator' [C:/Vivado_Git/VGA_Reaction_Game/vga_module.vhd:173]
@@ -645,7 +645,7 @@ WARNING: [Synth 8-3331] design Player1_Display has unconnected port char_colour[
 WARNING: [Synth 8-3331] design Player1_Display has unconnected port char_colour[1]
 WARNING: [Synth 8-3331] design Player1_Display has unconnected port char_colour[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 337.359 ; gain = 116.918
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 337.488 ; gain = 117.090
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -655,7 +655,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 337.359 ; gain = 116.918
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 337.488 ; gain = 117.090
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -671,22 +671,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 644.328 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 644.457 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 644.328 ; gain = 423.887
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 644.457 ; gain = 424.059
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 644.328 ; gain = 423.887
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 644.457 ; gain = 424.059
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 644.328 ; gain = 423.887
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 644.457 ; gain = 424.059
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6014] Unused sequential element current_hor_pos_reg was removed.  [C:/Vivado_Git/VGA_Reaction_Game/sync_signal_generator.vhd:43]
 WARNING: [Synth 8-6014] Unused sequential element current_ver_pos_reg was removed.  [C:/Vivado_Git/VGA_Reaction_Game/sync_signal_generator.vhd:44]
@@ -858,7 +858,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_
 WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
 WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 644.328 ; gain = 423.887
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 644.457 ; gain = 424.059
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1415,7 +1415,7 @@ WARNING: [Synth 8-3332] Sequential element (Player/green_reg[3]) is unused and w
 WARNING: [Synth 8-3332] Sequential element (Player/Number/Middle/rect_pos_x_reg[1]) is unused and will be removed from module vga_module.
 WARNING: [Synth 8-3332] Sequential element (Player/Number/Middle/rect_pos_x_reg[9]) is unused and will be removed from module vga_module.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 644.328 ; gain = 423.887
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 644.457 ; gain = 424.059
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1427,13 +1427,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 644.328 ; gain = 423.887
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 644.457 ; gain = 424.059
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 644.328 ; gain = 423.887
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 644.457 ; gain = 424.059
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1445,7 +1445,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 644.328 ; gain = 423.887
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 644.457 ; gain = 424.059
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1469,7 +1469,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 644.328 ; gain = 423.887
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 644.457 ; gain = 424.059
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1482,7 +1482,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 644.328 ; gain = 423.887
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 644.457 ; gain = 424.059
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1494,25 +1494,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 644.328 ; gain = 423.887
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 644.457 ; gain = 424.059
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 644.328 ; gain = 423.887
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 644.457 ; gain = 424.059
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 644.328 ; gain = 423.887
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 644.457 ; gain = 424.059
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 644.328 ; gain = 423.887
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 644.457 ; gain = 424.059
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1552,11 +1552,11 @@ Report Instance Areas:
 |4     |  VGA_SYNC            |sync_signals_generator |    75|
 +------+----------------------+-----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 644.328 ; gain = 423.887
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 644.457 ; gain = 424.059
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 167 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 644.328 ; gain = 116.918
-Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 644.328 ; gain = 423.887
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 644.457 ; gain = 117.090
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 644.457 ; gain = 424.059
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1567,7 +1567,7 @@ No Unisim elements were transformed.
 
 400 Infos, 247 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 644.328 ; gain = 424.977
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 644.457 ; gain = 425.098
 INFO: [Common 17-1381] The checkpoint 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.runs/synth_1/vga_module.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 644.328 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Nov 15 22:11:47 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 644.457 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 15 22:29:47 2018...
