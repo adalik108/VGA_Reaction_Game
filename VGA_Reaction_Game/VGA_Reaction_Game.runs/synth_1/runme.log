@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 28072 
+INFO: Helper process launched with PID 34684 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 296.410 ; gain = 76.012
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 296.715 ; gain = 76.004
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'vga_module' [C:/Vivado_Git/VGA_Reaction_Game/vga_module.vhd:44]
 INFO: [Synth 8-3491] module 'sync_signals_generator' declared at 'C:/Vivado_Git/VGA_Reaction_Game/sync_signal_generator.vhd:7' bound to instance 'VGA_SYNC' of component 'sync_signals_generator' [C:/Vivado_Git/VGA_Reaction_Game/vga_module.vhd:173]
@@ -77,7 +77,7 @@ INFO: [Synth 8-256] done synthesizing module 'clock_divider' (4#1) [C:/Vivado_Gi
 	Parameter p1_y_offset bound to: 450 - type: integer 
 INFO: [Synth 8-3491] module 'Player1_Display' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Player1_Display.vhd:10' bound to instance 'Player' of component 'Player1_Display' [C:/Vivado_Git/VGA_Reaction_Game/vga_module.vhd:232]
 INFO: [Synth 8-638] synthesizing module 'Player1_Display' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Player1_Display.vhd:30]
-	Parameter p1_width bound to: 10 - type: integer 
+	Parameter p1_width bound to: 120 - type: integer 
 	Parameter p1_x_offset bound to: 50 - type: integer 
 	Parameter p1_y_offset bound to: 450 - type: integer 
 	Parameter display_x_offset bound to: 50 - type: integer 
@@ -128,13 +128,13 @@ INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized3' (5#1) [
 	Parameter rectangle_height bound to: 2 - type: integer 
 	Parameter rectangle_width bound to: 12 - type: integer 
 	Parameter x_offset bound to: 50 - type: integer 
-	Parameter y_offset bound to: 460 - type: integer 
+	Parameter y_offset bound to: 458 - type: integer 
 INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Middle' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/P.vhd:122]
 INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized5' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
 	Parameter rectangle_height bound to: 2 - type: integer 
 	Parameter rectangle_width bound to: 12 - type: integer 
 	Parameter x_offset bound to: 50 - type: integer 
-	Parameter y_offset bound to: 460 - type: integer 
+	Parameter y_offset bound to: 458 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized5' (5#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
 INFO: [Synth 8-256] done synthesizing module 'P' (6#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/P.vhd:33]
 	Parameter px_offset bound to: 65 - type: integer 
@@ -208,13 +208,13 @@ INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized15' (7#1) 
 	Parameter rectangle_height bound to: 2 - type: integer 
 	Parameter rectangle_width bound to: 10 - type: integer 
 	Parameter x_offset bound to: 80 - type: integer 
-	Parameter y_offset bound to: 460 - type: integer 
+	Parameter y_offset bound to: 458 - type: integer 
 INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Middle' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/A.vhd:145]
 INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized17' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
 	Parameter rectangle_height bound to: 2 - type: integer 
 	Parameter rectangle_width bound to: 10 - type: integer 
 	Parameter x_offset bound to: 80 - type: integer 
-	Parameter y_offset bound to: 460 - type: integer 
+	Parameter y_offset bound to: 458 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized17' (7#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
 INFO: [Synth 8-256] done synthesizing module 'A' (8#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/A.vhd:33]
 	Parameter px_offset bound to: 95 - type: integer 
@@ -329,7 +329,7 @@ INFO: [Synth 8-638] synthesizing module 'R' [C:/Vivado_Git/VGA_Reaction_Game/VGA
 	Parameter rectangle_width bound to: 10 - type: integer 
 	Parameter x_offset bound to: 125 - type: integer 
 	Parameter y_offset bound to: 450 - type: integer 
-INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Top' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/R.vhd:87]
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Top' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/R.vhd:107]
 INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized35' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
 	Parameter rectangle_height bound to: 2 - type: integer 
 	Parameter rectangle_width bound to: 10 - type: integer 
@@ -340,7 +340,7 @@ INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized35' (10#1)
 	Parameter rectangle_width bound to: 2 - type: integer 
 	Parameter x_offset bound to: 125 - type: integer 
 	Parameter y_offset bound to: 450 - type: integer 
-INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Full_Left' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/R.vhd:107]
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Full_Left' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/R.vhd:127]
 INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized37' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
 	Parameter rectangle_height bound to: 20 - type: integer 
 	Parameter rectangle_width bound to: 2 - type: integer 
@@ -351,7 +351,7 @@ INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized37' (10#1)
 	Parameter rectangle_width bound to: 2 - type: integer 
 	Parameter x_offset bound to: 135 - type: integer 
 	Parameter y_offset bound to: 450 - type: integer 
-INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Right' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/R.vhd:127]
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Right' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/R.vhd:147]
 INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized39' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
 	Parameter rectangle_height bound to: 10 - type: integer 
 	Parameter rectangle_width bound to: 2 - type: integer 
@@ -361,31 +361,157 @@ INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized39' (10#1)
 	Parameter rectangle_height bound to: 2 - type: integer 
 	Parameter rectangle_width bound to: 12 - type: integer 
 	Parameter x_offset bound to: 125 - type: integer 
-	Parameter y_offset bound to: 460 - type: integer 
-INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Middle' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/R.vhd:148]
+	Parameter y_offset bound to: 458 - type: integer 
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Middle' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/R.vhd:168]
 INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized41' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
 	Parameter rectangle_height bound to: 2 - type: integer 
 	Parameter rectangle_width bound to: 12 - type: integer 
 	Parameter x_offset bound to: 125 - type: integer 
-	Parameter y_offset bound to: 460 - type: integer 
+	Parameter y_offset bound to: 458 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized41' (10#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter d2_height bound to: 2 - type: integer 
+	Parameter d2_width bound to: 1 - type: integer 
+	Parameter d2_x_offset bound to: 130 - type: integer 
+	Parameter d2_y_offset bound to: 460 - type: integer 
+INFO: [Synth 8-3491] module 'Diagonal2' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:10' bound to instance 'Tail_1' of component 'Diagonal2' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/R.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'Diagonal2' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:28]
+	Parameter d2_height bound to: 2 - type: integer 
+	Parameter d2_width bound to: 1 - type: integer 
+	Parameter d2_x_offset bound to: 130 - type: integer 
+	Parameter d2_y_offset bound to: 460 - type: integer 
 	Parameter rectangle_height bound to: 2 - type: integer 
 	Parameter rectangle_width bound to: 1 - type: integer 
-	Parameter x_offset bound to: 132 - type: integer 
-	Parameter y_offset bound to: 462 - type: integer 
-INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Tail_1' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/R.vhd:168]
+	Parameter x_offset bound to: 130 - type: integer 
+	Parameter y_offset bound to: 460 - type: integer 
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Top' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:55]
 INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized43' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
 	Parameter rectangle_height bound to: 2 - type: integer 
 	Parameter rectangle_width bound to: 1 - type: integer 
+	Parameter x_offset bound to: 130 - type: integer 
+	Parameter y_offset bound to: 460 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized43' (10#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 1 - type: integer 
+	Parameter x_offset bound to: 131 - type: integer 
+	Parameter y_offset bound to: 462 - type: integer 
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Bottom' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized45' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 1 - type: integer 
+	Parameter x_offset bound to: 131 - type: integer 
+	Parameter y_offset bound to: 462 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized45' (10#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Diagonal2' (11#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:28]
+	Parameter d2_height bound to: 2 - type: integer 
+	Parameter d2_width bound to: 1 - type: integer 
+	Parameter d2_x_offset bound to: 131 - type: integer 
+	Parameter d2_y_offset bound to: 460 - type: integer 
+INFO: [Synth 8-3491] module 'Diagonal2' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:10' bound to instance 'Tail_2' of component 'Diagonal2' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/R.vhd:207]
+INFO: [Synth 8-638] synthesizing module 'Diagonal2__parameterized1' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:28]
+	Parameter d2_height bound to: 2 - type: integer 
+	Parameter d2_width bound to: 1 - type: integer 
+	Parameter d2_x_offset bound to: 131 - type: integer 
+	Parameter d2_y_offset bound to: 460 - type: integer 
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 1 - type: integer 
+	Parameter x_offset bound to: 131 - type: integer 
+	Parameter y_offset bound to: 460 - type: integer 
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Top' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized47' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 1 - type: integer 
+	Parameter x_offset bound to: 131 - type: integer 
+	Parameter y_offset bound to: 460 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized47' (11#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 1 - type: integer 
 	Parameter x_offset bound to: 132 - type: integer 
 	Parameter y_offset bound to: 462 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized43' (10#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Bottom' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized49' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 1 - type: integer 
+	Parameter x_offset bound to: 132 - type: integer 
+	Parameter y_offset bound to: 462 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized49' (11#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Diagonal2__parameterized1' (11#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:28]
+	Parameter d4_height bound to: 2 - type: integer 
+	Parameter d4_width bound to: 1 - type: integer 
+	Parameter d4_x_offset bound to: 132 - type: integer 
+	Parameter d4_y_offset bound to: 464 - type: integer 
+INFO: [Synth 8-3491] module 'Diagonal4' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal4.vhd:10' bound to instance 'Tail_3' of component 'Diagonal4' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/R.vhd:227]
+INFO: [Synth 8-638] synthesizing module 'Diagonal4' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal4.vhd:28]
+	Parameter d4_height bound to: 2 - type: integer 
+	Parameter d4_width bound to: 1 - type: integer 
+	Parameter d4_x_offset bound to: 132 - type: integer 
+	Parameter d4_y_offset bound to: 464 - type: integer 
+	Parameter d2_height bound to: 2 - type: integer 
+	Parameter d2_width bound to: 1 - type: integer 
+	Parameter d2_x_offset bound to: 132 - type: integer 
+	Parameter d2_y_offset bound to: 464 - type: integer 
+INFO: [Synth 8-3491] module 'Diagonal2' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:10' bound to instance 'Top' of component 'Diagonal2' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal4.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'Diagonal2__parameterized3' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:28]
+	Parameter d2_height bound to: 2 - type: integer 
+	Parameter d2_width bound to: 1 - type: integer 
+	Parameter d2_x_offset bound to: 132 - type: integer 
+	Parameter d2_y_offset bound to: 464 - type: integer 
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 1 - type: integer 
+	Parameter x_offset bound to: 132 - type: integer 
+	Parameter y_offset bound to: 464 - type: integer 
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Top' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized51' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 1 - type: integer 
+	Parameter x_offset bound to: 132 - type: integer 
+	Parameter y_offset bound to: 464 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized51' (11#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 1 - type: integer 
+	Parameter x_offset bound to: 133 - type: integer 
+	Parameter y_offset bound to: 466 - type: integer 
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Bottom' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized53' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 1 - type: integer 
+	Parameter x_offset bound to: 133 - type: integer 
+	Parameter y_offset bound to: 466 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized53' (11#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Diagonal2__parameterized3' (11#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:28]
+	Parameter d2_height bound to: 2 - type: integer 
+	Parameter d2_width bound to: 1 - type: integer 
+	Parameter d2_x_offset bound to: 133 - type: integer 
+	Parameter d2_y_offset bound to: 466 - type: integer 
+INFO: [Synth 8-3491] module 'Diagonal2' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:10' bound to instance 'Bottom' of component 'Diagonal2' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal4.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'Diagonal2__parameterized5' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:28]
+	Parameter d2_height bound to: 2 - type: integer 
+	Parameter d2_width bound to: 1 - type: integer 
+	Parameter d2_x_offset bound to: 133 - type: integer 
+	Parameter d2_y_offset bound to: 466 - type: integer 
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 1 - type: integer 
+	Parameter x_offset bound to: 133 - type: integer 
+	Parameter y_offset bound to: 466 - type: integer 
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Top' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:55]
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 1 - type: integer 
+	Parameter x_offset bound to: 134 - type: integer 
+	Parameter y_offset bound to: 468 - type: integer 
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Bottom' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized55' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 1 - type: integer 
+	Parameter x_offset bound to: 134 - type: integer 
+	Parameter y_offset bound to: 468 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized55' (11#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Diagonal2__parameterized5' (11#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'Diagonal4' (12#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal4.vhd:28]
 	Parameter d4_height bound to: 2 - type: integer 
 	Parameter d4_width bound to: 1 - type: integer 
 	Parameter d4_x_offset bound to: 133 - type: integer 
 	Parameter d4_y_offset bound to: 464 - type: integer 
-INFO: [Synth 8-3491] module 'Diagonal4' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal4.vhd:10' bound to instance 'Tail_2' of component 'Diagonal4' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/R.vhd:188]
-INFO: [Synth 8-638] synthesizing module 'Diagonal4' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal4.vhd:28]
+INFO: [Synth 8-3491] module 'Diagonal4' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal4.vhd:10' bound to instance 'Tail_4' of component 'Diagonal4' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/R.vhd:247]
+INFO: [Synth 8-638] synthesizing module 'Diagonal4__parameterized1' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal4.vhd:28]
 	Parameter d4_height bound to: 2 - type: integer 
 	Parameter d4_width bound to: 1 - type: integer 
 	Parameter d4_x_offset bound to: 133 - type: integer 
@@ -395,7 +521,7 @@ INFO: [Synth 8-638] synthesizing module 'Diagonal4' [C:/Vivado_Git/VGA_Reaction_
 	Parameter d2_x_offset bound to: 133 - type: integer 
 	Parameter d2_y_offset bound to: 464 - type: integer 
 INFO: [Synth 8-3491] module 'Diagonal2' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:10' bound to instance 'Top' of component 'Diagonal2' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal4.vhd:54]
-INFO: [Synth 8-638] synthesizing module 'Diagonal2' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'Diagonal2__parameterized7' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:28]
 	Parameter d2_height bound to: 2 - type: integer 
 	Parameter d2_width bound to: 1 - type: integer 
 	Parameter d2_x_offset bound to: 133 - type: integer 
@@ -405,30 +531,30 @@ INFO: [Synth 8-638] synthesizing module 'Diagonal2' [C:/Vivado_Git/VGA_Reaction_
 	Parameter x_offset bound to: 133 - type: integer 
 	Parameter y_offset bound to: 464 - type: integer 
 INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Top' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:55]
-INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized45' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized57' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
 	Parameter rectangle_height bound to: 2 - type: integer 
 	Parameter rectangle_width bound to: 1 - type: integer 
 	Parameter x_offset bound to: 133 - type: integer 
 	Parameter y_offset bound to: 464 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized45' (10#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized57' (12#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
 	Parameter rectangle_height bound to: 2 - type: integer 
 	Parameter rectangle_width bound to: 1 - type: integer 
 	Parameter x_offset bound to: 134 - type: integer 
 	Parameter y_offset bound to: 466 - type: integer 
 INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Bottom' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:75]
-INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized47' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized59' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
 	Parameter rectangle_height bound to: 2 - type: integer 
 	Parameter rectangle_width bound to: 1 - type: integer 
 	Parameter x_offset bound to: 134 - type: integer 
 	Parameter y_offset bound to: 466 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized47' (10#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
-INFO: [Synth 8-256] done synthesizing module 'Diagonal2' (11#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized59' (12#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Diagonal2__parameterized7' (12#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:28]
 	Parameter d2_height bound to: 2 - type: integer 
 	Parameter d2_width bound to: 1 - type: integer 
 	Parameter d2_x_offset bound to: 134 - type: integer 
 	Parameter d2_y_offset bound to: 466 - type: integer 
 INFO: [Synth 8-3491] module 'Diagonal2' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:10' bound to instance 'Bottom' of component 'Diagonal2' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal4.vhd:74]
-INFO: [Synth 8-638] synthesizing module 'Diagonal2__parameterized1' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'Diagonal2__parameterized9' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:28]
 	Parameter d2_height bound to: 2 - type: integer 
 	Parameter d2_width bound to: 1 - type: integer 
 	Parameter d2_x_offset bound to: 134 - type: integer 
@@ -443,14 +569,14 @@ INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_
 	Parameter x_offset bound to: 135 - type: integer 
 	Parameter y_offset bound to: 468 - type: integer 
 INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Bottom' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:75]
-INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized49' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized61' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
 	Parameter rectangle_height bound to: 2 - type: integer 
 	Parameter rectangle_width bound to: 1 - type: integer 
 	Parameter x_offset bound to: 135 - type: integer 
 	Parameter y_offset bound to: 468 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized49' (11#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
-INFO: [Synth 8-256] done synthesizing module 'Diagonal2__parameterized1' (11#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:28]
-INFO: [Synth 8-256] done synthesizing module 'Diagonal4' (12#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal4.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized61' (12#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Diagonal2__parameterized9' (12#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'Diagonal4__parameterized1' (12#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal4.vhd:28]
 INFO: [Synth 8-256] done synthesizing module 'R' (13#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/R.vhd:33]
 INFO: [Synth 8-256] done synthesizing module 'Player_Display' (14#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Player_Display.vhd:33]
 	Parameter px_offset bound to: 155 - type: integer 
@@ -459,193 +585,155 @@ INFO: [Synth 8-3491] module 'Num1' declared at 'C:/Vivado_Git/VGA_Reaction_Game/
 INFO: [Synth 8-638] synthesizing module 'Num1' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Num1.vhd:33]
 	Parameter px_offset bound to: 155 - type: integer 
 	Parameter py_offset bound to: 450 - type: integer 
-	Parameter d4_height bound to: 1 - type: integer 
-	Parameter d4_width bound to: -1 - type: integer 
-	Parameter d4_x_offset bound to: 159 - type: integer 
-	Parameter d4_y_offset bound to: 450 - type: integer 
-INFO: [Synth 8-3491] module 'Diagonal4' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal4.vhd:10' bound to instance 'Head' of component 'Diagonal4' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Num1.vhd:88]
-INFO: [Synth 8-638] synthesizing module 'Diagonal4__parameterized1' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal4.vhd:28]
-	Parameter d4_height bound to: 1 - type: integer 
-	Parameter d4_width bound to: -1 - type: integer 
-	Parameter d4_x_offset bound to: 159 - type: integer 
-	Parameter d4_y_offset bound to: 450 - type: integer 
-	Parameter d2_height bound to: 1 - type: integer 
-	Parameter d2_width bound to: -1 - type: integer 
-	Parameter d2_x_offset bound to: 159 - type: integer 
-	Parameter d2_y_offset bound to: 450 - type: integer 
-INFO: [Synth 8-3491] module 'Diagonal2' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:10' bound to instance 'Top' of component 'Diagonal2' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal4.vhd:54]
-INFO: [Synth 8-638] synthesizing module 'Diagonal2__parameterized3' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:28]
-	Parameter d2_height bound to: 1 - type: integer 
-	Parameter d2_width bound to: -1 - type: integer 
-	Parameter d2_x_offset bound to: 159 - type: integer 
-	Parameter d2_y_offset bound to: 450 - type: integer 
-	Parameter rectangle_height bound to: 1 - type: integer 
-	Parameter rectangle_width bound to: -1 - type: integer 
-	Parameter x_offset bound to: 159 - type: integer 
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 4 - type: integer 
+	Parameter x_offset bound to: 155 - type: integer 
 	Parameter y_offset bound to: 450 - type: integer 
-INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Top' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:55]
-INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized51' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
-	Parameter rectangle_height bound to: 1 - type: integer 
-	Parameter rectangle_width bound to: -1 - type: integer 
-	Parameter x_offset bound to: 159 - type: integer 
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Head' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Num1.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized63' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+	Parameter rectangle_height bound to: 2 - type: integer 
+	Parameter rectangle_width bound to: 4 - type: integer 
+	Parameter x_offset bound to: 155 - type: integer 
 	Parameter y_offset bound to: 450 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized51' (14#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
-	Parameter rectangle_height bound to: 1 - type: integer 
-	Parameter rectangle_width bound to: -1 - type: integer 
-	Parameter x_offset bound to: 158 - type: integer 
-	Parameter y_offset bound to: 451 - type: integer 
-INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Bottom' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:75]
-INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized53' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
-	Parameter rectangle_height bound to: 1 - type: integer 
-	Parameter rectangle_width bound to: -1 - type: integer 
-	Parameter x_offset bound to: 158 - type: integer 
-	Parameter y_offset bound to: 451 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized53' (14#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
-INFO: [Synth 8-256] done synthesizing module 'Diagonal2__parameterized3' (14#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:28]
-	Parameter d2_height bound to: 1 - type: integer 
-	Parameter d2_width bound to: -1 - type: integer 
-	Parameter d2_x_offset bound to: 158 - type: integer 
-	Parameter d2_y_offset bound to: 451 - type: integer 
-INFO: [Synth 8-3491] module 'Diagonal2' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:10' bound to instance 'Bottom' of component 'Diagonal2' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal4.vhd:74]
-INFO: [Synth 8-638] synthesizing module 'Diagonal2__parameterized5' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:28]
-	Parameter d2_height bound to: 1 - type: integer 
-	Parameter d2_width bound to: -1 - type: integer 
-	Parameter d2_x_offset bound to: 158 - type: integer 
-	Parameter d2_y_offset bound to: 451 - type: integer 
-	Parameter rectangle_height bound to: 1 - type: integer 
-	Parameter rectangle_width bound to: -1 - type: integer 
-	Parameter x_offset bound to: 158 - type: integer 
-	Parameter y_offset bound to: 451 - type: integer 
-INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Top' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:55]
-	Parameter rectangle_height bound to: 1 - type: integer 
-	Parameter rectangle_width bound to: -1 - type: integer 
-	Parameter x_offset bound to: 157 - type: integer 
-	Parameter y_offset bound to: 452 - type: integer 
-INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Bottom' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:75]
-INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized55' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
-	Parameter rectangle_height bound to: 1 - type: integer 
-	Parameter rectangle_width bound to: -1 - type: integer 
-	Parameter x_offset bound to: 157 - type: integer 
-	Parameter y_offset bound to: 452 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized55' (14#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
-INFO: [Synth 8-256] done synthesizing module 'Diagonal2__parameterized5' (14#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal2.vhd:28]
-INFO: [Synth 8-256] done synthesizing module 'Diagonal4__parameterized1' (14#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Diagonal4.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized63' (14#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
 	Parameter rectangle_height bound to: 20 - type: integer 
 	Parameter rectangle_width bound to: 2 - type: integer 
 	Parameter x_offset bound to: 159 - type: integer 
 	Parameter y_offset bound to: 450 - type: integer 
-INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Middle' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Num1.vhd:108]
-INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized57' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Middle' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Num1.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized65' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
 	Parameter rectangle_height bound to: 20 - type: integer 
 	Parameter rectangle_width bound to: 2 - type: integer 
 	Parameter x_offset bound to: 159 - type: integer 
 	Parameter y_offset bound to: 450 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized57' (14#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized65' (14#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
 	Parameter rectangle_height bound to: 2 - type: integer 
 	Parameter rectangle_width bound to: 10 - type: integer 
 	Parameter x_offset bound to: 155 - type: integer 
 	Parameter y_offset bound to: 468 - type: integer 
-INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Bottom' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Num1.vhd:128]
-INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized59' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+INFO: [Synth 8-3491] module 'Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:15' bound to instance 'Bottom' of component 'Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Num1.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'Rectangle__parameterized67' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
 	Parameter rectangle_height bound to: 2 - type: integer 
 	Parameter rectangle_width bound to: 10 - type: integer 
 	Parameter x_offset bound to: 155 - type: integer 
 	Parameter y_offset bound to: 468 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized59' (14#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized67' (14#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:33]
 INFO: [Synth 8-256] done synthesizing module 'Num1' (15#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Num1.vhd:33]
 	Parameter box_width bound to: 10 - type: integer 
-	Parameter x_offset bound to: 110 - type: integer 
+	Parameter x_offset bound to: 100 - type: integer 
 	Parameter y_offset bound to: 445 - type: integer 
 INFO: [Synth 8-3491] module 'Growing_Rectangle' declared at 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Growing_Rectangle.vhd:15' bound to instance 'Rectangle' of component 'Growing_Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Player1_Display.vhd:146]
 INFO: [Synth 8-638] synthesizing module 'Growing_Rectangle' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Growing_Rectangle.vhd:32]
 	Parameter box_width bound to: 10 - type: integer 
-	Parameter x_offset bound to: 110 - type: integer 
+	Parameter x_offset bound to: 100 - type: integer 
 	Parameter y_offset bound to: 445 - type: integer 
 WARNING: [Synth 8-614] signal 'rectangle_height' is read in the process but is not in the sensitivity list [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Growing_Rectangle.vhd:46]
 INFO: [Synth 8-256] done synthesizing module 'Growing_Rectangle' (16#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Growing_Rectangle.vhd:32]
 INFO: [Synth 8-256] done synthesizing module 'Player1_Display' (17#1) [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Player1_Display.vhd:30]
-WARNING: [Synth 8-3848] Net rectangle_red in module/entity vga_module does not have driver. [C:/Vivado_Git/VGA_Reaction_Game/vga_module.vhd:155]
-WARNING: [Synth 8-3848] Net rectangle_green in module/entity vga_module does not have driver. [C:/Vivado_Git/VGA_Reaction_Game/vga_module.vhd:156]
-WARNING: [Synth 8-3848] Net rectangle_blue in module/entity vga_module does not have driver. [C:/Vivado_Git/VGA_Reaction_Game/vga_module.vhd:157]
 INFO: [Synth 8-256] done synthesizing module 'vga_module' (18#1) [C:/Vivado_Git/VGA_Reaction_Game/vga_module.vhd:44]
 WARNING: [Synth 8-3331] design Growing_Rectangle has unconnected port clk
 WARNING: [Synth 8-3331] design Growing_Rectangle has unconnected port kHz
+WARNING: [Synth 8-3331] design Rectangle__parameterized67 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized67 has unconnected port reset
+WARNING: [Synth 8-3331] design Rectangle__parameterized67 has unconnected port kHz
+WARNING: [Synth 8-3331] design Rectangle__parameterized65 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized65 has unconnected port reset
+WARNING: [Synth 8-3331] design Rectangle__parameterized65 has unconnected port kHz
+WARNING: [Synth 8-3331] design Rectangle__parameterized63 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized63 has unconnected port reset
+WARNING: [Synth 8-3331] design Rectangle__parameterized63 has unconnected port kHz
+WARNING: [Synth 8-3331] design Rectangle__parameterized61 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized61 has unconnected port reset
+WARNING: [Synth 8-3331] design Rectangle__parameterized61 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized59 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized59 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized59 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized57 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized57 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized57 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized55 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized55 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized55 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized53 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized53 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized53 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized51 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized51 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized51 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized49 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized49 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized49 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized47 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized47 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized47 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized45 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized45 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized45 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized43 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized43 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized43 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized41 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized41 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized41 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized39 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized39 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized39 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized37 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized37 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized37 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized35 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized35 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized35 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized33 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized33 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized33 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized31 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized31 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized31 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized29 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized29 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized29 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized27 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized27 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized27 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized25 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized25 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized25 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized23 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized23 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized23 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized21 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized21 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized21 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized19 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized19 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized19 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized17 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized17 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized17 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized15 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized15 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized15 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized13 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized13 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized13 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized11 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized11 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized11 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized9 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized9 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized9 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized7 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized7 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized7 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized5 has unconnected port clk
+WARNING: [Synth 8-3331] design Rectangle__parameterized5 has unconnected port reset
 WARNING: [Synth 8-3331] design Rectangle__parameterized5 has unconnected port kHz
 WARNING: [Synth 8-3331] design Rectangle__parameterized3 has unconnected port clk
-WARNING: [Synth 8-3331] design Rectangle__parameterized3 has unconnected port kHz
-WARNING: [Synth 8-3331] design Rectangle__parameterized1 has unconnected port clk
-WARNING: [Synth 8-3331] design Rectangle__parameterized1 has unconnected port kHz
-WARNING: [Synth 8-3331] design Rectangle has unconnected port clk
-WARNING: [Synth 8-3331] design Rectangle has unconnected port kHz
-WARNING: [Synth 8-3331] design Player1_Display has unconnected port char_colour[11]
-WARNING: [Synth 8-3331] design Player1_Display has unconnected port char_colour[10]
-WARNING: [Synth 8-3331] design Player1_Display has unconnected port char_colour[9]
-WARNING: [Synth 8-3331] design Player1_Display has unconnected port char_colour[8]
-WARNING: [Synth 8-3331] design Player1_Display has unconnected port char_colour[7]
-WARNING: [Synth 8-3331] design Player1_Display has unconnected port char_colour[6]
-WARNING: [Synth 8-3331] design Player1_Display has unconnected port char_colour[5]
-WARNING: [Synth 8-3331] design Player1_Display has unconnected port char_colour[4]
-WARNING: [Synth 8-3331] design Player1_Display has unconnected port char_colour[3]
-WARNING: [Synth 8-3331] design Player1_Display has unconnected port char_colour[2]
-WARNING: [Synth 8-3331] design Player1_Display has unconnected port char_colour[1]
-WARNING: [Synth 8-3331] design Player1_Display has unconnected port char_colour[0]
+WARNING: [Synth 8-3331] design Rectangle__parameterized3 has unconnected port reset
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 337.488 ; gain = 117.090
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 336.793 ; gain = 116.082
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -655,7 +743,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 337.488 ; gain = 117.090
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 336.793 ; gain = 116.082
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -671,22 +759,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 644.457 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 643.766 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 644.457 ; gain = 424.059
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 643.766 ; gain = 423.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 644.457 ; gain = 424.059
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 643.766 ; gain = 423.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 644.457 ; gain = 424.059
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 643.766 ; gain = 423.055
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6014] Unused sequential element current_hor_pos_reg was removed.  [C:/Vivado_Git/VGA_Reaction_Game/sync_signal_generator.vhd:43]
 WARNING: [Synth 8-6014] Unused sequential element current_ver_pos_reg was removed.  [C:/Vivado_Git/VGA_Reaction_Game/sync_signal_generator.vhd:44]
@@ -694,171 +782,8 @@ INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To p
 WARNING: [Synth 8-6014] Unused sequential element current_val_reg was removed.  [C:/Vivado_Git/VGA_Reaction_Game/up_down_counter.vhd:31]
 WARNING: [Synth 8-6014] Unused sequential element current_count_reg was removed.  [C:/Vivado_Git/VGA_Reaction_Game/downcounter.vhd:30]
 WARNING: [Synth 8-6014] Unused sequential element current_count_reg was removed.  [C:/Vivado_Git/VGA_Reaction_Game/downcounter.vhd:30]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:62]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:61]
-INFO: [Common 17-14] Message 'Synth 8-41' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_y_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'rect_pos_x_reg' [C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.srcs/sources_1/new/Rectangle.vhd:50]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 644.457 ; gain = 424.059
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 643.766 ; gain = 423.055
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -871,21 +796,20 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input     12 Bit       Adders := 66    
 	   2 Input     11 Bit       Adders := 4     
-	   2 Input     10 Bit       Adders := 69    
+	   2 Input     10 Bit       Adders := 3     
 	   2 Input      4 Bit       Adders := 5     
 	   2 Input      3 Bit       Adders := 2     
 	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
 	               11 Bit    Registers := 2     
 	               10 Bit    Registers := 1     
-	                4 Bit    Registers := 8     
+	                4 Bit    Registers := 11    
 	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 9     
 +---Muxes : 
-	   2 Input     12 Bit        Muxes := 34    
+	   2 Input     12 Bit        Muxes := 38    
 	   2 Input     11 Bit        Muxes := 4     
 	   2 Input     10 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 14    
@@ -953,219 +877,142 @@ Detailed RTL Component Info :
 	   2 Input      3 Bit        Muxes := 1     
 Module Rectangle 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized1 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized3 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized5 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized7 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized9 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized11 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized13 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized15 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized17 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized19 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized21 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized23 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized25 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized27 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized29 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized31 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized33 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized35 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized37 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized39 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized41 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized43 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized45 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized47 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized49 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized51 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized53 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized55 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized57 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Rectangle__parameterized59 
 Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     12 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module Rectangle__parameterized61 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module Rectangle__parameterized63 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module Rectangle__parameterized65 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module Rectangle__parameterized67 
+Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 Module Growing_Rectangle 
@@ -1180,7 +1027,7 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input     10 Bit       Adders := 1     
 +---Registers : 
-	                4 Bit    Registers := 3     
+	                4 Bit    Registers := 6     
 +---Muxes : 
 	   2 Input      4 Bit        Muxes := 6     
 ---------------------------------------------------------------------------------
@@ -1209,151 +1056,24 @@ WARNING: [Synth 8-6014] Unused sequential element DIVIDER/oneHzClock/current_cou
 WARNING: [Synth 8-6014] Unused sequential element DIVIDER/singleSecondsClock/current_count_reg was removed.  [C:/Vivado_Git/VGA_Reaction_Game/downcounter.vhd:30]
 WARNING: [Synth 8-6014] Unused sequential element DIVIDER/singleMinutesClock/current_count_reg was removed.  [C:/Vivado_Git/VGA_Reaction_Game/downcounter.vhd:30]
 WARNING: [Synth 8-6014] Unused sequential element DIVIDER/kiloHzClock/current_count_reg was removed.  [C:/Vivado_Git/VGA_Reaction_Game/downcounter.vhd:30]
-WARNING: [Synth 8-3331] design R has unconnected port clk
-WARNING: [Synth 8-3331] design R has unconnected port kHz
-WARNING: [Synth 8-3331] design E has unconnected port clk
-WARNING: [Synth 8-3331] design E has unconnected port kHz
-WARNING: [Synth 8-3331] design Y has unconnected port clk
-WARNING: [Synth 8-3331] design Y has unconnected port kHz
-WARNING: [Synth 8-3331] design A has unconnected port clk
-WARNING: [Synth 8-3331] design A has unconnected port kHz
-WARNING: [Synth 8-3331] design L has unconnected port clk
-WARNING: [Synth 8-3331] design L has unconnected port kHz
-WARNING: [Synth 8-3331] design P has unconnected port clk
-WARNING: [Synth 8-3331] design P has unconnected port kHz
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Top/rect_pos_y_reg[0]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Top/rect_pos_x_reg[0]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Middle/rect_pos_y_reg[0]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Middle/rect_pos_x_reg[0]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Full_Left/rect_pos_y_reg[0]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Full_Left/rect_pos_x_reg[0]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[0]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Full_Right/rect_pos_x_reg[0]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_L/Full_Left/rect_pos_y_reg[0]' (LD) to 'Player/Player/Letter_L/Full_Left/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_L/Full_Left/rect_pos_x_reg[0]' (LD) to 'Player/Player/Letter_L/Full_Left/rect_pos_y_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_L/Bottom/rect_pos_y_reg[0]' (LD) to 'Player/Player/Letter_L/Full_Left/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_L/Bottom/rect_pos_x_reg[0]' (LD) to 'Player/Player/Letter_L/Full_Left/rect_pos_y_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_Y/Left/rect_pos_y_reg[0]' (LD) to 'Player/Player/Letter_Y/Middle/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_Y/Left/rect_pos_x_reg[0]' (LD) to 'Player/Player/Letter_Y/Middle/rect_pos_y_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_Y/Middle/rect_pos_y_reg[0]' (LD) to 'Player/Player/Letter_Y/Middle/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_Y/Middle/rect_pos_x_reg[0]' (LD) to 'Player/Player/Letter_Y/Middle/rect_pos_y_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_Y/Y_middle/rect_pos_y_reg[0]' (LD) to 'Player/Player/Letter_Y/Middle/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_Y/Y_middle/rect_pos_x_reg[0]' (LD) to 'Player/Player/Letter_Y/Middle/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_Y/Right/rect_pos_y_reg[0]' (LD) to 'Player/Player/Letter_Y/Middle/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_Y/Right/rect_pos_x_reg[0]' (LD) to 'Player/Player/Letter_Y/Middle/rect_pos_y_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_E/Top/rect_pos_y_reg[0]' (LD) to 'Player/Player/Letter_E/Middle/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_E/Top/rect_pos_x_reg[0]' (LD) to 'Player/Player/Letter_E/Middle/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_E/Bottom/rect_pos_y_reg[0]' (LD) to 'Player/Player/Letter_E/Middle/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_E/Bottom/rect_pos_x_reg[0]' (LD) to 'Player/Player/Letter_E/Middle/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_E/Full_Left/rect_pos_y_reg[0]' (LD) to 'Player/Player/Letter_E/Middle/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_E/Full_Left/rect_pos_x_reg[0]' (LD) to 'Player/Player/Letter_E/Middle/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_E/Middle/rect_pos_y_reg[0]' (LD) to 'Player/Player/Letter_E/Middle/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_E/Middle/rect_pos_x_reg[0]' (LD) to 'Player/Player/Letter_E/Middle/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_R/Right/rect_pos_y_reg[0]' (LD) to 'Player/Player/Letter_R/Tail_1/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_R/Right/rect_pos_x_reg[0]' (LD) to 'Player/Player/Letter_R/Tail_1/rect_pos_y_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_R/Middle/rect_pos_y_reg[0]' (LD) to 'Player/Player/Letter_R/Tail_1/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_R/Middle/rect_pos_x_reg[0]' (LD) to 'Player/Player/Letter_R/Tail_1/rect_pos_y_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_R/Full_Left/rect_pos_y_reg[0]' (LD) to 'Player/Player/Letter_R/Tail_1/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_R/Full_Left/rect_pos_x_reg[0]' (LD) to 'Player/Player/Letter_R/Tail_1/rect_pos_y_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_R/Top/rect_pos_y_reg[0]' (LD) to 'Player/Player/Letter_R/Tail_1/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_R/Top/rect_pos_x_reg[0]' (LD) to 'Player/Player/Letter_R/Tail_1/rect_pos_y_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_R/Tail_2/Top/Top/rect_pos_y_reg[0]' (LD) to 'Player/Player/Letter_R/Tail_1/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_R/Tail_2/Top/Bottom/rect_pos_y_reg[0]' (LD) to 'Player/Player/Letter_R/Tail_1/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_R/Tail_2/Bottom/Bottom/rect_pos_y_reg[0]' (LD) to 'Player/Player/Letter_R/Tail_1/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_R/Tail_2/Bottom/Top/rect_pos_y_reg[0]' (LD) to 'Player/Player/Letter_R/Tail_1/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_R/Tail_1/rect_pos_y_reg[0]' (LD) to 'Player/Player/Letter_R/Tail_1/rect_pos_y_reg[4]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_P/Top/rect_pos_y_reg[0]' (LD) to 'Player/Player/Letter_P/Right/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_P/Top/rect_pos_x_reg[0]' (LD) to 'Player/Player/Letter_P/Right/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_P/Middle/rect_pos_y_reg[0]' (LD) to 'Player/Player/Letter_P/Right/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_P/Middle/rect_pos_x_reg[0]' (LD) to 'Player/Player/Letter_P/Right/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_P/Left/rect_pos_y_reg[0]' (LD) to 'Player/Player/Letter_P/Right/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_P/Left/rect_pos_x_reg[0]' (LD) to 'Player/Player/Letter_P/Right/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_P/Right/rect_pos_y_reg[0]' (LD) to 'Player/Player/Letter_P/Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_P/Right/rect_pos_x_reg[0]' (LD) to 'Player/Player/Letter_P/Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Number/Bottom/rect_pos_y_reg[0]' (LD) to 'Player/Number/Head/Bottom/Bottom/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Number/Bottom/rect_pos_x_reg[0]' (LD) to 'Player/Number/Head/Bottom/Bottom/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Number/Middle/rect_pos_y_reg[0]' (LD) to 'Player/Number/Head/Bottom/Bottom/rect_pos_y_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Player/Number/Middle/rect_pos_x_reg[0]' (LD) to 'Player/Number/Head/Bottom/Bottom/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Top/rect_pos_y_reg[1]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Top/rect_pos_y_reg[2]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Top/rect_pos_y_reg[3]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Top/rect_pos_y_reg[4]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Top/rect_pos_y_reg[5]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Top/rect_pos_y_reg[6]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Top/rect_pos_y_reg[7]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Top/rect_pos_y_reg[8]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Top/rect_pos_y_reg[9]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Top/rect_pos_x_reg[8]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Top/rect_pos_x_reg[7]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Top/rect_pos_x_reg[6]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Top/rect_pos_x_reg[5]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Top/rect_pos_x_reg[4]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Top/rect_pos_x_reg[2]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Top/rect_pos_x_reg[1]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Top/rect_pos_x_reg[3]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Top/rect_pos_x_reg[9]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Middle/rect_pos_y_reg[1]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Middle/rect_pos_y_reg[2]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Middle/rect_pos_y_reg[3]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Middle/rect_pos_y_reg[4]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Middle/rect_pos_y_reg[5]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Middle/rect_pos_y_reg[6]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Middle/rect_pos_y_reg[7]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Middle/rect_pos_y_reg[8]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Middle/rect_pos_y_reg[9]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Middle/rect_pos_x_reg[8]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Middle/rect_pos_x_reg[7]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Middle/rect_pos_x_reg[6]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Middle/rect_pos_x_reg[5]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Middle/rect_pos_x_reg[4]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Middle/rect_pos_x_reg[2]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Middle/rect_pos_x_reg[1]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Middle/rect_pos_x_reg[3]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Middle/rect_pos_x_reg[9]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Full_Left/rect_pos_y_reg[1]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Full_Left/rect_pos_y_reg[2]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Full_Left/rect_pos_y_reg[3]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Full_Left/rect_pos_y_reg[4]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Full_Left/rect_pos_y_reg[5]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Full_Left/rect_pos_y_reg[6]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Full_Left/rect_pos_y_reg[7]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Full_Left/rect_pos_y_reg[8]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Full_Left/rect_pos_y_reg[9]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Full_Left/rect_pos_x_reg[8]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Player/Player/Letter_A/Full_Left/rect_pos_x_reg[7]' (LD) to 'Player/Player/Letter_A/Full_Right/rect_pos_y_reg[2]'
-INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Player/Player /Letter_A/\Full_Right/rect_pos_x_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Player/Player /Letter_A/\Full_Right/rect_pos_x_reg[9] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Player/Player /Letter_L/\Bottom/rect_pos_x_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Player/Player /Letter_L/\Bottom/rect_pos_x_reg[9] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Player/Player /Letter_Y/\Right/rect_pos_x_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Player/Player /Letter_Y/\Right/rect_pos_x_reg[9] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Player/Player /Letter_E/\Middle/rect_pos_x_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Player/Player /Letter_E/\Middle/rect_pos_x_reg[9] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Player/Player /Letter_R/\Tail_1/rect_pos_x_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Player/Player /Letter_R/\Tail_1/rect_pos_x_reg[9] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Player/Player /Letter_P/\Right/rect_pos_x_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Player/Player /Letter_P/\Right/rect_pos_x_reg[9] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Player/Number/Middle/rect_pos_x_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Player/Number/Middle/rect_pos_x_reg[9] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Player/blue_reg[3] )
-WARNING: [Synth 8-3332] Sequential element (Right/rect_pos_x_reg[2]) is unused and will be removed from module P.
-WARNING: [Synth 8-3332] Sequential element (Right/rect_pos_x_reg[9]) is unused and will be removed from module P.
-WARNING: [Synth 8-3332] Sequential element (Bottom/rect_pos_x_reg[6]) is unused and will be removed from module L.
-WARNING: [Synth 8-3332] Sequential element (Bottom/rect_pos_x_reg[9]) is unused and will be removed from module L.
-WARNING: [Synth 8-3332] Sequential element (Full_Right/rect_pos_x_reg[1]) is unused and will be removed from module A.
-WARNING: [Synth 8-3332] Sequential element (Full_Right/rect_pos_x_reg[9]) is unused and will be removed from module A.
-WARNING: [Synth 8-3332] Sequential element (Right/rect_pos_x_reg[9]) is unused and will be removed from module Y.
-WARNING: [Synth 8-3332] Sequential element (Right/rect_pos_x_reg[3]) is unused and will be removed from module Y.
-WARNING: [Synth 8-3332] Sequential element (Middle/rect_pos_x_reg[9]) is unused and will be removed from module E.
-WARNING: [Synth 8-3332] Sequential element (Middle/rect_pos_x_reg[3]) is unused and will be removed from module E.
-WARNING: [Synth 8-3332] Sequential element (Tail_1/rect_pos_x_reg[2]) is unused and will be removed from module R.
-WARNING: [Synth 8-3332] Sequential element (Tail_1/rect_pos_x_reg[9]) is unused and will be removed from module R.
-WARNING: [Synth 8-3332] Sequential element (DIVIDER/hundredHzClock/current_count_reg[3]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (DIVIDER/hundredHzClock/current_count_reg[2]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (DIVIDER/hundredHzClock/current_count_reg[1]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (DIVIDER/hundredHzClock/current_count_reg[0]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (DIVIDER/hundredHzClock/i_zero_reg) is unused and will be removed from module vga_module.
+INFO: [Synth 8-3886] merging instance 'Player/char_blue_reg[0]' (FDE) to 'Player/char_blue_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/char_blue_reg[1]' (FDE) to 'Player/char_blue_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Player/char_blue_reg[2]' (FDE) to 'Player/char_blue_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/char_green_reg[0]' (FDE) to 'Player/char_green_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/char_green_reg[1]' (FDE) to 'Player/char_green_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/char_green_reg[2]' (FDE) to 'Player/char_green_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/char_red_reg[0]' (FDE) to 'Player/char_red_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/char_red_reg[1]' (FDE) to 'Player/char_red_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/char_red_reg[2]' (FDE) to 'Player/char_red_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/blue_reg[0]' (FD) to 'Player/blue_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/blue_reg[1]' (FD) to 'Player/blue_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Player/blue_reg[2]' (FD) to 'Player/blue_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/green_reg[0]' (FD) to 'Player/green_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/green_reg[1]' (FD) to 'Player/green_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Player/green_reg[2]' (FD) to 'Player/green_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/red_reg[0]' (FD) to 'Player/red_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Player/red_reg[1]' (FD) to 'Player/red_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Player/red_reg[2]' (FD) to 'Player/red_reg[3]'
 WARNING: [Synth 8-3332] Sequential element (DIVIDER/tenHzClock/current_count_reg[3]) is unused and will be removed from module vga_module.
 WARNING: [Synth 8-3332] Sequential element (DIVIDER/tenHzClock/current_count_reg[2]) is unused and will be removed from module vga_module.
 WARNING: [Synth 8-3332] Sequential element (DIVIDER/tenHzClock/current_count_reg[1]) is unused and will be removed from module vga_module.
@@ -1381,41 +1101,11 @@ WARNING: [Synth 8-3332] Sequential element (DIVIDER/singleMinutesClock/i_zero_re
 WARNING: [Synth 8-3332] Sequential element (DIVIDER/tensMinutesClock/current_count_reg[2]) is unused and will be removed from module vga_module.
 WARNING: [Synth 8-3332] Sequential element (DIVIDER/tensMinutesClock/current_count_reg[1]) is unused and will be removed from module vga_module.
 WARNING: [Synth 8-3332] Sequential element (DIVIDER/tensMinutesClock/current_count_reg[0]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (DIVIDER/kiloHzClock/current_count_reg[0]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (DIVIDER/kiloHzClock/current_count_reg[1]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (DIVIDER/kiloHzClock/current_count_reg[2]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (DIVIDER/kiloHzClock/current_count_reg[3]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (DIVIDER/kiloHzClock/current_count_reg[4]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (DIVIDER/kiloHzClock/current_count_reg[5]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (DIVIDER/kiloHzClock/current_count_reg[6]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (DIVIDER/kiloHzClock/current_count_reg[7]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (DIVIDER/kiloHzClock/current_count_reg[8]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (DIVIDER/kiloHzClock/current_count_reg[9]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (DIVIDER/kiloHzClock/current_count_reg[10]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (DIVIDER/kiloHzClock/current_count_reg[11]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (DIVIDER/kiloHzClock/current_count_reg[12]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (DIVIDER/kiloHzClock/current_count_reg[13]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (DIVIDER/kiloHzClock/current_count_reg[14]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (DIVIDER/kiloHzClock/current_count_reg[15]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (DIVIDER/kiloHzClock/current_count_reg[16]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (DIVIDER/kiloHzClock/i_zero_reg) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (CHANGE_Rectangle_Height/current_val_reg[9]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (CHANGE_Rectangle_Height/current_val_reg[8]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (CHANGE_Rectangle_Height/current_val_reg[7]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (CHANGE_Rectangle_Height/current_val_reg[6]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (CHANGE_Rectangle_Height/current_val_reg[5]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (CHANGE_Rectangle_Height/current_val_reg[4]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (CHANGE_Rectangle_Height/current_val_reg[3]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (CHANGE_Rectangle_Height/current_val_reg[2]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (CHANGE_Rectangle_Height/current_val_reg[1]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (CHANGE_Rectangle_Height/current_val_reg[0]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (Player/red_reg[3]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (Player/blue_reg[3]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (Player/green_reg[3]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (Player/Number/Middle/rect_pos_x_reg[1]) is unused and will be removed from module vga_module.
-WARNING: [Synth 8-3332] Sequential element (Player/Number/Middle/rect_pos_x_reg[9]) is unused and will be removed from module vga_module.
+INFO: [Synth 8-3886] merging instance 'Player/char_blue_reg[3]' (FDE) to 'Player/char_red_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/char_green_reg[3]' (FDE) to 'Player/char_red_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Player/green_reg[3]' (FD) to 'Player/red_reg[3]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 644.457 ; gain = 424.059
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 643.766 ; gain = 423.055
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1427,13 +1117,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 644.457 ; gain = 424.059
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 643.766 ; gain = 423.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 644.457 ; gain = 424.059
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 643.766 ; gain = 423.055
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1445,7 +1135,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 644.457 ; gain = 424.059
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 643.766 ; gain = 423.055
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1469,7 +1159,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 644.457 ; gain = 424.059
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 643.766 ; gain = 423.055
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1482,7 +1172,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 644.457 ; gain = 424.059
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 643.766 ; gain = 423.055
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1494,25 +1184,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 644.457 ; gain = 424.059
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 643.766 ; gain = 423.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 644.457 ; gain = 424.059
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 643.766 ; gain = 423.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 644.457 ; gain = 424.059
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 643.766 ; gain = 423.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 644.457 ; gain = 424.059
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 643.766 ; gain = 423.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1529,45 +1219,51 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |     4|
-|3     |LUT1   |     6|
-|4     |LUT2   |    19|
-|5     |LUT3   |     6|
-|6     |LUT4   |     5|
-|7     |LUT5   |     7|
-|8     |LUT6   |     9|
-|9     |FDCE   |    23|
-|10    |FDPE   |     2|
-|11    |IBUF   |     2|
-|12    |OBUF   |    14|
+|2     |CARRY4 |    16|
+|3     |LUT1   |    10|
+|4     |LUT2   |    66|
+|5     |LUT3   |    20|
+|6     |LUT4   |    20|
+|7     |LUT5   |    36|
+|8     |LUT6   |   142|
+|9     |FDCE   |    41|
+|10    |FDPE   |    17|
+|11    |FDRE   |     3|
+|12    |IBUF   |     4|
+|13    |OBUF   |    14|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+----------------------+-----------------------+------+
-|      |Instance              |Module                 |Cells |
-+------+----------------------+-----------------------+------+
-|1     |top                   |                       |    98|
-|2     |  DIVIDER             |clock_divider          |     6|
-|3     |    megaHzClock_25MHz |downcounter            |     6|
-|4     |  VGA_SYNC            |sync_signals_generator |    75|
-+------+----------------------+-----------------------+------+
++------+--------------------------+----------------------------+------+
+|      |Instance                  |Module                      |Cells |
++------+--------------------------+----------------------------+------+
+|1     |top                       |                            |   390|
+|2     |  CHANGE_Rectangle_Height |up_down_counter             |    42|
+|3     |  DIVIDER                 |clock_divider               |    70|
+|4     |    hundredHzClock        |downcounter__parameterized3 |    11|
+|5     |    kiloHzClock           |downcounter__parameterized1 |    53|
+|6     |    megaHzClock_25MHz     |downcounter                 |     6|
+|7     |  Player                  |Player1_Display             |     9|
+|8     |    Rectangle             |Growing_Rectangle           |     2|
+|9     |  VGA_SYNC                |sync_signals_generator      |   250|
++------+--------------------------+----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 644.457 ; gain = 424.059
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 643.766 ; gain = 423.055
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 167 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 644.457 ; gain = 117.090
-Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 644.457 ; gain = 424.059
+Synthesis finished with 0 errors, 0 critical warnings and 51 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:34 . Memory (MB): peak = 643.766 ; gain = 116.082
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 643.766 ; gain = 423.055
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-400 Infos, 247 Warnings, 0 Critical Warnings and 0 Errors encountered.
+223 Infos, 144 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 644.457 ; gain = 425.098
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 643.766 ; gain = 424.082
 INFO: [Common 17-1381] The checkpoint 'C:/Vivado_Git/VGA_Reaction_Game/VGA_Reaction_Game/VGA_Reaction_Game.runs/synth_1/vga_module.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 644.457 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Nov 15 22:29:47 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 643.766 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 16 00:10:48 2018...
