@@ -214,18 +214,18 @@ DIVIDER: clock_divider
 --               R          => stripe_red
 --             );
              
-Rectangle: Growing_Rectangle
-    Port map ( clk         => clk,
-               reset       => reset,
-               scan_line_x => scan_line_x,
-               scan_line_y => scan_line_y,
-               rectangle_color   => rectangle_color,
-               rectangle_height   => rectangle_size,
-               kHz         => i_kHz,
-               red         => rectangle_red,
-               blue        => rectangle_blue,
-               green       => rectangle_green
-           );
+--Rectangle: Growing_Rectangle
+--    Port map ( clk         => clk,
+--               reset       => reset,
+--               scan_line_x => scan_line_x,
+--               scan_line_y => scan_line_y,
+--               rectangle_color   => rectangle_color,
+--               rectangle_height   => rectangle_size,
+--               kHz         => i_kHz,
+--               red         => rectangle_red,
+--               blue        => rectangle_blue,
+--               green       => rectangle_green
+--           );
 -- END ADDED
 
 Player: Player1_Display
