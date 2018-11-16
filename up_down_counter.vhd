@@ -4,7 +4,7 @@ use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity up_down_counter is
-	Generic ( WIDTH: integer:= 6);
+	Generic ( WIDTH: integer:= 10);
 	Port (
 		up: in STD_LOGIC;
 		down: in STD_LOGIC;
@@ -21,13 +21,14 @@ signal current_val: std_logic_vector(WIDTH-1 downto 0) := (others => '0');
 
 -- Create a logic vector of proper length filled with zeros (also done during synthesis)
 constant zeros: 			std_logic_vector(WIDTH-1 downto 0) := (others => '0');
+constant start_pos: 			std_logic_vector(WIDTH-1 downto 0) := "0001100010";
 
 begin
 	Count: process(clk, reset)
 	begin
         -- Asynchronous reset
 	    if (reset = '1') then
-	       current_val <= zeros; -- Set output to 0
+	       current_val <= start_pos; 
 		elsif (rising_edge(clk)) then	
 			if ((up = '1') and (enable = '1')) then
 				current_val <= current_val + '1';

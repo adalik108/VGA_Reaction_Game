@@ -20,7 +20,7 @@ entity Growing_Rectangle is
         scan_line_x: in STD_LOGIC_VECTOR(10 downto 0);
         scan_line_y: in STD_LOGIC_VECTOR(10 downto 0);
         rectangle_color: in STD_LOGIC_VECTOR(11 downto 0);
-        rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+        rectangle_height: in STD_LOGIC_VECTOR(9 downto 0);
         kHz: in STD_LOGIC;
         red: out STD_LOGIC_VECTOR(3 downto 0);
         blue: out STD_LOGIC_VECTOR(3 downto 0);
@@ -45,14 +45,18 @@ begin
 process(reset)
 begin	
     if (reset ='1') then
-        rect_pos_x <= std_logic_vector(to_unsigned(x_offset, rect_pos_x'length));
-        rect_height <= "0000000000";--"0001100010";
+        
+        rect_height <= "0001100010";
 --        box_move_dir_x <= '0';
 --        box_move_dir_y <= '0';
         --redraw <= (others=>'0');
-	
+	else    
+        rect_height <= rectangle_height;
+        
 	end if;
 end process;
+
+rect_pos_x <= std_logic_vector(to_unsigned(x_offset, rect_pos_x'length));
 
 pixel_color <= rectangle_color when     ((scan_line_x >= rect_pos_x) and 
 								(scan_line_y >= rect_pos_y_max - rect_height) and 

@@ -100,7 +100,7 @@ end component;
         scan_line_x: in STD_LOGIC_VECTOR(10 downto 0);
         scan_line_y: in STD_LOGIC_VECTOR(10 downto 0);
         rectangle_color: in STD_LOGIC_VECTOR(11 downto 0);
-        rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+        rectangle_height: in STD_LOGIC_VECTOR(9 downto 0);
         kHz: in STD_LOGIC;
         red: out STD_LOGIC_VECTOR(3 downto 0);
         blue: out STD_LOGIC_VECTOR(3 downto 0);
@@ -147,7 +147,7 @@ signal scan_line_x, scan_line_y: STD_LOGIC_VECTOR(10 downto 0);
 
 -- Rectangle size signals:
 signal inc_rectangle, dec_rectangle: std_logic;
-signal rectangle_size: std_logic_vector(8 downto 0);
+signal rectangle_size: std_logic_vector(9 downto 0);
 
 -- Rectangle signals:
 signal rectangle_color: std_logic_vector(11 downto 0) := (11 downto 4 => '0', others => '1');
@@ -180,7 +180,7 @@ VGA_SYNC: sync_signals_generator
 			  );
 
 CHANGE_Rectangle_Height: up_down_counter
-	Generic map( 	WIDTH => 9)
+	Generic map( 	WIDTH => 10)
 	Port map(
 					up 	   => inc_rectangle,
 					down   => dec_rectangle,
