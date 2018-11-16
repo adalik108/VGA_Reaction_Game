@@ -166,6 +166,9 @@ begin
     if(rising_edge(clk)) then
         if((scan_line_x >= p1_x_offset) and (scan_line_x < p1_x_offset + p1_width) and (scan_line_y >= p1_y_offset - narrow - rectangle_height)) then
             if(scan_line_y >= p1_y_offset) then
+                char_red   <= i_red1 and i_red2;
+                char_green <= i_green1 and i_green2;
+                char_blue  <= i_blue1 and i_blue2;
                 red   <= char_red;
                 green <= char_green;
                 blue  <= char_blue;
@@ -182,8 +185,6 @@ begin
     end if;
 end process;
 
-char_red   <= i_red1 and i_red2;
-char_green <= i_green1 and i_green2;
-char_blue  <= i_blue1 and i_blue2;
+
 
 end Behavioral;

@@ -170,7 +170,7 @@ Tail_1: Rectangle
                   rectangle_height    => tail_height,
                   rectangle_width     => tail_width,
                   x_offset            => px_offset + half_length + tail_width,
-                  y_offset            => py_offset + long + tail_height
+                  y_offset            => py_offset + long + tail_height + long
                   )
       Port Map(     
                   clk             => clk,
