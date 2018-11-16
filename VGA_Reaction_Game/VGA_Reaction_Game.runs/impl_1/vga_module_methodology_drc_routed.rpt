@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Thu Nov 15 15:46:12 2018
+| Date         : Thu Nov 15 23:21:21 2018
 | Host         : Owner-VAIO running 64-bit major release  (build 9200)
 | Command      : report_methodology -file vga_module_methodology_drc_routed.rpt -rpx vga_module_methodology_drc_routed.rpx
 | Design       : vga_module
@@ -23,12 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 39
+             Violations found: 40
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
-| TIMING-17 | Warning  | Non-clocked sequential cell   | 36         |
-| TIMING-18 | Warning  | Missing input or output delay | 3          |
+| TIMING-17 | Warning  | Non-clocked sequential cell   | 25         |
+| TIMING-18 | Warning  | Missing input or output delay | 15         |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
@@ -65,150 +65,95 @@ Related violations: <none>
 
 TIMING-17#7 Warning
 Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_hor_pos_reg[4]_rep/C is not reached by a timing clock
+The clock pin VGA_SYNC/current_hor_pos_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#8 Warning
 Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_hor_pos_reg[4]_rep__0/C is not reached by a timing clock
+The clock pin VGA_SYNC/current_hor_pos_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#9 Warning
 Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_hor_pos_reg[4]_rep__1/C is not reached by a timing clock
+The clock pin VGA_SYNC/current_hor_pos_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#10 Warning
 Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_hor_pos_reg[5]/C is not reached by a timing clock
+The clock pin VGA_SYNC/current_hor_pos_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#11 Warning
 Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_hor_pos_reg[5]_rep/C is not reached by a timing clock
+The clock pin VGA_SYNC/current_hor_pos_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#12 Warning
 Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_hor_pos_reg[5]_rep__0/C is not reached by a timing clock
+The clock pin VGA_SYNC/current_ver_pos_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#13 Warning
 Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_hor_pos_reg[5]_rep__1/C is not reached by a timing clock
+The clock pin VGA_SYNC/current_ver_pos_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#14 Warning
 Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_hor_pos_reg[6]/C is not reached by a timing clock
+The clock pin VGA_SYNC/current_ver_pos_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#15 Warning
 Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_hor_pos_reg[6]_rep/C is not reached by a timing clock
+The clock pin VGA_SYNC/current_ver_pos_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#16 Warning
 Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_hor_pos_reg[6]_rep__0/C is not reached by a timing clock
+The clock pin VGA_SYNC/current_ver_pos_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#17 Warning
 Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_hor_pos_reg[7]/C is not reached by a timing clock
+The clock pin VGA_SYNC/current_ver_pos_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#18 Warning
 Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_hor_pos_reg[8]/C is not reached by a timing clock
+The clock pin VGA_SYNC/current_ver_pos_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#19 Warning
 Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_hor_pos_reg[9]/C is not reached by a timing clock
+The clock pin VGA_SYNC/current_ver_pos_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#20 Warning
 Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_ver_pos_reg[0]/C is not reached by a timing clock
+The clock pin VGA_SYNC/current_ver_pos_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#21 Warning
 Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_ver_pos_reg[0]_rep/C is not reached by a timing clock
+The clock pin VGA_SYNC/current_ver_pos_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#22 Warning
 Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_ver_pos_reg[0]_rep__0/C is not reached by a timing clock
+The clock pin VGA_SYNC/current_ver_pos_reg[8]_rep/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#23 Warning
 Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_ver_pos_reg[0]_rep__1/C is not reached by a timing clock
+The clock pin VGA_SYNC/current_ver_pos_reg[8]_rep__0/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#24 Warning
 Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_ver_pos_reg[10]/C is not reached by a timing clock
+The clock pin VGA_SYNC/current_ver_pos_reg[8]_rep__1/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#25 Warning
-Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_ver_pos_reg[1]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#26 Warning
-Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_ver_pos_reg[1]_rep/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#27 Warning
-Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_ver_pos_reg[1]_rep__0/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#28 Warning
-Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_ver_pos_reg[2]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#29 Warning
-Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_ver_pos_reg[2]_rep/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#30 Warning
-Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_ver_pos_reg[3]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#31 Warning
-Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_ver_pos_reg[4]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#32 Warning
-Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_ver_pos_reg[5]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#33 Warning
-Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_ver_pos_reg[6]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#34 Warning
-Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_ver_pos_reg[7]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#35 Warning
-Non-clocked sequential cell  
-The clock pin VGA_SYNC/current_ver_pos_reg[8]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#36 Warning
 Non-clocked sequential cell  
 The clock pin VGA_SYNC/current_ver_pos_reg[9]/C is not reached by a timing clock
 Related violations: <none>
@@ -226,6 +171,66 @@ Related violations: <none>
 TIMING-18#3 Warning
 Missing input or output delay  
 An input delay is missing on buttons[2] relative to clock(s) sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on blue[0] relative to clock(s) sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on blue[1] relative to clock(s) sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on blue[2] relative to clock(s) sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on blue[3] relative to clock(s) sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on green[0] relative to clock(s) sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on green[1] relative to clock(s) sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on green[2] relative to clock(s) sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on green[3] relative to clock(s) sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on red[0] relative to clock(s) sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on red[1] relative to clock(s) sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on red[2] relative to clock(s) sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on red[3] relative to clock(s) sys_clk_pin 
 Related violations: <none>
 
 

@@ -44,17 +44,20 @@ signal box_move_dir_x, box_move_dir_y: std_logic;
 
 begin
 
-process(reset)
-begin	
-    if (reset ='1') then
-        rect_pos_x <= std_logic_vector(to_unsigned(x_offset, rect_pos_x'length));
-        rect_pos_y <= std_logic_vector(to_unsigned(y_offset, rect_pos_y'length));
---        box_move_dir_x <= '0';
---        box_move_dir_y <= '0';
-        --redraw <= (others=>'0');
+--process(reset)
+--begin	
+--    if (reset ='1') then
+--        rect_pos_x <= std_logic_vector(to_unsigned(x_offset, rect_pos_x'length));
+--        rect_pos_y <= std_logic_vector(to_unsigned(y_offset, rect_pos_y'length));
+----        box_move_dir_x <= '0';
+----        box_move_dir_y <= '0';
+--        --redraw <= (others=>'0');
 	
-	end if;
-end process;
+--	end if;
+--end process;
+
+rect_pos_x <= std_logic_vector(to_unsigned(x_offset, rect_pos_x'length));
+rect_pos_y <= std_logic_vector(to_unsigned(y_offset, rect_pos_y'length));
 
 pixel_color <= rectangle_color when     ((scan_line_x >= rect_pos_x) and 
 								(scan_line_y >= rect_pos_y) and 

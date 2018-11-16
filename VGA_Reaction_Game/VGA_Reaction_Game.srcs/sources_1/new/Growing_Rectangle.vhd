@@ -14,7 +14,8 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity Growing_Rectangle is
     Generic ( 	box_width: integer:= 10;
-                x_offset: integer:= 50);
+                x_offset: integer:= 50;
+                y_offset: integer:= 50);
     Port ( 	clk : in  STD_LOGIC;
         reset : in  STD_LOGIC;
         scan_line_x: in STD_LOGIC_VECTOR(10 downto 0);
@@ -36,7 +37,7 @@ constant rect_pos_y_min: std_logic_vector(9 downto 0) := "0000000000";
 constant rect_pos_x_max: std_logic_vector(9 downto 0) := "1010000000" - 1;
 constant rect_pos_y_max: std_logic_vector(9 downto 0) := "0111100000" - 1;
 signal pixel_color: std_logic_vector(11 downto 0);
-signal rect_pos_x, rect_height: std_logic_vector(9 downto 0);
+signal rect_pos_x, rect_pos_y, rect_height: std_logic_vector(9 downto 0);
 signal box_move_dir_x, box_move_dir_y: std_logic;
 
 
@@ -57,11 +58,12 @@ begin
 end process;
 
 rect_pos_x <= std_logic_vector(to_unsigned(x_offset, rect_pos_x'length));
+rect_pos_y <= std_logic_vector(to_unsigned(y_offset, rect_pos_y'length));
 
 pixel_color <= rectangle_color when     ((scan_line_x >= rect_pos_x) and 
-								(scan_line_y >= rect_pos_y_max - rect_height) and 
+								(scan_line_y >= rect_pos_y - rect_height) and 
 								(scan_line_x < rect_pos_x+box_width) and 
-								(scan_line_y < rect_pos_y_max)) 
+								(scan_line_y < rect_pos_y)) 
 					   else
 				                "111111111111"; -- represents WHITE
 								

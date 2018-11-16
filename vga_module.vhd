@@ -117,8 +117,9 @@ Port (     clk : in  STD_LOGIC;
     reset : in  STD_LOGIC;
     scan_line_x: in STD_LOGIC_VECTOR(10 downto 0);
     scan_line_y: in STD_LOGIC_VECTOR(10 downto 0);
-    rectangle_color: in STD_LOGIC_VECTOR(11 downto 0);
-    --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+    char_colour: in std_logic_vector(11 downto 0);
+    rectangle_colour: in STD_LOGIC_VECTOR(11 downto 0);
+    rectangle_height: in STD_LOGIC_VECTOR(9 downto 0);
     kHz: in STD_LOGIC;
     red: out STD_LOGIC_VECTOR(3 downto 0);
     blue: out STD_LOGIC_VECTOR(3 downto 0);
@@ -156,7 +157,7 @@ signal rectangle_green: std_logic_vector(3 downto 0);
 signal rectangle_blue: std_logic_vector(3 downto 0);
 
 -- Letter signals:
-signal letter_color: std_logic_vector(11 downto 0);
+signal letter_color: std_logic_vector(11 downto 0) := (others => '0');
 signal letter_red: std_logic_vector(3 downto 0);
 signal letter_green: std_logic_vector(3 downto 0);
 signal letter_blue: std_logic_vector(3 downto 0);
@@ -214,36 +215,37 @@ DIVIDER: clock_divider
 --               R          => stripe_red
 --             );
              
-Rectangle: Growing_Rectangle
-    Port map ( clk         => clk,
-               reset       => reset,
-               scan_line_x => scan_line_x,
-               scan_line_y => scan_line_y,
-               rectangle_color   => rectangle_color,
-               rectangle_height   => rectangle_size,
-               kHz         => i_kHz,
-               red         => rectangle_red,
-               blue        => rectangle_blue,
-               green       => rectangle_green
-           );
+--Rectangle: Growing_Rectangle
+--    Port map ( clk         => clk,
+--               reset       => reset,
+--               scan_line_x => scan_line_x,
+--               scan_line_y => scan_line_y,
+--               rectangle_color   => rectangle_color,
+--               rectangle_height   => rectangle_size,
+--               kHz         => i_kHz,
+--               red         => rectangle_red,
+--               blue        => rectangle_blue,
+--               green       => rectangle_green
+--           );
 -- END ADDED
 
 Player: Player1_Display
       Generic Map(     
-                  p1_x_offset  => 300,
-                  p1_y_offset  => 400
+                  p1_x_offset  => 50,
+                  p1_y_offset  => 450
                   )
       Port Map(     
                   clk             => clk,
                   reset           => reset,
                   scan_line_x     => scan_line_x,
                   scan_line_y     => scan_line_y,
-                  rectangle_color => letter_color,
-                  --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+                  char_colour       => letter_color,
+                  rectangle_colour => rectangle_color,
+                  rectangle_height => rectangle_size,
                   kHz             => i_kHz,
-                  red             => letter_red,
-                  blue            => letter_blue,
-                  green           => letter_green
+                  red             => disp_red,
+                  blue            => disp_blue,
+                  green           => disp_green
         );
             
 
@@ -274,7 +276,7 @@ dec_rectangle <= buttons(2);
 --		-- Select which input gets written to disp_red, disp_blue and disp_green
 --		-- ADDED
 --		when '0' => 
-		disp_red <= rectangle_red and letter_red; disp_blue <= rectangle_blue and letter_blue; disp_green <= rectangle_green and letter_green;
+		--disp_red <= rectangle_red and letter_red; disp_blue <= rectangle_blue and letter_blue; disp_green <= rectangle_green and letter_green;
 --		when '1' => disp_red <= stripe_red; disp_blue <= stripe_blue; disp_green <= stripe_green;
 --		when others => disp_red <= "0000"; disp_blue <= "0000"; disp_green <= "0000";
 --	end case;
