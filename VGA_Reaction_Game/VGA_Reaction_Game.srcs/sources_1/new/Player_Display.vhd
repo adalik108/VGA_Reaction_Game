@@ -21,7 +21,7 @@ Port (     clk : in  STD_LOGIC;
     reset : in  STD_LOGIC;
     scan_line_x: in STD_LOGIC_VECTOR(10 downto 0);
     scan_line_y: in STD_LOGIC_VECTOR(10 downto 0);
-    rectangle_color: in STD_LOGIC_VECTOR(11 downto 0);
+    rectangle_colour: in STD_LOGIC_VECTOR(11 downto 0);
     --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
     kHz: in STD_LOGIC;
     red: out STD_LOGIC_VECTOR(3 downto 0);
@@ -162,7 +162,7 @@ Letter_P: P
                   reset           => reset,
                   scan_line_x     => scan_line_x,
                   scan_line_y     => scan_line_y,
-                  rectangle_color => rectangle_color,
+                  rectangle_color => rectangle_colour,
                   --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
                   kHz             => kHz,
                   red             => i_red1,
@@ -180,7 +180,7 @@ Letter_L: L
                   reset           => reset,
                   scan_line_x     => scan_line_x,
                   scan_line_y     => scan_line_y,
-                  rectangle_color => rectangle_color,
+                  rectangle_color => rectangle_colour,
                   --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
                   kHz             => kHz,
                   red             => i_red2,
@@ -198,7 +198,7 @@ Letter_A: A
                           reset           => reset,
                           scan_line_x     => scan_line_x,
                           scan_line_y     => scan_line_y,
-                          rectangle_color => rectangle_color,
+                          rectangle_color => rectangle_colour,
                           --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
                           kHz             => kHz,
                           red             => i_red3,
@@ -216,7 +216,7 @@ Letter_Y: Y
                           reset           => reset,
                           scan_line_x     => scan_line_x,
                           scan_line_y     => scan_line_y,
-                          rectangle_color => rectangle_color,
+                          rectangle_color => rectangle_colour,
                           --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
                           kHz             => kHz,
                           red             => i_red4,
@@ -234,7 +234,7 @@ Letter_E: E
                           reset           => reset,
                           scan_line_x     => scan_line_x,
                           scan_line_y     => scan_line_y,
-                          rectangle_color => rectangle_color,
+                          rectangle_color => rectangle_colour,
                           --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
                           kHz             => kHz,
                           red             => i_red5,
@@ -252,7 +252,7 @@ Letter_R: R
                           reset           => reset,
                           scan_line_x     => scan_line_x,
                           scan_line_y     => scan_line_y,
-                          rectangle_color => rectangle_color,
+                          rectangle_color => rectangle_colour,
                           --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
                           kHz             => kHz,
                           red             => i_red6,
