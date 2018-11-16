@@ -231,8 +231,8 @@ DIVIDER: clock_divider
 
 Player: Player1_Display
       Generic Map(     
-                  p1_x_offset  => 300,
-                  p1_y_offset  => 400
+                  p1_x_offset  => 50,
+                  p1_y_offset  => 450
                   )
       Port Map(     
                   clk             => clk,
@@ -243,9 +243,9 @@ Player: Player1_Display
                   rectangle_color => rectangle_color,
                   rectangle_height => rectangle_size,
                   kHz             => i_kHz,
-                  red             => letter_red,
-                  blue            => letter_blue,
-                  green           => letter_green
+                  red             => disp_red,
+                  blue            => disp_blue,
+                  green           => disp_green
         );
             
 
@@ -276,7 +276,7 @@ dec_rectangle <= buttons(2);
 --		-- Select which input gets written to disp_red, disp_blue and disp_green
 --		-- ADDED
 --		when '0' => 
-		disp_red <= rectangle_red and letter_red; disp_blue <= rectangle_blue and letter_blue; disp_green <= rectangle_green and letter_green;
+		--disp_red <= rectangle_red and letter_red; disp_blue <= rectangle_blue and letter_blue; disp_green <= rectangle_green and letter_green;
 --		when '1' => disp_red <= stripe_red; disp_blue <= stripe_blue; disp_green <= stripe_green;
 --		when others => disp_red <= "0000"; disp_blue <= "0000"; disp_green <= "0000";
 --	end case;
