@@ -76,7 +76,7 @@ signal i_red5, i_green5, i_blue5: std_logic_vector(3 downto 0);
 signal i_red6, i_green6, i_blue6: std_logic_vector(3 downto 0);
 
 constant head_height: integer:= 1;
-constant head_width: integer:= -1;
+constant head_width: integer:= 1;
 constant long: integer:= 10;
 constant half_length: integer:= 5;
 constant narrow: integer:= 2;
@@ -89,8 +89,8 @@ Head: Diagonal4
             Generic Map(     
                         d4_height    => head_height,
                         d4_width     => head_width,
-                        d4_x_offset  => px_offset + half_length - half_narrow,
-                        d4_y_offset  => py_offset
+                        d4_x_offset  => px_offset + half_length - half_narrow - head_width - head_width - head_width - head_width,
+                        d4_y_offset  => py_offset + head_height + head_height + head_height + head_height
                         )
             Port Map(     
                         clk             => clk,

@@ -202,8 +202,27 @@ Tail_1: Diagonal2
                   blue            => i_blue5,
                   green           => i_green5
         );
-        
-Tail_2: Diagonal4
+Tail_2: Diagonal2
+          Generic Map(     
+                      d2_height    => tail_height,
+                      d2_width     => tail_width,
+                      d2_x_offset            => px_offset + half_length + tail_width,
+                      d2_y_offset            => py_offset + long - narrow + tail_height
+                      )
+          Port Map(     
+                      clk             => clk,
+                      reset           => reset,
+                      scan_line_x     => scan_line_x,
+                      scan_line_y     => scan_line_y,
+                      rectangle_color => rectangle_color,
+                      --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+                      kHz             => kHz,
+                      red             => i_red5,
+                      blue            => i_blue5,
+                      green           => i_green5
+            );
+                        
+Tail_3: Diagonal4
             Generic Map(     
                         d4_height    => tail_height,
                         d4_width     => tail_width,
@@ -222,6 +241,26 @@ Tail_2: Diagonal4
                         blue            => i_blue6,
                         green           => i_green6
               );
+              
+Tail_4: Diagonal4
+          Generic Map(     
+                      d4_height    => tail_height,
+                      d4_width     => tail_width,
+                      d4_x_offset  => px_offset + half_length + tail_width + tail_width + tail_width,
+                      d4_y_offset  => py_offset + long + tail_height + tail_height
+                      )
+          Port Map(     
+                      clk             => clk,
+                      reset           => reset,
+                      scan_line_x     => scan_line_x,
+                      scan_line_y     => scan_line_y,
+                      rectangle_color => rectangle_color,
+                      --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+                      kHz             => kHz,
+                      red             => i_red6,
+                      blue            => i_blue6,
+                      green           => i_green6
+            );
         
 red   <= i_red1 and i_red2 and i_red3 and i_red4 and i_red5 and i_red6;
 green <= i_green1 and i_green2 and i_green3 and i_green4 and i_green5 and i_green6;
