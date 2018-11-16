@@ -85,25 +85,44 @@ constant half_narrow: integer:= 1;
 begin
 
 
-Head: Diagonal4
-            Generic Map(     
-                        d4_height    => head_height,
-                        d4_width     => head_width,
-                        d4_x_offset  => px_offset + half_length - half_narrow - head_width - head_width - head_width - head_width,
-                        d4_y_offset  => py_offset + head_height + head_height + head_height + head_height
-                        )
-            Port Map(     
-                        clk             => clk,
-                        reset           => reset,
-                        scan_line_x     => scan_line_x,
-                        scan_line_y     => scan_line_y,
-                        rectangle_color => rectangle_color,
-                        --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
-                        kHz             => kHz,
-                        red             => i_red1,
-                        blue            => i_blue1,
-                        green           => i_green1
-              );
+--Head: Diagonal4
+--            Generic Map(     
+--                        d4_height    => head_height,
+--                        d4_width     => head_width,
+--                        d4_x_offset  => px_offset + half_length - half_narrow - head_width - head_width - head_width - head_width,
+--                        d4_y_offset  => py_offset + head_height + head_height + head_height + head_height
+--                        )
+--            Port Map(     
+--                        clk             => clk,
+--                        reset           => reset,
+--                        scan_line_x     => scan_line_x,
+--                        scan_line_y     => scan_line_y,
+--                        rectangle_color => rectangle_color,
+--                        --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+--                        kHz             => kHz,
+--                        red             => i_red1,
+--                        blue            => i_blue1,
+--                        green           => i_green1
+--              );
+Head: Rectangle
+        Generic Map(     
+                    rectangle_height    => narrow,
+                    rectangle_width     => narrow + narrow,
+                    x_offset            => px_offset + half_length - half_narrow - narrow - narrow,
+                    y_offset            => py_offset
+                    )
+        Port Map(     
+                    clk             => clk,
+                    reset           => reset,
+                    scan_line_x     => scan_line_x,
+                    scan_line_y     => scan_line_y,
+                    rectangle_color => rectangle_color,
+                    --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+                    kHz             => kHz,
+                    red             => i_red2,
+                    blue            => i_blue2,
+                    green           => i_green2
+          );
               
 Middle: Rectangle
             Generic Map(     

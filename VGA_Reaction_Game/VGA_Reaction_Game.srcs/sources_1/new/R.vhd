@@ -92,6 +92,8 @@ signal i_red3, i_green3, i_blue3: std_logic_vector(3 downto 0);
 signal i_red4, i_green4, i_blue4: std_logic_vector(3 downto 0);
 signal i_red5, i_green5, i_blue5: std_logic_vector(3 downto 0);
 signal i_red6, i_green6, i_blue6: std_logic_vector(3 downto 0);
+signal i_red7, i_green7, i_blue7: std_logic_vector(3 downto 0);
+signal i_red8, i_green8, i_blue8: std_logic_vector(3 downto 0);
 
 constant tail_height: integer:= 2;
 constant tail_width: integer:= 1;
@@ -217,9 +219,9 @@ Tail_2: Diagonal2
                       rectangle_color => rectangle_color,
                       --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
                       kHz             => kHz,
-                      red             => i_red5,
-                      blue            => i_blue5,
-                      green           => i_green5
+                      red             => i_red6,
+                      blue            => i_blue6,
+                      green           => i_green6
             );
                         
 Tail_3: Diagonal4
@@ -237,9 +239,9 @@ Tail_3: Diagonal4
                         rectangle_color => rectangle_color,
                         --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
                         kHz             => kHz,
-                        red             => i_red6,
-                        blue            => i_blue6,
-                        green           => i_green6
+                        red             => i_red7,
+                        blue            => i_blue7,
+                        green           => i_green7
               );
               
 Tail_4: Diagonal4
@@ -257,13 +259,13 @@ Tail_4: Diagonal4
                       rectangle_color => rectangle_color,
                       --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
                       kHz             => kHz,
-                      red             => i_red6,
-                      blue            => i_blue6,
-                      green           => i_green6
+                      red             => i_red8,
+                      blue            => i_blue8,
+                      green           => i_green8
             );
         
-red   <= i_red1 and i_red2 and i_red3 and i_red4 and i_red5 and i_red6;
-green <= i_green1 and i_green2 and i_green3 and i_green4 and i_green5 and i_green6;
-blue  <= i_blue1 and i_blue2 and i_blue3 and i_blue4 and i_blue5 and i_blue6;
+red   <= i_red1 and i_red2 and i_red3 and i_red4 and i_red5 and i_red6 and i_red7 and i_red8;
+green <= i_green1 and i_green2 and i_green3 and i_green4 and i_green5 and i_green6 and i_green7 and i_green8;
+blue  <= i_blue1 and i_blue2 and i_blue3 and i_blue4 and i_blue5 and i_blue6 and i_blue7 and i_blue8;
 
 end Behavioral;
