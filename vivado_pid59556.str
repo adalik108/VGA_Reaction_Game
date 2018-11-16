@@ -1,0 +1,223 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 59556
+License: Customer
+
+Current time: 	Thu Nov 15 18:31:10 MST 2018
+Time zone: 	Mountain Standard Time (America/Denver)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 57 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	D:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	Taha Hamdy
+User home directory: C:/Users/Taha Hamdy
+User working directory: C:/Vivado_Git/VGA_Reaction_Game
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2018.2
+RDI_DATADIR: D:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: D:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/Taha Hamdy/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/Taha Hamdy/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/Taha Hamdy/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Vivado_Git/VGA_Reaction_Game/vivado.log
+Vivado journal file location: 	C:/Vivado_Git/VGA_Reaction_Game/vivado.jou
+Engine tmp dir: 	C:/Vivado_Git/VGA_Reaction_Game/.Xil/Vivado-59556-Theory
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2018.2
+XILINX_SDK: D:/Xilinx/SDK/2018.2
+XILINX_VIVADO: D:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	197 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 498 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: C:\Vivado_Git\VGA_Reaction_Game\Lab_5.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 58 MB (+58705kb) [00:00:16]
+// [Engine Memory]: 480 MB (+352172kb) [00:00:16]
+// Tcl Message: open_project C:/Vivado_Git/VGA_Reaction_Game/Lab_5.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Vivado_Git/VGA_Reaction_Game/Lab_5.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 501 MB. GUI used memory: 35 MB. Current time: 11/15/18 6:31:12 PM MST
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 517 MB (+13494kb) [00:00:25]
+// Project name: Lab_5; location: C:/Vivado_Git/VGA_Reaction_Game; part: xc7a35ticpg236-1L
+// Tcl Message: open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 767.945 ; gain = 40.617 
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 478ms to process. Increasing delay to 3000 ms.
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 547 MB (+3682kb) [00:00:32]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// a (ck): Critical Messages: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 555 MB. GUI used memory: 38 MB. Current time: 11/15/18 6:31:32 PM MST
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (ck)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// PAPropertyPanels.initPanels (downcounter.vhd) elapsed time: 0.4s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, downcounter(Behavioral) (downcounter.vhd)]", 2, false); // B (D, ck)
+// [Engine Memory]: 576 MB (+2464kb) [00:00:43]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, upcounter(Behavioral) (upcounter.vhd)]", 3, false, true, false, false, false, false); // B (D, ck) - Shift Key
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, downcounter(Behavioral) (downcounter.vhd)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, upcounter(Behavioral) (upcounter.vhd)]", 3, false, true, false, false, false, false); // B (D, ck) - Shift Key
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/downcounter.vhd] -no_script -reset -force -quiet 
+// aE (ck): Remove Sources: addNotify
+// bx (aE):  Remove Sources : addNotify
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/upcounter.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/downcounter.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/upcounter.vhd} 
+dismissDialog("Remove Sources"); // bx (aE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, ck) - Node
+// [GUI Memory]: 67 MB (+6075kb) [00:00:48]
+// [Engine Memory]: 608 MB (+3205kb) [00:00:48]
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton("NEXT", "Next >"); // JButton (j, c)
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+String[] filenames31467 = {"C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/AVG_Control.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/BCD_to_Binary.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/Binary_to_BCD.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/Binary_to_BCD_dig.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/Debouncer.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/Game_Control.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/Game_Top_Level.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/Menu_Control.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/PRNG_Delay.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/PWM_DAC.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/Sound_Control.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/clock_divider.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/digit_multiplexor.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/display_top_level.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/main_logic.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/mode_multiplexor.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/seven_segment_decoder.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/seven_segment_digit_selector.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/stopwatch_top_level.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/upcounter.vhd"};
+setFileChooser(filenames31467);
+// [GUI Memory]: 71 MB (+294kb) [00:01:00]
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 13 seconds
+dismissDialog("Add Sources"); // c (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3, true); // B (D, ck) - Node
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+String[] filenames16706 = {"C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_AVG_Control.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_BCD_to_Binary.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_Binary_to_BCD.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_Binary_to_BCD_dig.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_Debouncer.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_Game_Control.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_Game_Top_Level.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_Menu_Control.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_PRNG_Delay.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_PWM_DAC.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_Sound_Control.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_clock_divider.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_digit_multiplexor.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_display_top_level.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_main_logic.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_mode_multiplexor.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_seven_segment_decoder.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_seven_segment_digit_selector.vhd", "C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_stopwatch_top_level.vhd"};
+setFileChooser(filenames16706);
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 9 seconds
+// [GUI Memory]: 80 MB (+6057kb) [00:01:13]
+dismissDialog("Add Sources"); // c (ck)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// bx (ck):  Add Simulation Sources  : addNotify
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Add Simulation Sources"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_top_level(Behavioral) (stopwatch_top_level.vhd)]", 2, true); // B (D, ck) - Node
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_top_level(Behavioral) (stopwatch_top_level.vhd)]", 2, true); // B (D, ck) - Node
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/stopwatch_top_level.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/stopwatch_top_level.vhd 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 6); // B (D, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 6); // B (D, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 85 MB (+712kb) [00:01:50]

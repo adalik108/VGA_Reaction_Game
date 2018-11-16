@@ -1,0 +1,275 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 63424
+License: Customer
+
+Current time: 	Thu Nov 15 18:28:35 MST 2018
+Time zone: 	Mountain Standard Time (America/Denver)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 57 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	D:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	Taha Hamdy
+User home directory: C:/Users/Taha Hamdy
+User working directory: C:/Vivado_Git/VGA_Reaction_Game
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2018.2
+RDI_DATADIR: D:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: D:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/Taha Hamdy/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/Taha Hamdy/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/Taha Hamdy/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Vivado_Git/VGA_Reaction_Game/vivado.log
+Vivado journal file location: 	C:/Vivado_Git/VGA_Reaction_Game/vivado.jou
+Engine tmp dir: 	C:/Vivado_Git/VGA_Reaction_Game/.Xil/Vivado-63424-Theory
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2018.2
+XILINX_SDK: D:/Xilinx/SDK/2018.2
+XILINX_VIVADO: D:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	206 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 499 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Vivado_Git\VGA_Reaction_Game\Lab_5.xpr. Version: Vivado v2018.2 
+// bx (ck):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 68 MB (+69034kb) [00:00:13]
+// [Engine Memory]: 479 MB (+350956kb) [00:00:13]
+// TclEventType: MSGMGR_MOVEMSG
+// Tcl Message: open_project C:/Vivado_Git/VGA_Reaction_Game/Lab_5.xpr 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Vivado_Git/VGA_Reaction_Game/Lab_5.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 499 MB. GUI used memory: 35 MB. Current time: 11/15/18 6:28:38 PM MST
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 517 MB (+14026kb) [00:00:18]
+// [Engine Memory]: 560 MB (+18907kb) [00:00:21]
+// Project name: Lab_5; location: C:/Vivado_Git/VGA_Reaction_Game; part: xc7a35ticpg236-1L
+// Tcl Message: open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:09 . Memory (MB): peak = 803.090 ; gain = 72.473 
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// a (ck): Critical Messages: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (ck)
+// PAPropertyPanels.initPanels (Game_Top_Level.vhd) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game_Top_Level(Behavioral) (Game_Top_Level.vhd)]", 2, true); // B (D, ck) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game_Top_Level(Behavioral) (Game_Top_Level.vhd)]", 2); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game_Top_Level(Behavioral) (Game_Top_Level.vhd), AVERAGE : AVG_Control(Behavioral) (AVG_Control.vhd)]", 4, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game_Top_Level(Behavioral) (Game_Top_Level.vhd), GAME : Game_Control(Behavioral) (Game_Control.vhd)]", 5, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game_Top_Level(Behavioral) (Game_Top_Level.vhd), MAINFSM : main_logic(Behavioral) (main_logic.vhd)]", 3, true); // B (D, ck) - Node
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game_Top_Level(Behavioral) (Game_Top_Level.vhd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (D, ck) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game_Top_Level(Behavioral) (Game_Top_Level.vhd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Game_Top_Level(Behavioral) (Game_Top_Level.vhd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_stripes_dff2(Behavioral) (vga_stripes_dff2.vhd)]", 16, false, true, false, false, false, false); // B (D, ck) - Shift Key
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Game_Top_Level.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/main_logic.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/AVG_Control.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Game_Control.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Menu_Control.vhd] -no_script -reset -force -quiet 
+// aE (ck): Remove Sources: addNotify
+// bx (aE):  Remove Sources : addNotify
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/mode_multiplexor.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/display_top_level.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Sound_Control.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/vga_module.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/Debouncer.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/VGA_Reaction_Game_Top_Level.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/bouncing_box.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Letter.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/upcounter.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/vga_stripes_dff2.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Remove Sources"); // bx (aE)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 40 MB. Current time: 11/15/18 6:29:48 PM MST
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 74 MB (+2099kb) [00:01:28]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1, true); // B (D, ck) - Node
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clock_divider(Behavioral) (clock_divider.vhd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, up_down_counter(Behavioral) (up_down_counter.vhd)]", 12, false, true, false, false, false, false); // B (D, ck) - Shift Key
+// [GUI Memory]: 79 MB (+1233kb) [00:01:30]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 14); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 15); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files]", 16, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 15, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 15, true, false, false, false, true, false); // B (D, ck) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // aa (aj, ck)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RESET, "Reset Simulation"); // aa (aj, ck)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RESET, "Reset Simulation"); // aa (aj, ck)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // aa (aj, ck)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // aa (aj, ck)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RESET, "Reset Simulation"); // aa (aj, ck)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_AVG_Control(Behavioral) (tb_AVG_Control.vhd)]", 17, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, up_down_counter(Behavioral) (up_down_counter.vhd)]", 38, false, true, false, false, false, false); // B (D, ck) - Shift Key
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_AVG_Control.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_BCD_to_Binary.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Binary_to_BCD.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Binary_to_BCD_dig.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_Debouncer.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Game_Control.vhd] -no_script -reset -force -quiet 
+// aE (ck): Remove Sources: addNotify
+// bx (aE):  Remove Sources : addNotify
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Game_Top_Level.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Menu_Control.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_PRNG_Delay.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_PWM_DAC.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Sound_Control.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_clock_divider.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_digit_multiplexor.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_display_top_level.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_main_logic.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_mode_multiplexor.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_seven_segment_decoder.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_seven_segment_digit_selector.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_stopwatch_top_level.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Growing_Rectangle.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/sync_signal_generator.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/up_down_counter.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Growing_Rectangle.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/sync_signal_generator.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/up_down_counter.vhd} 
+dismissDialog("Remove Sources"); // bx (aE)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// RDIResource.RDIViews_PROPERTIES: Simulation-Only Sources Properties: close view
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clock_divider(Behavioral) (clock_divider.vhd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, seven_segment_digit_selector(Behavioral) (seven_segment_digit_selector.vhd)]", 9, false, true, false, false, false, false); // B (D, ck) - Shift Key
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, seven_segment_digit_selector(Behavioral) (seven_segment_digit_selector.vhd)]", 9, false); // B (D, ck)
+// [GUI Memory]: 88 MB (+5918kb) [00:01:51]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, clock_divider(Behavioral) (clock_divider.vhd)]", 14, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, seven_segment_digit_selector(Behavioral) (seven_segment_digit_selector.vhd)]", 21, false, true, false, false, false, false); // B (D, ck) - Shift Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clock_divider(Behavioral) (clock_divider.vhd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, seven_segment_digit_selector(Behavioral) (seven_segment_digit_selector.vhd)]", 9, false, true, false, false, false, false); // B (D, ck) - Shift Key
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/clock_divider.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Binary_to_BCD.vhd] -no_script -reset -force -quiet 
+// aE (ck): Remove Sources: addNotify
+// bx (aE):  Remove Sources : addNotify
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/PRNG_Delay.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/BCD_to_Binary.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/PWM_DAC.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/digit_multiplexor.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/seven_segment_decoder.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/seven_segment_digit_selector.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/clock_divider.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Binary_to_BCD.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/PRNG_Delay.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/BCD_to_Binary.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/PWM_DAC.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/digit_multiplexor.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/seven_segment_decoder.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/seven_segment_digit_selector.vhd} 
+dismissDialog("Remove Sources"); // bx (aE)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Binary_to_BCD_dig(Behavioral) (Binary_to_BCD_dig.vhd)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, upcounter(Behavioral) (upcounter.vhd)]", 4, false); // B (D, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, downcounter(Behavioral) (downcounter.vhd)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Binary_to_BCD_dig(Behavioral) (Binary_to_BCD_dig.vhd)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, upcounter(Behavioral) (upcounter.vhd)]", 4, false, true, false, false, false, false); // B (D, ck) - Shift Key
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, downcounter(Behavioral) (downcounter.vhd)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Binary_to_BCD_dig(Behavioral) (Binary_to_BCD_dig.vhd)]", 2, false); // B (D, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, upcounter(Behavioral) (upcounter.vhd)]", 4, false, true, false, false, false, false); // B (D, ck) - Shift Key
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Binary_to_BCD_dig(Behavioral) (Binary_to_BCD_dig.vhd)]", 2, false); // B (D, ck)

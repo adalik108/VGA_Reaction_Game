@@ -1,0 +1,76 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Nov 15 18:28:15 2018
+# Process ID: 63424
+# Current directory: C:/Vivado_Git/VGA_Reaction_Game
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent60464 C:\Vivado_Git\VGA_Reaction_Game\Lab_5.xpr
+# Log file: C:/Vivado_Git/VGA_Reaction_Game/vivado.log
+# Journal file: C:/Vivado_Git/VGA_Reaction_Game\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Vivado_Git/VGA_Reaction_Game/Lab_5.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Taha Hamdy/Documents/GitHub/VGA_Reaction_Game/downcounter.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:09 . Memory (MB): peak = 803.090 ; gain = 72.473
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Game_Top_Level.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/main_logic.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/AVG_Control.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Game_Control.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Menu_Control.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/mode_multiplexor.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/display_top_level.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Sound_Control.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/vga_module.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/Debouncer.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/VGA_Reaction_Game_Top_Level.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/bouncing_box.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Letter.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/upcounter.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/vga_stripes_dff2.vhd] -no_script -reset -force -quiet
+remove_files  {C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Game_Top_Level.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/main_logic.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/AVG_Control.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Game_Control.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Menu_Control.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/mode_multiplexor.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/display_top_level.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Sound_Control.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/vga_module.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/Debouncer.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/VGA_Reaction_Game_Top_Level.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/bouncing_box.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Letter.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/upcounter.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/vga_stripes_dff2.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_AVG_Control.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_BCD_to_Binary.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Binary_to_BCD.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Binary_to_BCD_dig.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_Debouncer.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Game_Control.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Game_Top_Level.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Menu_Control.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_PRNG_Delay.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_PWM_DAC.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Sound_Control.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_clock_divider.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_digit_multiplexor.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_display_top_level.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_main_logic.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_mode_multiplexor.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_seven_segment_decoder.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_seven_segment_digit_selector.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_stopwatch_top_level.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_AVG_Control.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_BCD_to_Binary.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Binary_to_BCD.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Binary_to_BCD_dig.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_Debouncer.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Game_Control.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Game_Top_Level.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Menu_Control.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_PRNG_Delay.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_PWM_DAC.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Sound_Control.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_clock_divider.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_digit_multiplexor.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_display_top_level.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_main_logic.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_mode_multiplexor.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_seven_segment_decoder.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_seven_segment_digit_selector.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_stopwatch_top_level.vhd}
+export_ip_user_files -of_objects  [get_files C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Growing_Rectangle.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/sync_signal_generator.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/up_down_counter.vhd] -no_script -reset -force -quiet
+remove_files  {C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Growing_Rectangle.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/sync_signal_generator.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/up_down_counter.vhd}
+export_ip_user_files -of_objects  [get_files C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/clock_divider.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Binary_to_BCD.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/PRNG_Delay.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/BCD_to_Binary.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/PWM_DAC.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/digit_multiplexor.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/seven_segment_decoder.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/seven_segment_digit_selector.vhd] -no_script -reset -force -quiet
+remove_files  {C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/clock_divider.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Binary_to_BCD.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/PRNG_Delay.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/BCD_to_Binary.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/PWM_DAC.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/digit_multiplexor.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/seven_segment_decoder.vhd C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/seven_segment_digit_selector.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Binary_to_BCD_dig.vhd] -no_script -reset -force -quiet
+remove_files  C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Binary_to_BCD_dig.vhd
