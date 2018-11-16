@@ -17,7 +17,7 @@ entity Player1_Display is
         scan_line_x: in STD_LOGIC_VECTOR(10 downto 0);
         scan_line_y: in STD_LOGIC_VECTOR(10 downto 0);
         rectangle_color: in STD_LOGIC_VECTOR(11 downto 0);
-        --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+        rectangle_height: in STD_LOGIC_VECTOR(9 downto 0);
         kHz: in STD_LOGIC;
         red: out STD_LOGIC_VECTOR(3 downto 0);
         blue: out STD_LOGIC_VECTOR(3 downto 0);
