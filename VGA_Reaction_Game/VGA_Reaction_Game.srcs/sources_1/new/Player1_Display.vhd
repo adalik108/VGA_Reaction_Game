@@ -73,6 +73,7 @@ signal i_red4, i_green4, i_blue4: std_logic_vector(3 downto 0);
 
 constant long: integer:= 10;
 constant space: integer:= long + 5;
+constant white: std_logic_vector(11 downto 0):= "111111111111";
 
 begin
 
@@ -113,8 +114,20 @@ Number: Num1
                   green           => i_green2
         );
 
-red   <= i_red1 and i_red2;
-green <= i_green1 and i_green2;
-blue  <= i_blue1 and i_blue2;
+process(clk, scan_line_x, scan_line_y)
+begin
+    if(rising_edge(clk)) then
+        if((scan_line_x >= p1_x_offset) and (scan_line_y >= p1_y_offset)) then
+            red   <= i_red1 and i_red2;
+            green <= i_green1 and i_green2;
+            blue  <= i_blue1 and i_blue2;
+            
+        else    
+            red   <= white(11 downto 8);
+            green <= white(7 downto 4);
+            blue  <= white(3 downto 0);
+        end if;
+    end if;
+end process;
 
 end Behavioral;
