@@ -117,8 +117,9 @@ Port (     clk : in  STD_LOGIC;
     reset : in  STD_LOGIC;
     scan_line_x: in STD_LOGIC_VECTOR(10 downto 0);
     scan_line_y: in STD_LOGIC_VECTOR(10 downto 0);
+    char_colour: in std_logic_vector(11 downto 0);
     rectangle_color: in STD_LOGIC_VECTOR(11 downto 0);
-    --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+    rectangle_height: in STD_LOGIC_VECTOR(9 downto 0);
     kHz: in STD_LOGIC;
     red: out STD_LOGIC_VECTOR(3 downto 0);
     blue: out STD_LOGIC_VECTOR(3 downto 0);
@@ -156,7 +157,7 @@ signal rectangle_green: std_logic_vector(3 downto 0);
 signal rectangle_blue: std_logic_vector(3 downto 0);
 
 -- Letter signals:
-signal letter_color: std_logic_vector(11 downto 0);
+signal letter_color: std_logic_vector(11 downto 0) := (others => '0');
 signal letter_red: std_logic_vector(3 downto 0);
 signal letter_green: std_logic_vector(3 downto 0);
 signal letter_blue: std_logic_vector(3 downto 0);
@@ -238,8 +239,9 @@ Player: Player1_Display
                   reset           => reset,
                   scan_line_x     => scan_line_x,
                   scan_line_y     => scan_line_y,
-                  rectangle_color => letter_color,
-                  --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+                  char_colour       => letter_color,
+                  rectangle_color => rectangle_color,
+                  rectangle_height => rectangle_size,
                   kHz             => i_kHz,
                   red             => letter_red,
                   blue            => letter_blue,
