@@ -9,7 +9,7 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity Player1_Display is
     Generic ( 	--p1_height: integer:= 10;
-                p1_width: integer:= 100;
+                p1_width: integer:= 120;
                 p1_x_offset: integer:= 50;
                 p1_y_offset: integer:= 50);
                 
@@ -101,7 +101,7 @@ signal i_red4, i_green4, i_blue4: std_logic_vector(3 downto 0);
 constant long: integer:= 10;
 constant narrow: integer:= 5;
 constant space: integer:= long + 5;
-constant half_width: integer:= 60;
+constant half_width: integer:= 50;
 constant white: std_logic_vector(11 downto 0):= "111111111111";
 
 begin
