@@ -76,7 +76,7 @@ signal i_red5, i_green5, i_blue5: std_logic_vector(3 downto 0);
 signal i_red6, i_green6, i_blue6: std_logic_vector(3 downto 0);
 
 constant head_height: integer:= 1;
-constant head_width: integer:= -1;
+constant head_width: integer:= 1;
 constant long: integer:= 10;
 constant half_length: integer:= 5;
 constant narrow: integer:= 2;

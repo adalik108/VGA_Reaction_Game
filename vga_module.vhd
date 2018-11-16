@@ -231,7 +231,7 @@ Rectangle: Growing_Rectangle
 Player: Player1_Display
       Generic Map(     
                   p1_x_offset  => 300,
-                  p1_y_offset  => 200
+                  p1_y_offset  => 400
                   )
       Port Map(     
                   clk             => clk,
