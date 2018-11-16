@@ -165,9 +165,9 @@ Right: Rectangle
 Middle: Rectangle
       Generic Map(     
                   rectangle_height    => narrow,
-                  rectangle_width     => long,
+                  rectangle_width     => long + narrow,
                   x_offset            => px_offset,
-                  y_offset            => py_offset + long
+                  y_offset            => py_offset + long - narrow
                   )
       Port Map(     
                   clk             => clk,

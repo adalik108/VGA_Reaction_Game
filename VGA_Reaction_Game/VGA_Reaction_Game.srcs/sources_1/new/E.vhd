@@ -147,7 +147,7 @@ Middle: Rectangle
                   rectangle_height    => narrow,
                   rectangle_width     => long,
                   x_offset            => px_offset,
-                  y_offset            => py_offset + long
+                  y_offset            => py_offset + long - narrow
                   )
       Port Map(     
                   clk             => clk,
@@ -167,7 +167,7 @@ Bottom: Rectangle
                   rectangle_height    => narrow,
                   rectangle_width     => long,
                   x_offset            => px_offset,
-                  y_offset            => py_offset + long + long
+                  y_offset            => py_offset + long + long - narrow
                   )
       Port Map(     
                   clk             => clk,

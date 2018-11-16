@@ -148,7 +148,7 @@ Right: Rectangle
 Middle: Rectangle
       Generic Map(     
                   rectangle_height    => narrow,
-                  rectangle_width     => long,
+                  rectangle_width     => long + narrow,
                   x_offset            => px_offset,
                   y_offset            => py_offset + long
                   )
@@ -169,8 +169,8 @@ Tail_1: Rectangle
       Generic Map(     
                   rectangle_height    => tail_height,
                   rectangle_width     => tail_width,
-                  x_offset            => px_offset + half_length,
-                  y_offset            => py_offset + long
+                  x_offset            => px_offset + half_length + tail_width,
+                  y_offset            => py_offset + long + tail_height
                   )
       Port Map(     
                   clk             => clk,
@@ -189,8 +189,8 @@ Tail_2: Diagonal4
             Generic Map(     
                         d4_height    => tail_height,
                         d4_width     => tail_width,
-                        d4_x_offset  => px_offset + half_length + tail_width,
-                        d4_y_offset  => py_offset + long + tail_height
+                        d4_x_offset  => px_offset + half_length + tail_width + tail_width,
+                        d4_y_offset  => py_offset + long + tail_height + tail_height
                         )
             Port Map(     
                         clk             => clk,
