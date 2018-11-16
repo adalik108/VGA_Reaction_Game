@@ -1,0 +1,482 @@
+
+*** Running vivado
+    with args -log vga_module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_module.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source vga_module.tcl -notrace
+Command: synth_design -top vga_module -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 25672 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 296.852 ; gain = 75.828
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'vga_module' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:44]
+INFO: [Synth 8-3491] module 'sync_signals_generator' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/sync_signal_generator.vhd:7' bound to instance 'VGA_SYNC' of component 'sync_signals_generator' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'sync_signals_generator' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/sync_signal_generator.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'sync_signals_generator' (1#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/sync_signal_generator.vhd:18]
+	Parameter WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'up_down_counter' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/up_down_counter.vhd:6' bound to instance 'CHANGE_Rectangle_Height' of component 'up_down_counter' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:182]
+INFO: [Synth 8-638] synthesizing module 'up_down_counter' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/up_down_counter.vhd:18]
+	Parameter WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'up_down_counter' (2#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/up_down_counter.vhd:18]
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/clock_divider.vhd:4' bound to instance 'DIVIDER' of component 'clock_divider' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/clock_divider.vhd:20]
+	Parameter period bound to: 3 - type: integer 
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'downcounter' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/downcounter.vhd:6' bound to instance 'megaHzClock_25MHz' of component 'downcounter' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/clock_divider.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'downcounter' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/downcounter.vhd:16]
+	Parameter period bound to: 3 - type: integer 
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'downcounter' (3#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/downcounter.vhd:16]
+	Parameter period bound to: 99999 - type: integer 
+	Parameter WIDTH bound to: 17 - type: integer 
+INFO: [Synth 8-3491] module 'downcounter' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/downcounter.vhd:6' bound to instance 'kiloHzClock' of component 'downcounter' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/clock_divider.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'downcounter__parameterized1' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/downcounter.vhd:16]
+	Parameter period bound to: 99999 - type: integer 
+	Parameter WIDTH bound to: 17 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'downcounter__parameterized1' (3#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/downcounter.vhd:16]
+	Parameter period bound to: 9 - type: integer 
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'downcounter' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/downcounter.vhd:6' bound to instance 'hundredHzClock' of component 'downcounter' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/clock_divider.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'downcounter__parameterized3' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/downcounter.vhd:16]
+	Parameter period bound to: 9 - type: integer 
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'downcounter__parameterized3' (3#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/downcounter.vhd:16]
+	Parameter period bound to: 9 - type: integer 
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'downcounter' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/downcounter.vhd:6' bound to instance 'tenHzClock' of component 'downcounter' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/clock_divider.vhd:89]
+	Parameter period bound to: 9 - type: integer 
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'downcounter' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/downcounter.vhd:6' bound to instance 'oneHzClock' of component 'downcounter' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/clock_divider.vhd:102]
+	Parameter period bound to: 9 - type: integer 
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'downcounter' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/downcounter.vhd:6' bound to instance 'singleSecondsClock' of component 'downcounter' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/clock_divider.vhd:115]
+	Parameter period bound to: 5 - type: integer 
+	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'downcounter' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/downcounter.vhd:6' bound to instance 'tensSecondsClock' of component 'downcounter' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/clock_divider.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'downcounter__parameterized5' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/downcounter.vhd:16]
+	Parameter period bound to: 5 - type: integer 
+	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'downcounter__parameterized5' (3#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/downcounter.vhd:16]
+	Parameter period bound to: 9 - type: integer 
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'downcounter' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/downcounter.vhd:6' bound to instance 'singleMinutesClock' of component 'downcounter' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/clock_divider.vhd:141]
+	Parameter period bound to: 5 - type: integer 
+	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'downcounter' declared at 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/downcounter.vhd:6' bound to instance 'tensMinutesClock' of component 'downcounter' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/clock_divider.vhd:154]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (4#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/clock_divider.vhd:20]
+	Parameter box_width bound to: 10 - type: integer 
+	Parameter x_offset bound to: 50 - type: integer 
+INFO: [Synth 8-637] synthesizing blackbox instance 'Rectangle' of component 'Growing_Rectangle' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:217]
+	Parameter p1_x_offset bound to: 300 - type: integer 
+	Parameter p1_y_offset bound to: 200 - type: integer 
+INFO: [Synth 8-637] synthesizing blackbox instance 'Player' of component 'Player1_Display' [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:231]
+WARNING: [Synth 8-3848] Net letter_color in module/entity vga_module does not have driver. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:159]
+INFO: [Synth 8-256] done synthesizing module 'vga_module' (5#1) [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_module.vhd:44]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 335.926 ; gain = 114.902
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 335.926 ; gain = 114.902
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc]
+WARNING: [Vivado 12-584] No ports matched 'switches[0]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'switches[0]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'switches[1]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'switches[1]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'switches[2]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'switches[2]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'switches[3]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'switches[3]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'switches[4]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'switches[4]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'switches[5]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'switches[5]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'switches[6]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'switches[6]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'switches[7]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'switches[7]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'switches[8]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'switches[8]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'switches[9]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'switches[9]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'switches[10]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'switches[10]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'switches[11]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'switches[11]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'switches[12]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'switches[12]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'switches[13]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'switches[13]'. [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc:39]
+Finished Parsing XDC File [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/vga_module_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/Basys3_VGA_reference.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vga_module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vga_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 636.883 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 636.883 ; gain = 415.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 636.883 ; gain = 415.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 636.883 ; gain = 415.859
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element current_hor_pos_reg was removed.  [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/sync_signal_generator.vhd:43]
+WARNING: [Synth 8-6014] Unused sequential element current_ver_pos_reg was removed.  [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/sync_signal_generator.vhd:44]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/up_down_counter.vhd:32]
+WARNING: [Synth 8-6014] Unused sequential element current_val_reg was removed.  [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/up_down_counter.vhd:30]
+WARNING: [Synth 8-6014] Unused sequential element current_count_reg was removed.  [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/downcounter.vhd:30]
+WARNING: [Synth 8-6014] Unused sequential element current_count_reg was removed.  [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/downcounter.vhd:30]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 636.883 ; gain = 415.859
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 4     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 5     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 8     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vga_module 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module sync_signals_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 4     
++---Registers : 
+	               11 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 4     
+Module up_down_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module downcounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module downcounter__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module downcounter__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module downcounter__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element kiloHzClock/current_count_reg was removed.  [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/downcounter.vhd:30]
+WARNING: [Synth 8-6014] Unused sequential element DIVIDER/tensMinutesClock/i_zero_reg was removed.  [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/downcounter.vhd:31]
+WARNING: [Synth 8-6014] Unused sequential element VGA_SYNC/current_hor_pos_reg was removed.  [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/sync_signal_generator.vhd:43]
+WARNING: [Synth 8-6014] Unused sequential element VGA_SYNC/current_ver_pos_reg was removed.  [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/sync_signal_generator.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element CHANGE_Rectangle_Height/current_val_reg was removed.  [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/up_down_counter.vhd:30]
+WARNING: [Synth 8-6014] Unused sequential element DIVIDER/hundredHzClock/current_count_reg was removed.  [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/downcounter.vhd:30]
+WARNING: [Synth 8-6014] Unused sequential element DIVIDER/tenHzClock/current_count_reg was removed.  [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/downcounter.vhd:30]
+WARNING: [Synth 8-6014] Unused sequential element DIVIDER/oneHzClock/current_count_reg was removed.  [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/downcounter.vhd:30]
+WARNING: [Synth 8-6014] Unused sequential element DIVIDER/singleSecondsClock/current_count_reg was removed.  [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/downcounter.vhd:30]
+WARNING: [Synth 8-6014] Unused sequential element DIVIDER/singleMinutesClock/current_count_reg was removed.  [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/downcounter.vhd:30]
+WARNING: [Synth 8-6014] Unused sequential element DIVIDER/kiloHzClock/current_count_reg was removed.  [C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/downcounter.vhd:30]
+WARNING: [Synth 8-3332] Sequential element (DIVIDER/tenHzClock/current_count_reg[3]) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (DIVIDER/tenHzClock/current_count_reg[2]) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (DIVIDER/tenHzClock/current_count_reg[1]) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (DIVIDER/tenHzClock/current_count_reg[0]) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (DIVIDER/tenHzClock/i_zero_reg) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (DIVIDER/oneHzClock/current_count_reg[3]) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (DIVIDER/oneHzClock/current_count_reg[2]) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (DIVIDER/oneHzClock/current_count_reg[1]) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (DIVIDER/oneHzClock/current_count_reg[0]) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (DIVIDER/oneHzClock/i_zero_reg) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (DIVIDER/singleSecondsClock/current_count_reg[3]) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (DIVIDER/singleSecondsClock/current_count_reg[2]) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (DIVIDER/singleSecondsClock/current_count_reg[1]) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (DIVIDER/singleSecondsClock/current_count_reg[0]) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (DIVIDER/singleSecondsClock/i_zero_reg) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (DIVIDER/tensSecondsClock/current_count_reg[2]) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (DIVIDER/tensSecondsClock/current_count_reg[1]) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (DIVIDER/tensSecondsClock/current_count_reg[0]) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (DIVIDER/tensSecondsClock/i_zero_reg) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (DIVIDER/singleMinutesClock/current_count_reg[3]) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (DIVIDER/singleMinutesClock/current_count_reg[2]) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (DIVIDER/singleMinutesClock/current_count_reg[1]) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (DIVIDER/singleMinutesClock/current_count_reg[0]) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (DIVIDER/singleMinutesClock/i_zero_reg) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (DIVIDER/tensMinutesClock/current_count_reg[2]) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (DIVIDER/tensMinutesClock/current_count_reg[1]) is unused and will be removed from module vga_module.
+WARNING: [Synth 8-3332] Sequential element (DIVIDER/tensMinutesClock/current_count_reg[0]) is unused and will be removed from module vga_module.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 636.883 ; gain = 415.859
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 636.883 ; gain = 415.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 636.883 ; gain = 415.859
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 636.883 ; gain = 415.859
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Player has unconnected pin rectangle_color[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Player has unconnected pin rectangle_color[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Player has unconnected pin rectangle_color[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Player has unconnected pin rectangle_color[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Player has unconnected pin rectangle_color[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Player has unconnected pin rectangle_color[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Player has unconnected pin rectangle_color[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Player has unconnected pin rectangle_color[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Player has unconnected pin rectangle_color[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Player has unconnected pin rectangle_color[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Player has unconnected pin rectangle_color[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Player has unconnected pin rectangle_color[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 636.883 ; gain = 415.859
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 636.883 ; gain = 415.859
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 636.883 ; gain = 415.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 636.883 ; gain = 415.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 636.883 ; gain = 415.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 636.883 ; gain = 415.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------+----------+
+|      |BlackBox name     |Instances |
++------+------------------+----------+
+|1     |Growing_Rectangle |         1|
+|2     |Player1_Display   |         1|
++------+------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------+------+
+|      |Cell                   |Count |
++------+-----------------------+------+
+|1     |Growing_Rectangle_bbox |     1|
+|2     |Player1_Display_bbox   |     1|
+|3     |BUFG                   |     1|
+|4     |CARRY4                 |    11|
+|5     |LUT1                   |    10|
+|6     |LUT2                   |    53|
+|7     |LUT3                   |     8|
+|8     |LUT4                   |    13|
+|9     |LUT5                   |    13|
+|10    |LUT6                   |    46|
+|11    |FDCE                   |    43|
+|12    |FDPE                   |    14|
+|13    |IBUF                   |     4|
+|14    |OBUF                   |    14|
++------+-----------------------+------+
+
+Report Instance Areas: 
++------+--------------------------+----------------------------+------+
+|      |Instance                  |Module                      |Cells |
++------+--------------------------+----------------------------+------+
+|1     |top                       |                            |   254|
+|2     |  CHANGE_Rectangle_Height |up_down_counter             |    21|
+|3     |  DIVIDER                 |clock_divider               |    70|
+|4     |    hundredHzClock        |downcounter__parameterized3 |    11|
+|5     |    kiloHzClock           |downcounter__parameterized1 |    53|
+|6     |    megaHzClock_25MHz     |downcounter                 |     6|
+|7     |  VGA_SYNC                |sync_signals_generator      |   120|
++------+--------------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 636.883 ; gain = 415.859
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 12 critical warnings and 43 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 636.883 ; gain = 114.902
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 636.883 ; gain = 415.859
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+42 Infos, 73 Warnings, 12 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 636.883 ; gain = 416.895
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Owner/Documents/Aaron/Aarons_School_Work/ENGG_Year_3/ENEL_453/Lab5/VGA_Reaction_Game/vga_test.runs/synth_1/vga_module.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 636.883 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 15 15:55:01 2018...
