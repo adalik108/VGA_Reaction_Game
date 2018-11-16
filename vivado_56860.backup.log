@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Nov 15 18:12:33 2018
+# Process ID: 56860
+# Current directory: C:/Vivado_Git/VGA_Reaction_Game
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent58412 C:\Vivado_Git\VGA_Reaction_Game\Lab_5.xpr
+# Log file: C:/Vivado_Git/VGA_Reaction_Game/vivado.log
+# Journal file: C:/Vivado_Git/VGA_Reaction_Game\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Vivado_Git/VGA_Reaction_Game/Lab_5.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Vivado_Projects/Lab_5' since last save.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/AVG_Control.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/AVG_Control.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/BCD_to_Binary.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/BCD_to_Binary.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Binary_to_BCD.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Binary_to_BCD.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Binary_to_BCD_dig.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Binary_to_BCD_dig.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Game_Control.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Game_Control.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Menu_Control.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Menu_Control.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/PRNG_Delay.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/PRNG_Delay.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.ip_user_files/PWM_DAC.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/PWM_DAC.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Sound_Control.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Sound_Control.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.ip_user_files/digit_multiplexor.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/digit_multiplexor.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/display_top_level.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/display_top_level.vhd' instead.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Taha Hamdy/Documents/GitHub/VGA_Reaction_Game/downcounter.vhd'.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/main_logic.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/main_logic.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/mode_multiplexor.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/mode_multiplexor.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.ip_user_files/seven_segment_decoder.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/seven_segment_decoder.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.ip_user_files/seven_segment_digit_selector.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/seven_segment_digit_selector.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.ip_user_files/upcounter.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/upcounter.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Game_Top_Level.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sources_1/new/Game_Top_Level.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.ip_user_files/Debouncer.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/Debouncer.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_AVG_Control.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_AVG_Control.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Binary_to_BCD.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Binary_to_BCD.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_stopwatch_top_level.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_stopwatch_top_level.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Game_Control.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Game_Control.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Menu_Control.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Menu_Control.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_seven_segment_decoder.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_seven_segment_decoder.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_PWM_DAC.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_PWM_DAC.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_main_logic.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_main_logic.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_Debouncer.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_Debouncer.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_seven_segment_digit_selector.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_seven_segment_digit_selector.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_mode_multiplexor.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_mode_multiplexor.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Binary_to_BCD_dig.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Binary_to_BCD_dig.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_PRNG_Delay.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_PRNG_Delay.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_display_top_level.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_display_top_level.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_BCD_to_Binary.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_BCD_to_Binary.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Sound_Control.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Sound_Control.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_digit_multiplexor.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_digit_multiplexor.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Game_Top_Level.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.srcs/sim_1/new/tb_Game_Top_Level.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Vivado_Git/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_clock_divider.vhd'; using path 'C:/Vivado_Projects/Lab_4_V4/Lab_4/Lab_4.ip_user_files/tb_clock_divider.vhd' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 15 18:13:04 2018...
