@@ -2,27 +2,46 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Thu Nov 15 18:30:45 2018
-# Process ID: 59556
-# Current directory: C:/Vivado_Git/VGA_Reaction_Game
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent62608 C:\Vivado_Git\VGA_Reaction_Game\Lab_5.xpr
-# Log file: C:/Vivado_Git/VGA_Reaction_Game/vivado.log
-# Journal file: C:/Vivado_Git/VGA_Reaction_Game\vivado.jou
+# Start of session at: Fri Nov 30 14:10:21 2018
+# Process ID: 288092
+# Current directory: C:/Users/Taha Hamdy/Desktop/Aux Work/Bluetooth/VGA_Reaction_Game-Lab_5/VGA_Reaction_Game-Lab_5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent290308 C:\Users\Taha Hamdy\Desktop\Aux Work\Bluetooth\VGA_Reaction_Game-Lab_5\VGA_Reaction_Game-Lab_5\Lab_5.xpr
+# Log file: C:/Users/Taha Hamdy/Desktop/Aux Work/Bluetooth/VGA_Reaction_Game-Lab_5/VGA_Reaction_Game-Lab_5/vivado.log
+# Journal file: C:/Users/Taha Hamdy/Desktop/Aux Work/Bluetooth/VGA_Reaction_Game-Lab_5/VGA_Reaction_Game-Lab_5\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Vivado_Git/VGA_Reaction_Game/Lab_5.xpr
+open_project {C:/Users/Taha Hamdy/Desktop/Aux Work/Bluetooth/VGA_Reaction_Game-Lab_5/VGA_Reaction_Game-Lab_5/Lab_5.xpr}
 update_compile_order -fileset sources_1
-export_ip_user_files -of_objects  [get_files C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/downcounter.vhd] -no_script -reset -force -quiet
-export_ip_user_files -of_objects  [get_files C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/upcounter.vhd] -no_script -reset -force -quiet
-remove_files  {C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/downcounter.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/upcounter.vhd}
-add_files -norecurse {C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/Binary_to_BCD_dig.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/PRNG_Delay.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/main_logic.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/stopwatch_top_level.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/Game_Top_Level.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/AVG_Control.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/PWM_DAC.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/clock_divider.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/mode_multiplexor.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/seven_segment_decoder.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/Sound_Control.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/BCD_to_Binary.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/Menu_Control.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/Debouncer.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/display_top_level.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/Binary_to_BCD.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/upcounter.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/digit_multiplexor.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/Game_Control.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/seven_segment_digit_selector.vhd}
-update_compile_order -fileset sources_1
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-add_files -fileset sim_1 -norecurse {C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_Game_Top_Level.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_AVG_Control.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_PWM_DAC.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_Menu_Control.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_Game_Control.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_Sound_Control.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_seven_segment_decoder.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_BCD_to_Binary.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_main_logic.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_mode_multiplexor.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_PRNG_Delay.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_Debouncer.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_Binary_to_BCD_dig.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_display_top_level.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_seven_segment_digit_selector.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_clock_divider.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_Binary_to_BCD.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_digit_multiplexor.vhd C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/simnew/tb_stopwatch_top_level.vhd}
-update_compile_order -fileset sources_1
-update_compile_order -fileset sim_1
-export_ip_user_files -of_objects  [get_files C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/stopwatch_top_level.vhd] -no_script -reset -force -quiet
-remove_files  C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/stopwatch_top_level.vhd
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sim_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Taha Hamdy/Desktop/Aux Work/Bluetooth/VGA_Reaction_Game-Lab_5/VGA_Reaction_Game-Lab_5/Lab_5.runs/impl_1/Game_Top_Level.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Taha Hamdy/Desktop/Aux Work/Bluetooth/VGA_Reaction_Game-Lab_5/VGA_Reaction_Game-Lab_5/Lab_5.runs/impl_1/Game_Top_Level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Taha Hamdy/Desktop/Aux Work/Bluetooth/VGA_Reaction_Game-Lab_5/VGA_Reaction_Game-Lab_5/Lab_5.runs/impl_1/Game_Top_Level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Taha Hamdy/Desktop/Aux Work/Bluetooth/VGA_Reaction_Game-Lab_5/VGA_Reaction_Game-Lab_5/Lab_5.runs/impl_1/Game_Top_Level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Taha Hamdy/Desktop/Aux Work/Bluetooth/VGA_Reaction_Game-Lab_5/VGA_Reaction_Game-Lab_5/Lab_5.runs/impl_1/Game_Top_Level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

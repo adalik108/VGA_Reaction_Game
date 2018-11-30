@@ -48,7 +48,8 @@ entity main_logic is
            button_4_score: out STD_LOGIC_VECTOR(3 downto 0);           
            delayed_enable: out STD_LOGIC;
            menu_enable : out STD_LOGIC;
-           display_cntrl: out STD_LOGIC_VECTOR(1 downto 0));
+           display_cntrl: out STD_LOGIC_VECTOR(1 downto 0);
+           reset_scores_out: out STD_LOGIC);
 end main_logic;
 
 architecture Behavioral of main_logic is
@@ -382,6 +383,7 @@ end process;
 -- Connecting internal signals to outputss
 round_winner<=button_4_enable & button_3_enable & button_2_enable & button_1_enable;
 winner_select<= button_4_win & button_3_win & button_2_win & button_1_win;
+reset_scores_out<=reset_scores;
 button_1_score<=button_1_score_i;
 button_2_score<=button_2_score_i;
 button_3_score<=button_3_score_i;

@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Nov 23 15:15:50 2018
+# Process ID: 16636
+# Current directory: C:/Users/taha.ghazaly/Downloads/VGA_Reaction_Game-Lab_5/VGA_Reaction_Game-Lab_5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14944 C:\Users\taha.ghazaly\Downloads\VGA_Reaction_Game-Lab_5\VGA_Reaction_Game-Lab_5\Lab_5.xpr
+# Log file: C:/Users/taha.ghazaly/Downloads/VGA_Reaction_Game-Lab_5/VGA_Reaction_Game-Lab_5/vivado.log
+# Journal file: C:/Users/taha.ghazaly/Downloads/VGA_Reaction_Game-Lab_5/VGA_Reaction_Game-Lab_5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/taha.ghazaly/Downloads/VGA_Reaction_Game-Lab_5/VGA_Reaction_Game-Lab_5/Lab_5.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 893.637 ; gain = 166.121
+update_compile_order -fileset sources_1
+close [ open C:/Users/taha.ghazaly/Downloads/VGA_Reaction_Game-Lab_5/VGA_Reaction_Game-Lab_5/Lab_5.srcs/sources_1/new/VGA_Display_Combiner.vhd w ]
+add_files C:/Users/taha.ghazaly/Downloads/VGA_Reaction_Game-Lab_5/VGA_Reaction_Game-Lab_5/Lab_5.srcs/sources_1/new/VGA_Display_Combiner.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 23 16:03:33 2018...
