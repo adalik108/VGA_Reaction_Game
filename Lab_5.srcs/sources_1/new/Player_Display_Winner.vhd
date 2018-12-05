@@ -110,6 +110,23 @@ component Growing_Rectangle is
       );
 end component;
 
+component Wins is
+    Generic ( 	
+        x_offset: integer:= 50;
+        y_offset: integer:= 50);
+    Port (     clk : in  STD_LOGIC;
+        reset : in  STD_LOGIC;
+        scan_line_x: in STD_LOGIC_VECTOR(10 downto 0);
+        scan_line_y: in STD_LOGIC_VECTOR(10 downto 0);
+        rectangle_color: in STD_LOGIC_VECTOR(11 downto 0);
+        --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+        kHz: in STD_LOGIC;
+        red: out STD_LOGIC_VECTOR(3 downto 0);
+        blue: out STD_LOGIC_VECTOR(3 downto 0);
+        green: out std_logic_vector(3 downto 0)
+    );
+end component;
+
 signal rectangle_red: std_logic_vector(3 downto 0);
 signal rectangle_green: std_logic_vector(3 downto 0);
 signal rectangle_blue: std_logic_vector(3 downto 0);
@@ -190,22 +207,28 @@ Rectangle: Growing_Rectangle
                    blue        => rectangle_blue,
                    green       => rectangle_green
                );
+               
+Word_Wins: Wins
+       Generic Map( x_offset  => p1_x_offset + space + space + space + space + space + space + space + space + space,
+                  y_offset  => p1_y_offset
+                  )
+       Port Map(clk, reset, scan_line_x, scan_line_y, char_colour, kHz, i_red3, i_blue3, i_green3);
 
 process(clk, scan_line_x, scan_line_y)
 begin
     if(rising_edge(clk)) then
         if((scan_line_x >= p1_x_offset) and (scan_line_x < p1_x_offset + p1_width) and (scan_line_y >= p1_y_offset - narrow - rectangle_height)) then   -- Could be what causes overflow the -rectangle_height
-            char_red   <= i_red1 and i_red2;
-            char_green <= i_green1 and i_green2;
-            char_blue  <= i_blue1 and i_blue2;
+            char_red   <= i_red1 and i_red2 and i_red3;
+            char_green <= i_green1 and i_green2 and i_green3;
+            char_blue  <= i_blue1 and i_blue2 and i_blue3;
             if(scan_line_y >= p1_y_offset) then
                 red   <= char_red;
                 green <= char_green;
                 blue  <= char_blue;
             else
-                red <= rectangle_red;
-                blue <= rectangle_blue;
-                green <= rectangle_green;
+                red <= (others => '1');
+                blue <= (others => '1');
+                green <= (others => '1');
             end if; 
         else    
             red   <= white(11 downto 8);

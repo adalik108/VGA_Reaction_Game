@@ -188,6 +188,20 @@ component Player_Display_Winner is
      green: out std_logic_vector(3 downto 0)
    );
 end component;
+
+component VGA_Border is
+    Port (     clk : in  STD_LOGIC;
+        reset : in  STD_LOGIC;
+        scan_line_x: in STD_LOGIC_VECTOR(10 downto 0);
+        scan_line_y: in STD_LOGIC_VECTOR(10 downto 0);
+        border_colour: in STD_LOGIC_VECTOR(11 downto 0);
+        --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+        kHz: in STD_LOGIC;
+        red: out STD_LOGIC_VECTOR(3 downto 0);
+        blue: out STD_LOGIC_VECTOR(3 downto 0);
+        green: out std_logic_vector(3 downto 0)
+      );
+end component;
 -- END ADDED
 
 -- Signals:
@@ -251,9 +265,14 @@ signal player1_rectangle_color: std_logic_vector(11 downto 0):= (11 downto 8 => 
 signal player2_rectangle_color: std_logic_vector(11 downto 0):= (7 downto 4 => '1', others => '0');
 signal player3_rectangle_color: std_logic_vector(11 downto 0):= (3 downto 0 => '1', others => '0');
 signal player4_rectangle_color: std_logic_vector(11 downto 0):= (11 downto 6 => '1', others => '0');
+signal border_color: std_logic_vector(11 downto 0):= (11 downto 4 => '0', others => '1');
 signal rectangle_red: std_logic_vector(3 downto 0);
 signal rectangle_green: std_logic_vector(3 downto 0);
 signal rectangle_blue: std_logic_vector(3 downto 0);
+
+signal border_red: std_logic_vector(3 downto 0);
+signal border_green: std_logic_vector(3 downto 0);
+signal border_blue: std_logic_vector(3 downto 0);
 
 -- Letter signals:
 signal letter_color: std_logic_vector(11 downto 0) := (others => '0');
@@ -489,6 +508,9 @@ PlayerWinner: Player_Display_Winner
                   blue            => player_winner_disp_blue,
                   green           => player_winner_disp_green
         );
+        
+Border: VGA_Border
+    Port Map(clk, reset, scan_line_x, scan_line_y, border_color, i_kHz, border_red, border_blue, border_green);
 
 show_stripe <= not vga_blank;
 
@@ -510,9 +532,9 @@ if(enable='1') then
         disp_green<=player1_disp_green and player2_disp_green and player3_disp_green and player4_disp_green and time_disp_green;
     end if;
 else    -- Plug in menu Art here when ready 
-disp_red<=time_disp_red;
-disp_blue<=time_disp_blue;
-disp_green<=time_disp_green;
+disp_red<=time_disp_red and border_red;
+disp_blue<=time_disp_blue and border_blue;
+disp_green<=time_disp_green and border_green;
 end if;
 end process;
 

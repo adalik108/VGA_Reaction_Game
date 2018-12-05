@@ -1,0 +1,313 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity N is
+    Generic ( 	
+        px_offset: integer:= 50;
+        py_offset: integer:= 50);
+    Port (     clk : in  STD_LOGIC;
+        reset : in  STD_LOGIC;
+        scan_line_x: in STD_LOGIC_VECTOR(10 downto 0);
+        scan_line_y: in STD_LOGIC_VECTOR(10 downto 0);
+        rectangle_color: in STD_LOGIC_VECTOR(11 downto 0);
+        --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+        kHz: in STD_LOGIC;
+        red: out STD_LOGIC_VECTOR(3 downto 0);
+        blue: out STD_LOGIC_VECTOR(3 downto 0);
+        green: out std_logic_vector(3 downto 0)
+    );
+end N;
+
+architecture Behavioral of N is
+
+component Diagonal4 is
+    Generic ( 	d4_height: integer:= 10;
+        d4_width: integer:= 10;
+        d4_x_offset: integer:= 50;
+        d4_y_offset: integer:= 50);
+    Port (     clk : in  STD_LOGIC;
+        reset : in  STD_LOGIC;
+        scan_line_x: in STD_LOGIC_VECTOR(10 downto 0);
+        scan_line_y: in STD_LOGIC_VECTOR(10 downto 0);
+        rectangle_color: in STD_LOGIC_VECTOR(11 downto 0);
+        --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+        kHz: in STD_LOGIC;
+        red: out STD_LOGIC_VECTOR(3 downto 0);
+        blue: out STD_LOGIC_VECTOR(3 downto 0);
+        green: out std_logic_vector(3 downto 0)
+);
+end component;
+
+component Rectangle is
+    Generic ( 	rectangle_height: integer:= 10;
+                rectangle_width: integer:= 10;
+                x_offset: integer:= 50;
+                y_offset: integer:= 50);
+    Port ( 	clk : in  STD_LOGIC;
+        reset : in  STD_LOGIC;
+        scan_line_x: in STD_LOGIC_VECTOR(10 downto 0);
+        scan_line_y: in STD_LOGIC_VECTOR(10 downto 0);
+        rectangle_color: in STD_LOGIC_VECTOR(11 downto 0);
+        --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+        kHz: in STD_LOGIC;
+        red: out STD_LOGIC_VECTOR(3 downto 0);
+        blue: out STD_LOGIC_VECTOR(3 downto 0);
+        green: out std_logic_vector(3 downto 0)
+      );
+end component;
+
+component Diagonal2 is
+    Generic ( 	d2_height: integer:= 10;
+        d2_width: integer:= 10;
+        d2_x_offset: integer:= 50;
+        d2_y_offset: integer:= 50);
+    Port (     clk : in  STD_LOGIC;
+        reset : in  STD_LOGIC;
+        scan_line_x: in STD_LOGIC_VECTOR(10 downto 0);
+        scan_line_y: in STD_LOGIC_VECTOR(10 downto 0);
+        rectangle_color: in STD_LOGIC_VECTOR(11 downto 0);
+        --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+        kHz: in STD_LOGIC;
+        red: out STD_LOGIC_VECTOR(3 downto 0);
+        blue: out STD_LOGIC_VECTOR(3 downto 0);
+        green: out std_logic_vector(3 downto 0)
+);
+end component;
+
+signal i_red1, i_green1, i_blue1: std_logic_vector(3 downto 0);
+signal i_red2, i_green2, i_blue2: std_logic_vector(3 downto 0);
+signal i_red3, i_green3, i_blue3: std_logic_vector(3 downto 0);
+signal i_red4, i_green4, i_blue4: std_logic_vector(3 downto 0);
+signal i_red5, i_green5, i_blue5: std_logic_vector(3 downto 0);
+signal i_red6, i_green6, i_blue6: std_logic_vector(3 downto 0);
+signal i_red7, i_green7, i_blue7: std_logic_vector(3 downto 0);
+signal i_red8, i_green8, i_blue8: std_logic_vector(3 downto 0);
+signal i_red9, i_green9, i_blue9: std_logic_vector(3 downto 0);
+signal i_red10, i_green10, i_blue10: std_logic_vector(3 downto 0);
+
+constant angle_height: integer:= 2;
+constant angle_width: integer:= 1;
+constant long: integer:= 10;
+constant half_length: integer:= 5;
+constant narrow: integer:= 2;
+
+
+begin
+
+      
+Full_Left: Rectangle
+      Generic Map(     
+                  rectangle_height    => long + long,
+                  rectangle_width     => narrow,
+                  x_offset            => px_offset,
+                  y_offset            => py_offset
+                  )
+      Port Map(     
+                  clk             => clk,
+                  reset           => reset,
+                  scan_line_x     => scan_line_x,
+                  scan_line_y     => scan_line_y,
+                  rectangle_color => rectangle_color,
+                  --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+                  kHz             => kHz,
+                  red             => i_red1,
+                  blue            => i_blue1,
+                  green           => i_green1
+        );
+
+Full_Right: Rectangle
+  Generic Map(     
+              rectangle_height    => long + long,
+              rectangle_width     => narrow,
+              x_offset            => px_offset + long,
+              y_offset            => py_offset
+              )
+  Port Map(     
+              clk             => clk,
+              reset           => reset,
+              scan_line_x     => scan_line_x,
+              scan_line_y     => scan_line_y,
+              rectangle_color => rectangle_color,
+              --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+              kHz             => kHz,
+              red             => i_red2,
+              blue            => i_blue2,
+              green           => i_green2
+    );
+     
+Angle_1_1: Diagonal4
+            Generic Map(     
+                        d4_height    => angle_height,
+                        d4_width     => angle_width,
+                        d4_x_offset  => px_offset + narrow,
+                        d4_y_offset  => py_offset
+                        )
+            Port Map(     
+                        clk             => clk,
+                        reset           => reset,
+                        scan_line_x     => scan_line_x,
+                        scan_line_y     => scan_line_y,
+                        rectangle_color => rectangle_color,
+                        --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+                        kHz             => kHz,
+                        red             => i_red3,
+                        blue            => i_blue3,
+                        green           => i_green3
+              );
+
+Angle_1_2: Diagonal4
+            Generic Map(     
+                        d4_height    => angle_height,
+                        d4_width     => angle_width,
+                        d4_x_offset  => px_offset + narrow,
+                        d4_y_offset  => py_offset + angle_height
+                        )
+            Port Map(     
+                        clk             => clk,
+                        reset           => reset,
+                        scan_line_x     => scan_line_x,
+                        scan_line_y     => scan_line_y,
+                        rectangle_color => rectangle_color,
+                        --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+                        kHz             => kHz,
+                        red             => i_red7,
+                        blue            => i_blue7,
+                        green           => i_green7
+              );
+              
+Angle_2_1: Diagonal4
+          Generic Map(     
+                      d4_height    => angle_height,
+                      d4_width     => angle_width,
+                      d4_x_offset  => px_offset + narrow + angle_width + angle_width + angle_width,
+                      d4_y_offset  => py_offset + angle_height + angle_height + angle_height
+                      )
+          Port Map(     
+                      clk             => clk,
+                      reset           => reset,
+                      scan_line_x     => scan_line_x,
+                      scan_line_y     => scan_line_y,
+                      rectangle_color => rectangle_color,
+                      --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+                      kHz             => kHz,
+                      red             => i_red4,
+                      blue            => i_blue4,
+                      green           => i_green4
+            );
+            
+Angle_2_2: Diagonal4
+          Generic Map(     
+                      d4_height    => angle_height,
+                      d4_width     => angle_width,
+                      d4_x_offset  => px_offset + narrow + angle_width + angle_width + angle_width,
+                      d4_y_offset  => py_offset + angle_height + angle_height + angle_height + angle_height
+                      )
+          Port Map(     
+                      clk             => clk,
+                      reset           => reset,
+                      scan_line_x     => scan_line_x,
+                      scan_line_y     => scan_line_y,
+                      rectangle_color => rectangle_color,
+                      --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+                      kHz             => kHz,
+                      red             => i_red8,
+                      blue            => i_blue8,
+                      green           => i_green8
+            );
+
+Angle_3_1: Diagonal4
+          Generic Map(     
+                      d4_height    => angle_height,
+                      d4_width     => angle_width,
+                      d4_x_offset  => px_offset + narrow + angle_width + angle_width + angle_width + angle_width + angle_width + angle_width,
+                      d4_y_offset  => py_offset + angle_height + angle_height + angle_height + angle_height + angle_height + angle_height
+                      )
+          Port Map(     
+                      clk             => clk,
+                      reset           => reset,
+                      scan_line_x     => scan_line_x,
+                      scan_line_y     => scan_line_y,
+                      rectangle_color => rectangle_color,
+                      --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+                      kHz             => kHz,
+                      red             => i_red5,
+                      blue            => i_blue5,
+                      green           => i_green5
+            );
+
+Angle_3_2: Diagonal4
+          Generic Map(     
+                      d4_height    => angle_height,
+                      d4_width     => angle_width,
+                      d4_x_offset  => px_offset + narrow + angle_width + angle_width + angle_width + angle_width + angle_width + angle_width,
+                      d4_y_offset  => py_offset + angle_height + angle_height + angle_height + angle_height + angle_height + angle_height + angle_height
+                      )
+          Port Map(     
+                      clk             => clk,
+                      reset           => reset,
+                      scan_line_x     => scan_line_x,
+                      scan_line_y     => scan_line_y,
+                      rectangle_color => rectangle_color,
+                      --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+                      kHz             => kHz,
+                      red             => i_red9,
+                      blue            => i_blue9,
+                      green           => i_green9
+            );
+
+Angle_4_1: Diagonal4
+          Generic Map(     
+                      d4_height    => angle_height,
+                      d4_width     => angle_width,
+                      d4_x_offset  => px_offset + narrow  + angle_width + angle_width + angle_width + angle_width + angle_width + angle_width + angle_width,
+                      d4_y_offset  => py_offset + angle_height + angle_height + angle_height + angle_height + angle_height + angle_height + angle_height
+                      )
+          Port Map(     
+                      clk             => clk,
+                      reset           => reset,
+                      scan_line_x     => scan_line_x,
+                      scan_line_y     => scan_line_y,
+                      rectangle_color => rectangle_color,
+                      --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+                      kHz             => kHz,
+                      red             => i_red6,
+                      blue            => i_blue6,
+                      green           => i_green6
+            );
+
+Angle_4_2: Diagonal4
+          Generic Map(     
+                      d4_height    => angle_height,
+                      d4_width     => angle_width,
+                      d4_x_offset  => px_offset + narrow  + angle_width + angle_width + angle_width + angle_width + angle_width + angle_width,
+                      d4_y_offset  => py_offset + angle_height + angle_height + angle_height + angle_height + angle_height + angle_height + angle_height
+                      )
+          Port Map(     
+                      clk             => clk,
+                      reset           => reset,
+                      scan_line_x     => scan_line_x,
+                      scan_line_y     => scan_line_y,
+                      rectangle_color => rectangle_color,
+                      --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
+                      kHz             => kHz,
+                      red             => i_red10,
+                      blue            => i_blue10,
+                      green           => i_green10
+            );
+        
+red   <= i_red1 and i_red2 and i_red3 and i_red4 and i_red5 and i_red6 and i_red7 and i_red8 and i_red9 and i_red10;
+green <= i_green1 and i_green2 and i_green3 and i_green4 and i_green5 and i_green6 and i_green7 and i_green8 and i_green9 and i_green10;
+blue  <= i_blue1 and i_blue2 and i_blue3 and i_blue4 and i_blue5 and i_blue6 and i_blue7 and i_blue8 and i_blue9 and i_blue10;
+
+end Behavioral;

@@ -66,16 +66,16 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param xicom.use_bs_reader 1
-  create_project -in_memory -part xc7a35ticpg236-1L
+  create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {C:/Users/Taha Hamdy/Desktop/Aux Work/Bluetooth/VGA_Reaction_Game-Lab_5/VGA_Reaction_Game-Lab_5/Lab_5.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/Taha Hamdy/Desktop/Aux Work/Bluetooth/VGA_Reaction_Game-Lab_5/VGA_Reaction_Game-Lab_5/Lab_5.xpr} [current_project]
-  set_property ip_output_repo {{C:/Users/Taha Hamdy/Desktop/Aux Work/Bluetooth/VGA_Reaction_Game-Lab_5/VGA_Reaction_Game-Lab_5/Lab_5.cache/ip}} [current_project]
+  set_property webtalk.parent_dir C:/Vivado_Git/VGA_Reaction_Game/Lab_5.cache/wt [current_project]
+  set_property parent.project_path C:/Vivado_Git/VGA_Reaction_Game/Lab_5.xpr [current_project]
+  set_property ip_output_repo C:/Vivado_Git/VGA_Reaction_Game/Lab_5.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet {{C:/Users/Taha Hamdy/Desktop/Aux Work/Bluetooth/VGA_Reaction_Game-Lab_5/VGA_Reaction_Game-Lab_5/Lab_5.runs/synth_1/Game_Top_Level.dcp}}
-  read_xdc {{C:/Users/Taha Hamdy/Desktop/Aux Work/Bluetooth/VGA_Reaction_Game-Lab_5/VGA_Reaction_Game-Lab_5/Lab_5.ip_user_files/VGA Default/Basys3_VGA_reference.xdc}}
-  link_design -top Game_Top_Level -part xc7a35ticpg236-1L
+  add_files -quiet C:/Vivado_Git/VGA_Reaction_Game/Lab_5.runs/synth_1/Game_Top_Level.dcp
+  read_xdc {{C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/VGA Default/Basys3_VGA_reference.xdc}}
+  link_design -top Game_Top_Level -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {

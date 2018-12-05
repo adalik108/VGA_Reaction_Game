@@ -80,7 +80,7 @@ component seven_segment_decoder_VGA is
 end component;
 
 constant long: integer:= 10;
-constant narrow: integer:= 5;
+constant narrow: integer:= 7;
 constant space: integer:= long + 5;
 constant half_width: integer:= 50;
 constant screen_mid: integer:= 400-long*4-space*4;
@@ -103,7 +103,7 @@ Seg7Dig4: seven_segment_decoder_VGA Port map(dig4,Segdig1);
 Dig1Num: Num1
 Generic Map(     
           px_offset  => screen_mid,
-          py_offset  => long
+          py_offset  => long + narrow
           )
 Port Map(     
           clk             => clk,
@@ -123,7 +123,7 @@ Port Map(
 Dig2Num: Num1
 Generic Map(     
           px_offset  => screen_mid + long + space,
-          py_offset  => long
+          py_offset  => long + narrow
           )
 Port Map(     
           clk             => clk,
@@ -142,7 +142,7 @@ Port Map(
 Dig3Num: Num1
       Generic Map(     
                   px_offset  => screen_mid + long + space+long + space,
-                  py_offset  => long
+                  py_offset  => long + narrow
                   )
       Port Map(     
                   clk             => clk,
@@ -161,7 +161,7 @@ Dig3Num: Num1
 Dig4Num: Num1
       Generic Map(     
                   px_offset  => screen_mid + long + space+long + space+long + space,
-                  py_offset  => long
+                  py_offset  => long + narrow
                   )
       Port Map(     
                   clk             => clk,

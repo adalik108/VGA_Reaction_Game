@@ -1,12 +1,12 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Fri Nov 30 15:19:00 2018
-| Host         : Theory running 64-bit major release  (build 9200)
+| Date         : Wed Dec  5 16:39:24 2018
+| Host         : Owner-VAIO running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Game_Top_Level_methodology_drc_routed.rpt -pb Game_Top_Level_methodology_drc_routed.pb -rpx Game_Top_Level_methodology_drc_routed.rpx
 | Design       : Game_Top_Level
-| Device       : xc7a35ticpg236-1L
-| Speed File   : -1L
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
 | Design State : Routed
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -37,7 +37,7 @@ Table of Contents
 -----------------
 LUTAR-1#1 Warning
 LUT drives async reset alert  
-LUT cell MAINFSM/Clock/enable_Q_i_2__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) VGA/CHANGE_Rectangle_Height_1/current_val_reg[2]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[3]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[4]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[5]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[6]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[7]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[8]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[9]/CLR, VGA/CHANGE_Rectangle_Height_1/enable_Q_reg/CLR, VGA/CHANGE_Rectangle_Height_2/current_val_reg[2]/CLR, VGA/CHANGE_Rectangle_Height_2/current_val_reg[3]/CLR, VGA/CHANGE_Rectangle_Height_2/current_val_reg[4]/CLR, VGA/CHANGE_Rectangle_Height_2/current_val_reg[5]/CLR, VGA/CHANGE_Rectangle_Height_2/current_val_reg[6]/CLR, VGA/CHANGE_Rectangle_Height_2/current_val_reg[7]/CLR (the first 15 of 36 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell MAINFSM/Clock/enable_Q_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) VGA/CHANGE_Rectangle_Height_1/current_val_reg[2]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[3]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[4]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[5]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[6]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[7]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[8]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[9]/CLR, VGA/CHANGE_Rectangle_Height_1/enable_Q_reg/CLR, VGA/CHANGE_Rectangle_Height_2/current_val_reg[2]/CLR, VGA/CHANGE_Rectangle_Height_2/current_val_reg[3]/CLR, VGA/CHANGE_Rectangle_Height_2/current_val_reg[4]/CLR, VGA/CHANGE_Rectangle_Height_2/current_val_reg[5]/CLR, VGA/CHANGE_Rectangle_Height_2/current_val_reg[6]/CLR, VGA/CHANGE_Rectangle_Height_2/current_val_reg[7]/CLR (the first 15 of 36 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#2 Warning
@@ -154,7 +154,7 @@ XDCH-2#1 Warning
 Same min and max delay values on IO port  
 The same input delay of 2.000 ns has been defined on port 'reset' relative to clock sys_clk_pin for both max and min. Make sure this reflects the design intent.
 set_input_delay -clock [get_clocks sys_clk_pin] -max -add_delay 2.000 [get_ports reset]
-C:/Users/Taha Hamdy/Desktop/Aux Work/Bluetooth/VGA_Reaction_Game-Lab_5/VGA_Reaction_Game-Lab_5/Lab_5.ip_user_files/VGA Default/Basys3_VGA_reference.xdc (Line: 305)
+C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/VGA Default/Basys3_VGA_reference.xdc (Line: 305)
 Related violations: <none>
 
 

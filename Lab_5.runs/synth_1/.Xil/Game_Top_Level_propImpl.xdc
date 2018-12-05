@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{C:/Users/Taha Hamdy/Desktop/Aux Work/Bluetooth/VGA_Reaction_Game-Lab_5/VGA_Reaction_Game-Lab_5/Lab_5.ip_user_files/VGA Default/Basys3_VGA_reference.xdc} rfile:{../../../Lab_5.ip_user_files/VGA Default/Basys3_VGA_reference.xdc} id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/VGA Default/Basys3_VGA_reference.xdc} rfile:{../../../Lab_5.ip_user_files/VGA Default/Basys3_VGA_reference.xdc} id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports clk]
 set_property src_info {type:XDC file:1 line:11 export:INPUT save:INPUT read:READ} [current_design]
