@@ -51,7 +51,7 @@ read_vhdl -library xil_defaultlib {
   C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/PRNG_Delay.vhd
   C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/PWM_DAC.vhd
   {C:/Vivado_Git/VGA_Reaction_Game/Lab_5.srcs/sources_1/imports/Aaron Modules/Player1_Display.vhd}
-  {C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/Player_Display.vhd}
+  {C:/Vivado_Git/VGA_Reaction_Game/Lab_5.srcs/sources_1/imports/Aaron Modules/Player_Display.vhd}
   C:/Vivado_Git/VGA_Reaction_Game/Lab_5.srcs/sources_1/new/Player_Display_Winner.vhd
   {C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/R.vhd}
   {C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/Rectangle.vhd}

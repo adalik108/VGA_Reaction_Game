@@ -260,8 +260,53 @@ Letter_R: R
                           green           => i_green6
                 );
                 
-red   <= i_red1 and i_red2 and i_red3 and i_red4 and i_red5 and i_red6;
-green <= i_green1 and i_green2 and i_green3 and i_green4 and i_green5 and i_green6;
-blue  <= i_blue1 and i_blue2 and i_blue3 and i_blue4 and i_blue5 and i_blue6;
+process(clk, reset, scan_line_x, scan_line_y) begin
+
+    if(reset = '1') then
+        red <= (others => '1');
+        blue <= (others => '1');
+        green <= (others => '1');
+        
+    elsif(rising_edge(clk)) then
+        if((scan_line_y >= (display_y_offset - 1)) and (scan_line_y <= (display_y_offset + long + long + 1))) then
+            if((scan_line_x >= (display_x_offset - 1)) and (scan_line_x <= (display_x_offset + space - 2))) then
+                red   <= i_red1;
+                green <= i_green1;
+                blue  <= i_blue1;
+            elsif((scan_line_x >= (display_x_offset + space - 1)) and (scan_line_x <= (display_x_offset + space + space - 2))) then
+                red   <= i_red2;
+                green <= i_green2;
+                blue  <= i_blue2;
+            elsif((scan_line_x >= (display_x_offset + space + space - 1)) and (scan_line_x <= (display_x_offset + space + space + space - 2))) then
+                red   <= i_red3;
+                green <= i_green3;
+                blue  <= i_blue3;
+            elsif((scan_line_x >= (display_x_offset + space + space + space - 1)) and (scan_line_x <= (display_x_offset + space + space + space + space - 2))) then
+                red   <= i_red4;
+                green <= i_green4;
+                blue  <= i_blue4;
+            elsif((scan_line_x >= (display_x_offset + space + space + space + space - 1)) and (scan_line_x <= (display_x_offset + space + space + space + space + space - 2))) then
+                red   <= i_red5;
+                green <= i_green5;
+                blue  <= i_blue5;
+            elsif((scan_line_x >= (display_x_offset + space + space + space + space + space - 1)) and (scan_line_x <= (display_x_offset + space + space + space + space + space + space - 2))) then
+                red   <= i_red6;
+                green <= i_green6;
+                blue  <= i_blue6;
+            else
+                red   <= (others => '1');
+                green <= (others => '1');
+                blue  <= (others => '1');
+            end if;
+        end if;
+    end if;
+end process;
+
+ 
+ 
+                
+--red   <= i_red1 and i_red2 and i_red3 and i_red4 and i_red5 and i_red6;
+--green <= i_green1 and i_green2 and i_green3 and i_green4 and i_green5 and i_green6;
+--blue  <= i_blue1 and i_blue2 and i_blue3 and i_blue4 and i_blue5 and i_blue6;
 
 end Behavioral;

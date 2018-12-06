@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 59220 
+INFO: Helper process launched with PID 62604 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 335.047 ; gain = 100.398
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 335.500 ; gain = 100.922
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Game_Top_Level' [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/Game_Top_Level.vhd:74]
 INFO: [Synth 8-3491] module 'main_logic' declared at 'C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/main_logic.vhd:34' bound to instance 'MAINFSM' of component 'main_logic' [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.sim/desnew/Game_Top_Level.vhd:238]
@@ -638,13 +638,13 @@ INFO: [Synth 8-638] synthesizing module 'Player1_Display' [C:/Vivado_Git/VGA_Rea
 INFO: [Synth 8-3491] module 'seven_segment_decoder_VGA' declared at 'C:/Vivado_Git/VGA_Reaction_Game/Lab_5.srcs/sources_1/new/seven_segment_decoder_VGA.vhd:34' bound to instance 'Seg7ScoreDig' of component 'seven_segment_decoder_VGA' [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.srcs/sources_1/imports/Aaron Modules/Player1_Display.vhd:123]
 	Parameter display_x_offset bound to: 30 - type: integer 
 	Parameter display_y_offset bound to: 450 - type: integer 
-INFO: [Synth 8-3491] module 'Player_Display' declared at 'C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/Player_Display.vhd:15' bound to instance 'Player' of component 'Player_Display' [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.srcs/sources_1/imports/Aaron Modules/Player1_Display.vhd:126]
-INFO: [Synth 8-638] synthesizing module 'Player_Display' [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/Player_Display.vhd:33]
+INFO: [Synth 8-3491] module 'Player_Display' declared at 'C:/Vivado_Git/VGA_Reaction_Game/Lab_5.srcs/sources_1/imports/Aaron Modules/Player_Display.vhd:15' bound to instance 'Player' of component 'Player_Display' [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.srcs/sources_1/imports/Aaron Modules/Player1_Display.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'Player_Display' [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.srcs/sources_1/imports/Aaron Modules/Player_Display.vhd:33]
 	Parameter display_x_offset bound to: 30 - type: integer 
 	Parameter display_y_offset bound to: 450 - type: integer 
 	Parameter px_offset bound to: 30 - type: integer 
 	Parameter py_offset bound to: 450 - type: integer 
-INFO: [Synth 8-3491] module 'P' declared at 'C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/P.vhd:15' bound to instance 'Letter_P' of component 'P' [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/Player_Display.vhd:155]
+INFO: [Synth 8-3491] module 'P' declared at 'C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/P.vhd:15' bound to instance 'Letter_P' of component 'P' [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.srcs/sources_1/imports/Aaron Modules/Player_Display.vhd:155]
 INFO: [Synth 8-638] synthesizing module 'P' [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/P.vhd:33]
 	Parameter px_offset bound to: 30 - type: integer 
 	Parameter py_offset bound to: 450 - type: integer 
@@ -1092,7 +1092,7 @@ INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized125' (32#1
 INFO: [Synth 8-256] done synthesizing module 'Diagonal2__parameterized9' (32#1) [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.srcs/sources_1/imports/Aaron Modules/Diagonal2.vhd:28]
 INFO: [Synth 8-256] done synthesizing module 'Diagonal4__parameterized1' (32#1) [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/Diagonal4.vhd:28]
 INFO: [Synth 8-256] done synthesizing module 'R' (33#1) [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/R.vhd:33]
-INFO: [Synth 8-256] done synthesizing module 'Player_Display' (34#1) [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/Player_Display.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Player_Display' (34#1) [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.srcs/sources_1/imports/Aaron Modules/Player_Display.vhd:33]
 	Parameter px_offset bound to: 135 - type: integer 
 	Parameter py_offset bound to: 450 - type: integer 
 INFO: [Synth 8-638] synthesizing module 'Num1__parameterized7' [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/Num1.vhd:35]
@@ -1284,7 +1284,7 @@ INFO: [Synth 8-638] synthesizing module 'Player1_Display__parameterized1' [C:/Vi
 	Parameter p1_y_offset bound to: 450 - type: integer 
 	Parameter display_x_offset bound to: 180 - type: integer 
 	Parameter display_y_offset bound to: 450 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'Player_Display__parameterized1' [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/Player_Display.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'Player_Display__parameterized1' [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.srcs/sources_1/imports/Aaron Modules/Player_Display.vhd:33]
 	Parameter display_x_offset bound to: 180 - type: integer 
 	Parameter display_y_offset bound to: 450 - type: integer 
 	Parameter px_offset bound to: 180 - type: integer 
@@ -1731,7 +1731,7 @@ INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized221' (36#1
 INFO: [Synth 8-256] done synthesizing module 'Diagonal2__parameterized21' (36#1) [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.srcs/sources_1/imports/Aaron Modules/Diagonal2.vhd:28]
 INFO: [Synth 8-256] done synthesizing module 'Diagonal4__parameterized5' (36#1) [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/Diagonal4.vhd:28]
 INFO: [Synth 8-256] done synthesizing module 'R__parameterized1' (36#1) [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/R.vhd:33]
-INFO: [Synth 8-256] done synthesizing module 'Player_Display__parameterized1' (36#1) [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/Player_Display.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Player_Display__parameterized1' (36#1) [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.srcs/sources_1/imports/Aaron Modules/Player_Display.vhd:33]
 	Parameter px_offset bound to: 285 - type: integer 
 	Parameter py_offset bound to: 450 - type: integer 
 INFO: [Synth 8-638] synthesizing module 'Num1__parameterized11' [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/Num1.vhd:35]
@@ -1923,7 +1923,7 @@ INFO: [Synth 8-638] synthesizing module 'Player1_Display__parameterized3' [C:/Vi
 	Parameter p1_y_offset bound to: 450 - type: integer 
 	Parameter display_x_offset bound to: 330 - type: integer 
 	Parameter display_y_offset bound to: 450 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'Player_Display__parameterized3' [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/Player_Display.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'Player_Display__parameterized3' [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.srcs/sources_1/imports/Aaron Modules/Player_Display.vhd:33]
 	Parameter display_x_offset bound to: 330 - type: integer 
 	Parameter display_y_offset bound to: 450 - type: integer 
 	Parameter px_offset bound to: 330 - type: integer 
@@ -2370,7 +2370,7 @@ INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized317' (36#1
 INFO: [Synth 8-256] done synthesizing module 'Diagonal2__parameterized33' (36#1) [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.srcs/sources_1/imports/Aaron Modules/Diagonal2.vhd:28]
 INFO: [Synth 8-256] done synthesizing module 'Diagonal4__parameterized9' (36#1) [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/Diagonal4.vhd:28]
 INFO: [Synth 8-256] done synthesizing module 'R__parameterized3' (36#1) [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/R.vhd:33]
-INFO: [Synth 8-256] done synthesizing module 'Player_Display__parameterized3' (36#1) [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/Player_Display.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Player_Display__parameterized3' (36#1) [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.srcs/sources_1/imports/Aaron Modules/Player_Display.vhd:33]
 	Parameter px_offset bound to: 435 - type: integer 
 	Parameter py_offset bound to: 450 - type: integer 
 INFO: [Synth 8-638] synthesizing module 'Num1__parameterized15' [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/Num1.vhd:35]
@@ -2562,7 +2562,7 @@ INFO: [Synth 8-638] synthesizing module 'Player1_Display__parameterized5' [C:/Vi
 	Parameter p1_y_offset bound to: 450 - type: integer 
 	Parameter display_x_offset bound to: 480 - type: integer 
 	Parameter display_y_offset bound to: 450 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'Player_Display__parameterized5' [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/Player_Display.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'Player_Display__parameterized5' [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.srcs/sources_1/imports/Aaron Modules/Player_Display.vhd:33]
 	Parameter display_x_offset bound to: 480 - type: integer 
 	Parameter display_y_offset bound to: 450 - type: integer 
 	Parameter px_offset bound to: 480 - type: integer 
@@ -3009,7 +3009,7 @@ INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized413' (36#1
 INFO: [Synth 8-256] done synthesizing module 'Diagonal2__parameterized45' (36#1) [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.srcs/sources_1/imports/Aaron Modules/Diagonal2.vhd:28]
 INFO: [Synth 8-256] done synthesizing module 'Diagonal4__parameterized13' (36#1) [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/Diagonal4.vhd:28]
 INFO: [Synth 8-256] done synthesizing module 'R__parameterized5' (36#1) [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/R.vhd:33]
-INFO: [Synth 8-256] done synthesizing module 'Player_Display__parameterized5' (36#1) [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/Player_Display.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Player_Display__parameterized5' (36#1) [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.srcs/sources_1/imports/Aaron Modules/Player_Display.vhd:33]
 	Parameter px_offset bound to: 585 - type: integer 
 	Parameter py_offset bound to: 450 - type: integer 
 INFO: [Synth 8-638] synthesizing module 'Num1__parameterized19' [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/Num1.vhd:35]
@@ -3201,7 +3201,7 @@ INFO: [Synth 8-638] synthesizing module 'Player_Display_Winner' [C:/Vivado_Git/V
 	Parameter p1_y_offset bound to: 180 - type: integer 
 	Parameter display_x_offset bound to: 160 - type: integer 
 	Parameter display_y_offset bound to: 180 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'Player_Display__parameterized7' [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/Player_Display.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'Player_Display__parameterized7' [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.srcs/sources_1/imports/Aaron Modules/Player_Display.vhd:33]
 	Parameter display_x_offset bound to: 160 - type: integer 
 	Parameter display_y_offset bound to: 180 - type: integer 
 	Parameter px_offset bound to: 160 - type: integer 
@@ -3648,7 +3648,7 @@ INFO: [Synth 8-256] done synthesizing module 'Rectangle__parameterized509' (36#1
 INFO: [Synth 8-256] done synthesizing module 'Diagonal2__parameterized57' (36#1) [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.srcs/sources_1/imports/Aaron Modules/Diagonal2.vhd:28]
 INFO: [Synth 8-256] done synthesizing module 'Diagonal4__parameterized17' (36#1) [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/Diagonal4.vhd:28]
 INFO: [Synth 8-256] done synthesizing module 'R__parameterized7' (36#1) [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/R.vhd:33]
-INFO: [Synth 8-256] done synthesizing module 'Player_Display__parameterized7' (36#1) [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/Player_Display.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Player_Display__parameterized7' (36#1) [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.srcs/sources_1/imports/Aaron Modules/Player_Display.vhd:33]
 	Parameter px_offset bound to: 265 - type: integer 
 	Parameter py_offset bound to: 180 - type: integer 
 INFO: [Synth 8-638] synthesizing module 'Num1__parameterized23' [C:/Vivado_Git/VGA_Reaction_Game/Lab_5.ip_user_files/Aaron Modules/Num1.vhd:35]
@@ -10204,7 +10204,7 @@ WARNING: [Synth 8-3331] design Rectangle__parameterized1443 has unconnected port
 WARNING: [Synth 8-3331] design Rectangle__parameterized1441 has unconnected port clk
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 535.867 ; gain = 301.219
+Finished RTL Elaboration : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 537.738 ; gain = 303.160
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -10217,10 +10217,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 535.867 ; gain = 301.219
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 537.738 ; gain = 303.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 535.867 ; gain = 301.219
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 537.738 ; gain = 303.160
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -10245,22 +10245,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 889.879 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 892.590 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:04 ; elapsed = 00:01:12 . Memory (MB): peak = 889.879 ; gain = 655.230
+Finished Constraint Validation : Time (s): cpu = 00:00:55 ; elapsed = 00:01:02 . Memory (MB): peak = 892.590 ; gain = 658.012
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:04 ; elapsed = 00:01:12 . Memory (MB): peak = 889.879 ; gain = 655.230
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:55 ; elapsed = 00:01:02 . Memory (MB): peak = 892.590 ; gain = 658.012
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:04 ; elapsed = 00:01:12 . Memory (MB): peak = 889.879 ; gain = 655.230
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:01:02 . Memory (MB): peak = 892.590 ; gain = 658.012
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'FSM_STATE_reg' in module 'main_logic'
 INFO: [Synth 8-5544] ROM "button_4_win" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -10293,7 +10293,7 @@ INFO: [Synth 8-5544] ROM "player_winner_seg7" won't be mapped to Block RAM becau
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'FSM_STATE_reg' using encoding 'sequential' in module 'main_logic'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:19 ; elapsed = 00:01:32 . Memory (MB): peak = 889.879 ; gain = 655.230
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:09 ; elapsed = 00:01:20 . Memory (MB): peak = 892.590 ; gain = 658.012
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'VGA/PlayerWinner/Word_Wins/Letter_N/Angle_3_2' (Diagonal4__parameterized33) to 'VGA/PlayerWinner/Word_Wins/Letter_N/Angle_4_2'
 
@@ -10302,7 +10302,7 @@ Report RTL Partitions:
 |      |RTL Partition       |Replication |Instances |
 +------+--------------------+------------+----------+
 |1     |vga_module__GB0     |           1|     36835|
-|2     |vga_module__GB1     |           1|     26479|
+|2     |vga_module__GB1     |           1|     27744|
 |3     |Game_Top_Level__GC0 |           1|      3172|
 +------+--------------------+------------+----------+
 ---------------------------------------------------------------------------------
@@ -10329,7 +10329,7 @@ Detailed RTL Component Info :
 	               10 Bit    Registers := 4     
 	                6 Bit    Registers := 1     
 	                5 Bit    Registers := 1     
-	                4 Bit    Registers := 62    
+	                4 Bit    Registers := 77    
 	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 41    
@@ -12532,6 +12532,10 @@ Module Rectangle__parameterized125
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
+Module R 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 3     
 Module Rectangle__parameterized127 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -12755,6 +12759,10 @@ Module Rectangle__parameterized221
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
+Module R__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 3     
 Module Rectangle__parameterized223 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -12978,6 +12986,10 @@ Module Rectangle__parameterized317
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
+Module R__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 3     
 Module Rectangle__parameterized319 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -13201,6 +13213,10 @@ Module Rectangle__parameterized413
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
+Module R__parameterized5 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 3     
 Module Rectangle__parameterized415 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -13424,6 +13440,10 @@ Module Rectangle__parameterized509
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
+Module R__parameterized7 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 3     
 Module Rectangle__parameterized511 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -14056,10 +14076,68 @@ INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Word_Wins/Letter_W/gr
 INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Word_Wins/Letter_W/red_reg[0]' (FDP) to 'VGAi_2/PlayerWinner/Word_Wins/Letter_W/red_reg[1]'
 INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Word_Wins/Letter_W/red_reg[1]' (FDP) to 'VGAi_2/PlayerWinner/Word_Wins/Letter_W/red_reg[2]'
 INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Word_Wins/Letter_W/red_reg[2]' (FDP) to 'VGAi_2/PlayerWinner/Word_Wins/Letter_W/red_reg[3]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Player/Letter_R/blue_reg[0]' (FDPE) to 'VGAi_2/PlayerWinner/Player/Letter_R/blue_reg[1]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo1/Player/Letter_R/blue_reg[0]' (FDPE) to 'VGAi_2/PlayerNo1/Player/Letter_R/blue_reg[1]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo4/Player/Letter_R/blue_reg[0]' (FDPE) to 'VGAi_2/PlayerNo4/Player/Letter_R/blue_reg[1]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo3/Player/Letter_R/blue_reg[0]' (FDPE) to 'VGAi_2/PlayerNo3/Player/Letter_R/blue_reg[1]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo2/Player/Letter_R/blue_reg[0]' (FDPE) to 'VGAi_2/PlayerNo2/Player/Letter_R/blue_reg[1]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Player/Letter_R/blue_reg[1]' (FDPE) to 'VGAi_2/PlayerWinner/Player/Letter_R/blue_reg[2]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo1/Player/Letter_R/blue_reg[1]' (FDPE) to 'VGAi_2/PlayerNo1/Player/Letter_R/blue_reg[2]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo4/Player/Letter_R/blue_reg[1]' (FDPE) to 'VGAi_2/PlayerNo4/Player/Letter_R/blue_reg[2]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo3/Player/Letter_R/blue_reg[1]' (FDPE) to 'VGAi_2/PlayerNo3/Player/Letter_R/blue_reg[2]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo2/Player/Letter_R/blue_reg[1]' (FDPE) to 'VGAi_2/PlayerNo2/Player/Letter_R/blue_reg[2]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Player/Letter_R/blue_reg[2]' (FDPE) to 'VGAi_2/PlayerWinner/Player/Letter_R/blue_reg[3]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo1/Player/Letter_R/blue_reg[2]' (FDPE) to 'VGAi_2/PlayerNo1/Player/Letter_R/blue_reg[3]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo4/Player/Letter_R/blue_reg[2]' (FDPE) to 'VGAi_2/PlayerNo4/Player/Letter_R/blue_reg[3]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo3/Player/Letter_R/blue_reg[2]' (FDPE) to 'VGAi_2/PlayerNo3/Player/Letter_R/blue_reg[3]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo2/Player/Letter_R/blue_reg[2]' (FDPE) to 'VGAi_2/PlayerNo2/Player/Letter_R/blue_reg[3]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Player/Letter_R/green_reg[0]' (FDPE) to 'VGAi_2/PlayerWinner/Player/Letter_R/green_reg[1]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo1/Player/Letter_R/green_reg[0]' (FDPE) to 'VGAi_2/PlayerNo1/Player/Letter_R/green_reg[1]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo4/Player/Letter_R/green_reg[0]' (FDPE) to 'VGAi_2/PlayerNo4/Player/Letter_R/green_reg[1]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo3/Player/Letter_R/green_reg[0]' (FDPE) to 'VGAi_2/PlayerNo3/Player/Letter_R/green_reg[1]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo2/Player/Letter_R/green_reg[0]' (FDPE) to 'VGAi_2/PlayerNo2/Player/Letter_R/green_reg[1]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Player/Letter_R/green_reg[1]' (FDPE) to 'VGAi_2/PlayerWinner/Player/Letter_R/green_reg[2]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo1/Player/Letter_R/green_reg[1]' (FDPE) to 'VGAi_2/PlayerNo1/Player/Letter_R/green_reg[2]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo4/Player/Letter_R/green_reg[1]' (FDPE) to 'VGAi_2/PlayerNo4/Player/Letter_R/green_reg[2]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo3/Player/Letter_R/green_reg[1]' (FDPE) to 'VGAi_2/PlayerNo3/Player/Letter_R/green_reg[2]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo2/Player/Letter_R/green_reg[1]' (FDPE) to 'VGAi_2/PlayerNo2/Player/Letter_R/green_reg[2]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Player/Letter_R/green_reg[2]' (FDPE) to 'VGAi_2/PlayerWinner/Player/Letter_R/green_reg[3]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo1/Player/Letter_R/green_reg[2]' (FDPE) to 'VGAi_2/PlayerNo1/Player/Letter_R/green_reg[3]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo4/Player/Letter_R/green_reg[2]' (FDPE) to 'VGAi_2/PlayerNo4/Player/Letter_R/green_reg[3]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo3/Player/Letter_R/green_reg[2]' (FDPE) to 'VGAi_2/PlayerNo3/Player/Letter_R/green_reg[3]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo2/Player/Letter_R/green_reg[2]' (FDPE) to 'VGAi_2/PlayerNo2/Player/Letter_R/green_reg[3]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Player/Letter_R/red_reg[0]' (FDPE) to 'VGAi_2/PlayerWinner/Player/Letter_R/red_reg[1]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo1/Player/Letter_R/red_reg[0]' (FDPE) to 'VGAi_2/PlayerNo1/Player/Letter_R/red_reg[1]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo4/Player/Letter_R/red_reg[0]' (FDPE) to 'VGAi_2/PlayerNo4/Player/Letter_R/red_reg[1]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo3/Player/Letter_R/red_reg[0]' (FDPE) to 'VGAi_2/PlayerNo3/Player/Letter_R/red_reg[1]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo2/Player/Letter_R/red_reg[0]' (FDPE) to 'VGAi_2/PlayerNo2/Player/Letter_R/red_reg[1]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Player/Letter_R/red_reg[1]' (FDPE) to 'VGAi_2/PlayerWinner/Player/Letter_R/red_reg[2]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo1/Player/Letter_R/red_reg[1]' (FDPE) to 'VGAi_2/PlayerNo1/Player/Letter_R/red_reg[2]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo4/Player/Letter_R/red_reg[1]' (FDPE) to 'VGAi_2/PlayerNo4/Player/Letter_R/red_reg[2]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo3/Player/Letter_R/red_reg[1]' (FDPE) to 'VGAi_2/PlayerNo3/Player/Letter_R/red_reg[2]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo2/Player/Letter_R/red_reg[1]' (FDPE) to 'VGAi_2/PlayerNo2/Player/Letter_R/red_reg[2]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Player/Letter_R/red_reg[2]' (FDPE) to 'VGAi_2/PlayerWinner/Player/Letter_R/red_reg[3]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo1/Player/Letter_R/red_reg[2]' (FDPE) to 'VGAi_2/PlayerNo1/Player/Letter_R/red_reg[3]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo4/Player/Letter_R/red_reg[2]' (FDPE) to 'VGAi_2/PlayerNo4/Player/Letter_R/red_reg[3]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo3/Player/Letter_R/red_reg[2]' (FDPE) to 'VGAi_2/PlayerNo3/Player/Letter_R/red_reg[3]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo2/Player/Letter_R/red_reg[2]' (FDPE) to 'VGAi_2/PlayerNo2/Player/Letter_R/red_reg[3]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (VGAi_2/p_0_out_inferred__2/\CHANGE_Rectangle_Height_1/current_val_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (VGAi_2/p_0_out_inferred__1/\CHANGE_Rectangle_Height_4/current_val_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (VGAi_2/p_0_out_inferred__0/\CHANGE_Rectangle_Height_3/current_val_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (VGAi_2/p_0_out_inferred/\CHANGE_Rectangle_Height_2/current_val_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (VGAi_2/p_0_out_inferred__2/\CHANGE_Rectangle_Height_1/current_val_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (VGAi_2/p_0_out_inferred__1/\CHANGE_Rectangle_Height_4/current_val_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (VGAi_2/p_0_out_inferred__0/\CHANGE_Rectangle_Height_3/current_val_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (VGAi_2/p_0_out_inferred/\CHANGE_Rectangle_Height_2/current_val_reg[1] )
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Word_Wins/blue_reg[0]' (FDP) to 'VGAi_2/PlayerWinner/Word_Wins/blue_reg[1]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Word_Wins/blue_reg[1]' (FDP) to 'VGAi_2/PlayerWinner/Word_Wins/blue_reg[2]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Word_Wins/blue_reg[2]' (FDP) to 'VGAi_2/PlayerWinner/Word_Wins/blue_reg[3]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Word_Wins/green_reg[0]' (FDP) to 'VGAi_2/PlayerWinner/Word_Wins/green_reg[1]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Word_Wins/green_reg[1]' (FDP) to 'VGAi_2/PlayerWinner/Word_Wins/green_reg[2]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Word_Wins/green_reg[2]' (FDP) to 'VGAi_2/PlayerWinner/Word_Wins/green_reg[3]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Word_Wins/red_reg[0]' (FDP) to 'VGAi_2/PlayerWinner/Word_Wins/red_reg[1]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Word_Wins/red_reg[1]' (FDP) to 'VGAi_2/PlayerWinner/Word_Wins/red_reg[2]'
+INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Word_Wins/red_reg[2]' (FDP) to 'VGAi_2/PlayerWinner/Word_Wins/red_reg[3]'
 INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo1/char_blue_reg[0]' (FDE) to 'VGAi_2/PlayerNo1/char_blue_reg[1]'
 INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo4/char_blue_reg[0]' (FDE) to 'VGAi_2/PlayerNo4/char_blue_reg[1]'
 INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo3/char_blue_reg[0]' (FDE) to 'VGAi_2/PlayerNo3/char_blue_reg[1]'
@@ -14079,64 +14157,6 @@ INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo2/char_green_reg[0]' (FDE)
 INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo1/char_green_reg[1]' (FDE) to 'VGAi_2/PlayerNo1/char_green_reg[2]'
 INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo4/char_green_reg[1]' (FDE) to 'VGAi_2/PlayerNo4/char_green_reg[2]'
 INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo3/char_green_reg[1]' (FDE) to 'VGAi_2/PlayerNo3/char_green_reg[2]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo2/char_green_reg[1]' (FDE) to 'VGAi_2/PlayerNo2/char_green_reg[2]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo1/char_green_reg[2]' (FDE) to 'VGAi_2/PlayerNo1/char_green_reg[3]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo4/char_green_reg[2]' (FDE) to 'VGAi_2/PlayerNo4/char_green_reg[3]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo3/char_green_reg[2]' (FDE) to 'VGAi_2/PlayerNo3/char_green_reg[3]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo2/char_green_reg[2]' (FDE) to 'VGAi_2/PlayerNo2/char_green_reg[3]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo1/char_red_reg[0]' (FDE) to 'VGAi_2/PlayerNo1/char_red_reg[1]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo4/char_red_reg[0]' (FDE) to 'VGAi_2/PlayerNo4/char_red_reg[1]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo3/char_red_reg[0]' (FDE) to 'VGAi_2/PlayerNo3/char_red_reg[1]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo2/char_red_reg[0]' (FDE) to 'VGAi_2/PlayerNo2/char_red_reg[1]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo1/char_red_reg[1]' (FDE) to 'VGAi_2/PlayerNo1/char_red_reg[2]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo4/char_red_reg[1]' (FDE) to 'VGAi_2/PlayerNo4/char_red_reg[2]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo3/char_red_reg[1]' (FDE) to 'VGAi_2/PlayerNo3/char_red_reg[2]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo2/char_red_reg[1]' (FDE) to 'VGAi_2/PlayerNo2/char_red_reg[2]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo1/char_red_reg[2]' (FDE) to 'VGAi_2/PlayerNo1/char_red_reg[3]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo4/char_red_reg[2]' (FDE) to 'VGAi_2/PlayerNo4/char_red_reg[3]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo3/char_red_reg[2]' (FDE) to 'VGAi_2/PlayerNo3/char_red_reg[3]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo2/char_red_reg[2]' (FDE) to 'VGAi_2/PlayerNo2/char_red_reg[3]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (VGAi_2/p_0_out_inferred__2/\CHANGE_Rectangle_Height_1/current_val_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (VGAi_2/p_0_out_inferred__1/\CHANGE_Rectangle_Height_4/current_val_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (VGAi_2/p_0_out_inferred__0/\CHANGE_Rectangle_Height_3/current_val_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (VGAi_2/p_0_out_inferred/\CHANGE_Rectangle_Height_2/current_val_reg[1] )
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Word_Wins/blue_reg[0]' (FDP) to 'VGAi_2/PlayerWinner/Word_Wins/blue_reg[1]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Word_Wins/blue_reg[1]' (FDP) to 'VGAi_2/PlayerWinner/Word_Wins/blue_reg[2]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Word_Wins/blue_reg[2]' (FDP) to 'VGAi_2/PlayerWinner/Word_Wins/blue_reg[3]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Word_Wins/green_reg[0]' (FDP) to 'VGAi_2/PlayerWinner/Word_Wins/green_reg[1]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Word_Wins/green_reg[1]' (FDP) to 'VGAi_2/PlayerWinner/Word_Wins/green_reg[2]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Word_Wins/green_reg[2]' (FDP) to 'VGAi_2/PlayerWinner/Word_Wins/green_reg[3]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Word_Wins/red_reg[0]' (FDP) to 'VGAi_2/PlayerWinner/Word_Wins/red_reg[1]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Word_Wins/red_reg[1]' (FDP) to 'VGAi_2/PlayerWinner/Word_Wins/red_reg[2]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerWinner/Word_Wins/red_reg[2]' (FDP) to 'VGAi_2/PlayerWinner/Word_Wins/red_reg[3]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo1/blue_reg[0]' (FD) to 'VGAi_2/PlayerNo1/blue_reg[1]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo4/blue_reg[0]' (FD) to 'VGAi_2/PlayerNo4/blue_reg[1]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo3/blue_reg[0]' (FD) to 'VGAi_2/PlayerNo3/blue_reg[1]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo2/blue_reg[0]' (FD) to 'VGAi_2/PlayerNo2/blue_reg[1]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo1/blue_reg[1]' (FD) to 'VGAi_2/PlayerNo1/blue_reg[2]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo4/blue_reg[1]' (FD) to 'VGAi_2/PlayerNo4/blue_reg[2]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo3/blue_reg[1]' (FD) to 'VGAi_2/PlayerNo3/blue_reg[2]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo2/blue_reg[1]' (FD) to 'VGAi_2/PlayerNo2/blue_reg[2]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo1/blue_reg[2]' (FD) to 'VGAi_2/PlayerNo1/blue_reg[3]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo4/blue_reg[2]' (FD) to 'VGAi_2/PlayerNo4/blue_reg[3]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo3/blue_reg[2]' (FD) to 'VGAi_2/PlayerNo3/blue_reg[3]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo2/blue_reg[2]' (FD) to 'VGAi_2/PlayerNo2/blue_reg[3]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo1/green_reg[0]' (FD) to 'VGAi_2/PlayerNo1/green_reg[1]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo4/green_reg[0]' (FD) to 'VGAi_2/PlayerNo4/green_reg[1]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo3/green_reg[0]' (FD) to 'VGAi_2/PlayerNo3/green_reg[1]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo2/green_reg[0]' (FD) to 'VGAi_2/PlayerNo2/green_reg[1]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo1/green_reg[1]' (FD) to 'VGAi_2/PlayerNo1/green_reg[2]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo3/green_reg[1]' (FD) to 'VGAi_2/PlayerNo3/green_reg[2]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo2/green_reg[1]' (FD) to 'VGAi_2/PlayerNo2/green_reg[2]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo1/green_reg[2]' (FD) to 'VGAi_2/PlayerNo1/green_reg[3]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo4/green_reg[2]' (FD) to 'VGAi_2/PlayerNo4/green_reg[3]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo3/green_reg[2]' (FD) to 'VGAi_2/PlayerNo3/green_reg[3]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo2/green_reg[2]' (FD) to 'VGAi_2/PlayerNo2/green_reg[3]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo1/red_reg[0]' (FD) to 'VGAi_2/PlayerNo1/red_reg[1]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo4/red_reg[0]' (FD) to 'VGAi_2/PlayerNo4/red_reg[1]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo3/red_reg[0]' (FD) to 'VGAi_2/PlayerNo3/red_reg[1]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo2/red_reg[0]' (FD) to 'VGAi_2/PlayerNo2/red_reg[1]'
-INFO: [Synth 8-3886] merging instance 'VGAi_2/PlayerNo1/red_reg[1]' (FD) to 'VGAi_2/PlayerNo1/red_reg[2]'
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-3332] Sequential element (hundredHzClock/i_zero_reg) is unused and will be removed from module clock_divider_VGA.
 WARNING: [Synth 8-3332] Sequential element (tenHzClock/i_zero_reg) is unused and will be removed from module clock_divider_VGA.
@@ -14155,7 +14175,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (VGAi_2/VG
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (VGAi_1/\Border/Horizontal /\count_reg[10] )
 WARNING: [Synth 8-3332] Sequential element (count_reg[10]) is unused and will be removed from module Horizontal_Border.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:09 ; elapsed = 00:03:37 . Memory (MB): peak = 889.879 ; gain = 655.230
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:51 ; elapsed = 00:03:16 . Memory (MB): peak = 892.590 ; gain = 658.012
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -14163,20 +14183,20 @@ Report RTL Partitions:
 |      |RTL Partition       |Replication |Instances |
 +------+--------------------+------------+----------+
 |1     |vga_module__GB0     |           1|     10570|
-|2     |vga_module__GB1     |           1|      2029|
+|2     |vga_module__GB1     |           1|      2281|
 |3     |Game_Top_Level__GC0 |           1|      1973|
 +------+--------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:22 ; elapsed = 00:03:53 . Memory (MB): peak = 889.879 ; gain = 655.230
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:03 ; elapsed = 00:03:29 . Memory (MB): peak = 892.590 ; gain = 658.012
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:03:24 ; elapsed = 00:03:55 . Memory (MB): peak = 889.879 ; gain = 655.230
+Finished Timing Optimization : Time (s): cpu = 00:03:04 ; elapsed = 00:03:30 . Memory (MB): peak = 892.590 ; gain = 658.012
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -14184,14 +14204,14 @@ Report RTL Partitions:
 |      |RTL Partition       |Replication |Instances |
 +------+--------------------+------------+----------+
 |1     |vga_module__GB0     |           1|     10570|
-|2     |vga_module__GB1     |           1|      2029|
+|2     |vga_module__GB1     |           1|      2281|
 |3     |Game_Top_Level__GC0 |           1|      1973|
 +------+--------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:03:29 ; elapsed = 00:04:00 . Memory (MB): peak = 979.676 ; gain = 745.027
+Finished Technology Mapping : Time (s): cpu = 00:03:09 ; elapsed = 00:03:35 . Memory (MB): peak = 988.035 ; gain = 753.457
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -14215,7 +14235,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:03:31 ; elapsed = 00:04:02 . Memory (MB): peak = 979.676 ; gain = 745.027
+Finished IO Insertion : Time (s): cpu = 00:03:11 ; elapsed = 00:03:37 . Memory (MB): peak = 988.035 ; gain = 753.457
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -14228,7 +14248,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:03:31 ; elapsed = 00:04:02 . Memory (MB): peak = 979.676 ; gain = 745.027
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:11 ; elapsed = 00:03:37 . Memory (MB): peak = 988.035 ; gain = 753.457
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -14240,25 +14260,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:31 ; elapsed = 00:04:02 . Memory (MB): peak = 979.676 ; gain = 745.027
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:11 ; elapsed = 00:03:38 . Memory (MB): peak = 988.035 ; gain = 753.457
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:03:31 ; elapsed = 00:04:02 . Memory (MB): peak = 979.676 ; gain = 745.027
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:11 ; elapsed = 00:03:38 . Memory (MB): peak = 988.035 ; gain = 753.457
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:03:31 ; elapsed = 00:04:03 . Memory (MB): peak = 979.676 ; gain = 745.027
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:12 ; elapsed = 00:03:38 . Memory (MB): peak = 988.035 ; gain = 753.457
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:03:31 ; elapsed = 00:04:03 . Memory (MB): peak = 979.676 ; gain = 745.027
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:12 ; elapsed = 00:03:38 . Memory (MB): peak = 988.035 ; gain = 753.457
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -14291,16 +14311,16 @@ Report Cell Usage:
 |1     |BUFG   |     1|
 |2     |CARRY4 |   122|
 |3     |LUT1   |    32|
-|4     |LUT2   |   357|
-|5     |LUT3   |   100|
-|6     |LUT4   |   210|
-|7     |LUT5   |   302|
-|8     |LUT6   |  1130|
-|9     |MUXF7  |    11|
-|10    |MUXF8  |     4|
+|4     |LUT2   |   371|
+|5     |LUT3   |   115|
+|6     |LUT4   |   190|
+|7     |LUT5   |   327|
+|8     |LUT6   |  1169|
+|9     |MUXF7  |    14|
+|10    |MUXF8  |     5|
 |11    |SRL16E |     1|
 |12    |FDCE   |   422|
-|13    |FDPE   |    15|
+|13    |FDPE   |    20|
 |14    |FDRE   |   143|
 |15    |LDC    |     1|
 |16    |IBUF   |    12|
@@ -14311,7 +14331,7 @@ Report Instance Areas:
 +------+------------------------------------+-----------------------------------+------+
 |      |Instance                            |Module                             |Cells |
 +------+------------------------------------+-----------------------------------+------+
-|1     |top                                 |                                   |  2891|
+|1     |top                                 |                                   |  2973|
 |2     |  AVERAGE                           |AVG_Control                        |   209|
 |3     |    BCDConversion                   |Binary_to_BCD                      |    69|
 |4     |      \digits_mapping[1].digit_bcd  |Binary_to_BCD_dig                  |    10|
@@ -14329,14 +14349,14 @@ Report Instance Areas:
 |16    |      singleSecondsClock            |upcounter__parameterized7_6        |    14|
 |17    |      tenMinutesClock               |upcounter__parameterized7_7        |    26|
 |18    |      tenSecondsClock               |upcounter__parameterized7_8        |    11|
-|19    |  MAINFSM                           |main_logic                         |   274|
+|19    |  MAINFSM                           |main_logic                         |   273|
 |20    |    Clock                           |upcounter                          |    47|
 |21    |    Delayer                         |PRNG_Delay                         |   100|
 |22    |      fourHzClock                   |upcounter__parameterized3          |    49|
-|23    |    button1counter                  |upcounter__parameterized1          |    29|
-|24    |    button2counter                  |upcounter__parameterized1_3        |    29|
+|23    |    button1counter                  |upcounter__parameterized1          |    30|
+|24    |    button2counter                  |upcounter__parameterized1_3        |    28|
 |25    |    button3counter                  |upcounter__parameterized1_4        |    27|
-|26    |    button4counter                  |upcounter__parameterized1_5        |    35|
+|26    |    button4counter                  |upcounter__parameterized1_5        |    34|
 |27    |  SOUND                             |Sound_Control                      |   432|
 |28    |    PWM1600Hz                       |PWM_DAC__parameterized1            |    58|
 |29    |    PWM2400Hz                       |PWM_DAC__parameterized3            |    58|
@@ -14344,9 +14364,9 @@ Report Instance Areas:
 |31    |    PWM4000Hz                       |PWM_DAC__parameterized7            |    59|
 |32    |    PWM4800Hz                       |PWM_DAC__parameterized9            |    57|
 |33    |    PWM800Hz                        |PWM_DAC                            |    55|
-|34    |  VGA                               |vga_module                         |  1657|
-|35    |    Border                          |VGA_Border                         |   628|
-|36    |      Horizontal                    |Horizontal_Border                  |   211|
+|34    |  VGA                               |vga_module                         |  1740|
+|35    |    Border                          |VGA_Border                         |   623|
+|36    |      Horizontal                    |Horizontal_Border                  |   213|
 |37    |        \Bottom_Pulses[0].pulse_n   |Horizontal_Pulse                   |     1|
 |38    |          falling                   |Rectangle__parameterized629        |     1|
 |39    |        \Bottom_Pulses[10].pulse_n  |Horizontal_Pulse__parameterized19  |     4|
@@ -14387,303 +14407,314 @@ Report Instance Areas:
 |74    |        \Bottom_Pulses[20].pulse_n  |Horizontal_Pulse__parameterized39  |     2|
 |75    |          falling                   |Rectangle__parameterized789        |     1|
 |76    |          rising                    |Rectangle__parameterized793        |     1|
-|77    |        \Bottom_Pulses[21].pulse_n  |Horizontal_Pulse__parameterized41  |     1|
+|77    |        \Bottom_Pulses[21].pulse_n  |Horizontal_Pulse__parameterized41  |     3|
 |78    |          falling                   |Rectangle__parameterized797        |     1|
-|79    |        \Bottom_Pulses[22].pulse_n  |Horizontal_Pulse__parameterized43  |     4|
-|80    |          falling                   |Rectangle__parameterized805        |     1|
-|81    |          high                      |Rectangle__parameterized811        |     1|
-|82    |          low                       |Rectangle__parameterized807        |     1|
-|83    |          rising                    |Rectangle__parameterized809        |     1|
-|84    |        \Bottom_Pulses[23].pulse_n  |Horizontal_Pulse__parameterized45  |     3|
-|85    |          falling                   |Rectangle__parameterized813        |     1|
-|86    |          high                      |Rectangle__parameterized819        |     1|
-|87    |          rising                    |Rectangle__parameterized817        |     1|
-|88    |        \Bottom_Pulses[24].pulse_n  |Horizontal_Pulse__parameterized47  |     2|
-|89    |          falling                   |Rectangle__parameterized821        |     1|
-|90    |          rising                    |Rectangle__parameterized825        |     1|
-|91    |        \Bottom_Pulses[25].pulse_n  |Horizontal_Pulse__parameterized49  |     1|
-|92    |          falling                   |Rectangle__parameterized829        |     1|
-|93    |        \Bottom_Pulses[26].pulse_n  |Horizontal_Pulse__parameterized51  |     3|
-|94    |          high                      |Rectangle__parameterized843        |     1|
-|95    |          low                       |Rectangle__parameterized839        |     1|
-|96    |          rising                    |Rectangle__parameterized841        |     1|
-|97    |        \Bottom_Pulses[27].pulse_n  |Horizontal_Pulse__parameterized53  |     1|
-|98    |          rising                    |Rectangle__parameterized849        |     1|
-|99    |        \Bottom_Pulses[28].pulse_n  |Horizontal_Pulse__parameterized55  |     1|
-|100   |          rising                    |Rectangle__parameterized857        |     1|
-|101   |        \Bottom_Pulses[2].pulse_n   |Horizontal_Pulse__parameterized3   |     3|
-|102   |          falling                   |Rectangle__parameterized645        |     1|
-|103   |          high                      |Rectangle__parameterized651        |     1|
-|104   |          low                       |Rectangle__parameterized647        |     1|
-|105   |        \Bottom_Pulses[30].pulse_n  |Horizontal_Pulse__parameterized59  |     3|
-|106   |          high                      |Rectangle__parameterized875        |     1|
-|107   |          low                       |Rectangle__parameterized871        |     1|
-|108   |          rising                    |Rectangle__parameterized873        |     1|
-|109   |        \Bottom_Pulses[31].pulse_n  |Horizontal_Pulse__parameterized61  |     2|
-|110   |          high                      |Rectangle__parameterized883        |     1|
-|111   |          rising                    |Rectangle__parameterized881        |     1|
-|112   |        \Bottom_Pulses[4].pulse_n   |Horizontal_Pulse__parameterized7   |     1|
-|113   |          falling                   |Rectangle__parameterized661        |     1|
-|114   |        \Bottom_Pulses[5].pulse_n   |Horizontal_Pulse__parameterized9   |     2|
-|115   |          falling                   |Rectangle__parameterized669        |     1|
-|116   |          low                       |Rectangle__parameterized671        |     1|
-|117   |        \Bottom_Pulses[6].pulse_n   |Horizontal_Pulse__parameterized11  |     4|
-|118   |          falling                   |Rectangle__parameterized677        |     1|
-|119   |          high                      |Rectangle__parameterized683        |     1|
-|120   |          low                       |Rectangle__parameterized679        |     1|
-|121   |          rising                    |Rectangle__parameterized681        |     1|
-|122   |        \Bottom_Pulses[7].pulse_n   |Horizontal_Pulse__parameterized13  |     3|
-|123   |          falling                   |Rectangle__parameterized685        |     1|
-|124   |          high                      |Rectangle__parameterized691        |     1|
-|125   |          rising                    |Rectangle__parameterized689        |     1|
-|126   |        \Bottom_Pulses[9].pulse_n   |Horizontal_Pulse__parameterized17  |     3|
-|127   |          falling                   |Rectangle__parameterized701        |     1|
-|128   |          low                       |Rectangle__parameterized703        |     1|
-|129   |          rising                    |Rectangle__parameterized705        |     1|
-|130   |        \Top_Pulses[0].pulse_n      |Horizontal_Pulse__parameterized63  |     1|
-|131   |          falling                   |Rectangle__parameterized885        |     1|
-|132   |        \Top_Pulses[10].pulse_n     |Horizontal_Pulse__parameterized83  |     4|
-|133   |          falling                   |Rectangle__parameterized965        |     1|
-|134   |          high                      |Rectangle__parameterized971        |     1|
-|135   |          low                       |Rectangle__parameterized967        |     1|
-|136   |          rising                    |Rectangle__parameterized969        |     1|
-|137   |        \Top_Pulses[11].pulse_n     |Horizontal_Pulse__parameterized85  |     4|
-|138   |          high                      |Rectangle__parameterized979        |     2|
-|139   |          rising                    |Rectangle__parameterized977        |     2|
-|140   |        \Top_Pulses[13].pulse_n     |Horizontal_Pulse__parameterized89  |     4|
-|141   |          falling                   |Rectangle__parameterized989        |     2|
-|142   |          low                       |Rectangle__parameterized991        |     2|
-|143   |        \Top_Pulses[14].pulse_n     |Horizontal_Pulse__parameterized91  |     4|
-|144   |          falling                   |Rectangle__parameterized997        |     1|
-|145   |          high                      |Rectangle__parameterized1003       |     1|
-|146   |          low                       |Rectangle__parameterized999        |     1|
-|147   |          rising                    |Rectangle__parameterized1001       |     1|
-|148   |        \Top_Pulses[15].pulse_n     |Horizontal_Pulse__parameterized93  |     4|
-|149   |          high                      |Rectangle__parameterized1011       |     2|
-|150   |          rising                    |Rectangle__parameterized1009       |     2|
-|151   |        \Top_Pulses[17].pulse_n     |Horizontal_Pulse__parameterized97  |     5|
-|152   |          falling                   |Rectangle__parameterized1021       |     2|
-|153   |          low                       |Rectangle__parameterized1023       |     2|
-|154   |          rising                    |Rectangle__parameterized1025       |     1|
-|155   |        \Top_Pulses[18].pulse_n     |Horizontal_Pulse__parameterized99  |     6|
-|156   |          falling                   |Rectangle__parameterized1029       |     1|
-|157   |          high                      |Rectangle__parameterized1035       |     1|
-|158   |          low                       |Rectangle__parameterized1031       |     2|
-|159   |          rising                    |Rectangle__parameterized1033       |     2|
-|160   |        \Top_Pulses[19].pulse_n     |Horizontal_Pulse__parameterized101 |     4|
-|161   |          high                      |Rectangle__parameterized1043       |     2|
-|162   |          rising                    |Rectangle__parameterized1041       |     2|
-|163   |        \Top_Pulses[1].pulse_n      |Horizontal_Pulse__parameterized65  |     3|
-|164   |          falling                   |Rectangle__parameterized893        |     2|
-|165   |          low                       |Rectangle__parameterized895        |     1|
-|166   |        \Top_Pulses[20].pulse_n     |Horizontal_Pulse__parameterized103 |     2|
-|167   |          falling                   |Rectangle__parameterized1045       |     1|
-|168   |          rising                    |Rectangle__parameterized1049       |     1|
-|169   |        \Top_Pulses[21].pulse_n     |Horizontal_Pulse__parameterized105 |     5|
-|170   |          falling                   |Rectangle__parameterized1053       |     2|
-|171   |          low                       |Rectangle__parameterized1055       |     2|
-|172   |          rising                    |Rectangle__parameterized1057       |     1|
-|173   |        \Top_Pulses[22].pulse_n     |Horizontal_Pulse__parameterized107 |     7|
-|174   |          falling                   |Rectangle__parameterized1061       |     1|
-|175   |          high                      |Rectangle__parameterized1067       |     2|
-|176   |          low                       |Rectangle__parameterized1063       |     2|
-|177   |          rising                    |Rectangle__parameterized1065       |     2|
-|178   |        \Top_Pulses[23].pulse_n     |Horizontal_Pulse__parameterized109 |     2|
-|179   |          high                      |Rectangle__parameterized1075       |     1|
-|180   |          rising                    |Rectangle__parameterized1073       |     1|
-|181   |        \Top_Pulses[25].pulse_n     |Horizontal_Pulse__parameterized113 |     2|
-|182   |          falling                   |Rectangle__parameterized1085       |     1|
-|183   |          low                       |Rectangle__parameterized1087       |     1|
-|184   |        \Top_Pulses[26].pulse_n     |Horizontal_Pulse__parameterized115 |     5|
-|185   |          high                      |Rectangle__parameterized1099       |     2|
-|186   |          low                       |Rectangle__parameterized1095       |     1|
-|187   |          rising                    |Rectangle__parameterized1097       |     2|
-|188   |        \Top_Pulses[27].pulse_n     |Horizontal_Pulse__parameterized117 |     4|
-|189   |          high                      |Rectangle__parameterized1107       |     2|
-|190   |          rising                    |Rectangle__parameterized1105       |     2|
-|191   |        \Top_Pulses[29].pulse_n     |Horizontal_Pulse__parameterized121 |     2|
-|192   |          low                       |Rectangle__parameterized1119       |     2|
-|193   |        \Top_Pulses[2].pulse_n      |Horizontal_Pulse__parameterized67  |     6|
-|194   |          falling                   |Rectangle__parameterized901        |     2|
-|195   |          high                      |Rectangle__parameterized907        |     2|
-|196   |          low                       |Rectangle__parameterized903        |     2|
-|197   |        \Top_Pulses[30].pulse_n     |Horizontal_Pulse__parameterized123 |     5|
-|198   |          high                      |Rectangle__parameterized1131       |     2|
-|199   |          low                       |Rectangle__parameterized1127       |     1|
-|200   |          rising                    |Rectangle__parameterized1129       |     2|
-|201   |        \Top_Pulses[31].pulse_n     |Horizontal_Pulse__parameterized125 |     3|
-|202   |          high                      |Rectangle__parameterized1139       |     1|
-|203   |          rising                    |Rectangle__parameterized1137       |     2|
-|204   |        \Top_Pulses[3].pulse_n      |Horizontal_Pulse__parameterized69  |     2|
-|205   |          high                      |Rectangle__parameterized915        |     2|
-|206   |        \Top_Pulses[4].pulse_n      |Horizontal_Pulse__parameterized71  |     1|
-|207   |          falling                   |Rectangle__parameterized917        |     1|
-|208   |        \Top_Pulses[5].pulse_n      |Horizontal_Pulse__parameterized73  |     4|
-|209   |          falling                   |Rectangle__parameterized925        |     2|
-|210   |          low                       |Rectangle__parameterized927        |     2|
-|211   |        \Top_Pulses[6].pulse_n      |Horizontal_Pulse__parameterized75  |     6|
-|212   |          falling                   |Rectangle__parameterized933        |     2|
-|213   |          high                      |Rectangle__parameterized939        |     2|
-|214   |          low                       |Rectangle__parameterized935        |     1|
-|215   |          rising                    |Rectangle__parameterized937        |     1|
-|216   |        \Top_Pulses[7].pulse_n      |Horizontal_Pulse__parameterized77  |     4|
-|217   |          high                      |Rectangle__parameterized947        |     2|
-|218   |          rising                    |Rectangle__parameterized945        |     2|
-|219   |        \Top_Pulses[9].pulse_n      |Horizontal_Pulse__parameterized81  |     4|
-|220   |          falling                   |Rectangle__parameterized957        |     2|
-|221   |          low                       |Rectangle__parameterized959        |     2|
-|222   |      Vertical                      |Vertical_Border                    |    79|
-|223   |        \Left_Pulses[0].pulse_n     |Vertical_Pulse                     |     1|
-|224   |          high                      |Rectangle__parameterized1147       |     1|
-|225   |        \Left_Pulses[10].pulse_n    |Vertical_Pulse__parameterized19    |     3|
-|226   |          high                      |Rectangle__parameterized1227       |     1|
-|227   |          low                       |Rectangle__parameterized1223       |     1|
-|228   |          rising                    |Rectangle__parameterized1225       |     1|
-|229   |        \Left_Pulses[11].pulse_n    |Vertical_Pulse__parameterized21    |     2|
-|230   |          high                      |Rectangle__parameterized1235       |     1|
-|231   |          low                       |Rectangle__parameterized1231       |     1|
-|232   |        \Left_Pulses[12].pulse_n    |Vertical_Pulse__parameterized23    |     2|
-|233   |          falling                   |Rectangle__parameterized1237       |     1|
-|234   |          rising                    |Rectangle__parameterized1241       |     1|
-|235   |        \Left_Pulses[13].pulse_n    |Vertical_Pulse__parameterized25    |     1|
-|236   |          high                      |Rectangle__parameterized1251       |     1|
-|237   |        \Left_Pulses[14].pulse_n    |Vertical_Pulse__parameterized27    |     3|
-|238   |          falling                   |Rectangle__parameterized1253       |     1|
-|239   |          high                      |Rectangle__parameterized1259       |     1|
-|240   |          low                       |Rectangle__parameterized1255       |     1|
-|241   |        \Left_Pulses[15].pulse_n    |Vertical_Pulse__parameterized29    |     2|
-|242   |          high                      |Rectangle__parameterized1267       |     1|
-|243   |          low                       |Rectangle__parameterized1263       |     1|
-|244   |        \Left_Pulses[16].pulse_n    |Vertical_Pulse__parameterized31    |     1|
-|245   |          high                      |Rectangle__parameterized1275       |     1|
-|246   |        \Left_Pulses[17].pulse_n    |Vertical_Pulse__parameterized33    |     2|
-|247   |          falling                   |Rectangle__parameterized1277       |     1|
-|248   |          low                       |Rectangle__parameterized1279       |     1|
-|249   |        \Left_Pulses[18].pulse_n    |Vertical_Pulse__parameterized35    |     3|
-|250   |          falling                   |Rectangle__parameterized1285       |     1|
-|251   |          low                       |Rectangle__parameterized1287       |     1|
-|252   |          rising                    |Rectangle__parameterized1289       |     1|
-|253   |        \Left_Pulses[19].pulse_n    |Vertical_Pulse__parameterized37    |     1|
-|254   |          low                       |Rectangle__parameterized1295       |     1|
-|255   |        \Left_Pulses[1].pulse_n     |Vertical_Pulse__parameterized1     |     2|
-|256   |          high                      |Rectangle__parameterized1155       |     1|
-|257   |          low                       |Rectangle__parameterized1151       |     1|
-|258   |        \Left_Pulses[20].pulse_n    |Vertical_Pulse__parameterized39    |     1|
-|259   |          high                      |Rectangle__parameterized1307       |     1|
-|260   |        \Left_Pulses[21].pulse_n    |Vertical_Pulse__parameterized41    |     2|
-|261   |          high                      |Rectangle__parameterized1315       |     1|
-|262   |          low                       |Rectangle__parameterized1311       |     1|
-|263   |        \Left_Pulses[22].pulse_n    |Vertical_Pulse__parameterized43    |     2|
-|264   |          falling                   |Rectangle__parameterized1317       |     1|
-|265   |          low                       |Rectangle__parameterized1319       |     1|
-|266   |        \Left_Pulses[2].pulse_n     |Vertical_Pulse__parameterized3     |     1|
-|267   |          low                       |Rectangle__parameterized1159       |     1|
-|268   |        \Left_Pulses[3].pulse_n     |Vertical_Pulse__parameterized5     |     1|
-|269   |          low                       |Rectangle__parameterized1167       |     1|
-|270   |        \Left_Pulses[4].pulse_n     |Vertical_Pulse__parameterized7     |     1|
-|271   |          high                      |Rectangle__parameterized1179       |     1|
-|272   |        \Left_Pulses[5].pulse_n     |Vertical_Pulse__parameterized9     |     2|
-|273   |          high                      |Rectangle__parameterized1187       |     1|
-|274   |          low                       |Rectangle__parameterized1183       |     1|
-|275   |        \Left_Pulses[6].pulse_n     |Vertical_Pulse__parameterized11    |     2|
-|276   |          high                      |Rectangle__parameterized1195       |     1|
-|277   |          low                       |Rectangle__parameterized1191       |     1|
-|278   |        \Left_Pulses[7].pulse_n     |Vertical_Pulse__parameterized13    |     1|
-|279   |          low                       |Rectangle__parameterized1199       |     1|
-|280   |        \Left_Pulses[8].pulse_n     |Vertical_Pulse__parameterized15    |     1|
-|281   |          falling                   |Rectangle__parameterized1205       |     1|
-|282   |        \Left_Pulses[9].pulse_n     |Vertical_Pulse__parameterized17    |     2|
-|283   |          high                      |Rectangle__parameterized1219       |     1|
-|284   |          low                       |Rectangle__parameterized1215       |     1|
-|285   |        \Right_Pulses[0].pulse_n    |Vertical_Pulse__parameterized45    |     1|
-|286   |          high                      |Rectangle__parameterized1331       |     1|
-|287   |        \Right_Pulses[10].pulse_n   |Vertical_Pulse__parameterized65    |     3|
-|288   |          high                      |Rectangle__parameterized1411       |     1|
-|289   |          low                       |Rectangle__parameterized1407       |     1|
-|290   |          rising                    |Rectangle__parameterized1409       |     1|
-|291   |        \Right_Pulses[11].pulse_n   |Vertical_Pulse__parameterized67    |     2|
-|292   |          high                      |Rectangle__parameterized1419       |     1|
-|293   |          low                       |Rectangle__parameterized1415       |     1|
-|294   |        \Right_Pulses[12].pulse_n   |Vertical_Pulse__parameterized69    |     2|
-|295   |          falling                   |Rectangle__parameterized1421       |     1|
-|296   |          rising                    |Rectangle__parameterized1425       |     1|
-|297   |        \Right_Pulses[13].pulse_n   |Vertical_Pulse__parameterized71    |     1|
-|298   |          high                      |Rectangle__parameterized1435       |     1|
-|299   |        \Right_Pulses[14].pulse_n   |Vertical_Pulse__parameterized73    |     3|
-|300   |          falling                   |Rectangle__parameterized1437       |     1|
-|301   |          high                      |Rectangle__parameterized1443       |     1|
-|302   |          low                       |Rectangle__parameterized1439       |     1|
-|303   |        \Right_Pulses[15].pulse_n   |Vertical_Pulse__parameterized75    |     2|
-|304   |          high                      |Rectangle__parameterized1451       |     1|
-|305   |          low                       |Rectangle__parameterized1447       |     1|
-|306   |        \Right_Pulses[16].pulse_n   |Vertical_Pulse__parameterized77    |     1|
-|307   |          high                      |Rectangle__parameterized1459       |     1|
-|308   |        \Right_Pulses[17].pulse_n   |Vertical_Pulse__parameterized79    |     2|
-|309   |          falling                   |Rectangle__parameterized1461       |     1|
-|310   |          low                       |Rectangle__parameterized1463       |     1|
-|311   |        \Right_Pulses[18].pulse_n   |Vertical_Pulse__parameterized81    |     3|
-|312   |          falling                   |Rectangle__parameterized1469       |     1|
-|313   |          high                      |Rectangle__parameterized1475       |     1|
-|314   |          rising                    |Rectangle__parameterized1473       |     1|
-|315   |        \Right_Pulses[19].pulse_n   |Vertical_Pulse__parameterized83    |     1|
-|316   |          low                       |Rectangle__parameterized1479       |     1|
-|317   |        \Right_Pulses[1].pulse_n    |Vertical_Pulse__parameterized47    |     2|
-|318   |          high                      |Rectangle__parameterized1339       |     1|
-|319   |          low                       |Rectangle__parameterized1335       |     1|
-|320   |        \Right_Pulses[20].pulse_n   |Vertical_Pulse__parameterized85    |     1|
-|321   |          high                      |Rectangle__parameterized1491       |     1|
-|322   |        \Right_Pulses[21].pulse_n   |Vertical_Pulse__parameterized87    |     2|
-|323   |          high                      |Rectangle__parameterized1499       |     1|
-|324   |          low                       |Rectangle__parameterized1495       |     1|
-|325   |        \Right_Pulses[22].pulse_n   |Vertical_Pulse__parameterized89    |     2|
-|326   |          falling                   |Rectangle__parameterized1501       |     1|
-|327   |          low                       |Rectangle__parameterized1503       |     1|
-|328   |        \Right_Pulses[2].pulse_n    |Vertical_Pulse__parameterized49    |     1|
-|329   |          low                       |Rectangle__parameterized1343       |     1|
-|330   |        \Right_Pulses[3].pulse_n    |Vertical_Pulse__parameterized51    |     1|
-|331   |          low                       |Rectangle__parameterized1351       |     1|
-|332   |        \Right_Pulses[4].pulse_n    |Vertical_Pulse__parameterized53    |     1|
-|333   |          high                      |Rectangle__parameterized1363       |     1|
-|334   |        \Right_Pulses[5].pulse_n    |Vertical_Pulse__parameterized55    |     2|
-|335   |          high                      |Rectangle__parameterized1371       |     1|
-|336   |          low                       |Rectangle__parameterized1367       |     1|
-|337   |        \Right_Pulses[6].pulse_n    |Vertical_Pulse__parameterized57    |     2|
-|338   |          high                      |Rectangle__parameterized1379       |     1|
-|339   |          low                       |Rectangle__parameterized1375       |     1|
-|340   |        \Right_Pulses[7].pulse_n    |Vertical_Pulse__parameterized59    |     1|
-|341   |          low                       |Rectangle__parameterized1383       |     1|
-|342   |        \Right_Pulses[8].pulse_n    |Vertical_Pulse__parameterized61    |     1|
-|343   |          falling                   |Rectangle__parameterized1389       |     1|
-|344   |        \Right_Pulses[9].pulse_n    |Vertical_Pulse__parameterized63    |     2|
-|345   |          high                      |Rectangle__parameterized1403       |     1|
-|346   |          low                       |Rectangle__parameterized1399       |     1|
-|347   |    CHANGE_Rectangle_Height_1       |up_down_counter                    |    37|
-|348   |    CHANGE_Rectangle_Height_2       |up_down_counter_0                  |    31|
-|349   |    CHANGE_Rectangle_Height_3       |up_down_counter_1                  |    24|
-|350   |    CHANGE_Rectangle_Height_4       |up_down_counter_2                  |    30|
-|351   |    DIVIDER                         |clock_divider_VGA                  |     6|
-|352   |      megaHzClock_25MHz             |downcounter                        |     6|
-|353   |    PlayerNo1                       |Player1_Display                    |     5|
-|354   |      Rectangle                     |Growing_Rectangle                  |     2|
-|355   |    PlayerNo2                       |Player1_Display__parameterized1    |     5|
-|356   |      Rectangle                     |Growing_Rectangle__parameterized1  |     2|
-|357   |    PlayerNo3                       |Player1_Display__parameterized3    |     6|
-|358   |      Rectangle                     |Growing_Rectangle__parameterized3  |     2|
-|359   |    PlayerNo4                       |Player1_Display__parameterized5    |     8|
-|360   |      Rectangle                     |Growing_Rectangle__parameterized5  |     2|
-|361   |    PlayerWinner                    |Player_Display_Winner              |    11|
-|362   |      Word_Wins                     |Wins                               |     4|
-|363   |        Letter_W                    |W                                  |     3|
-|364   |    VGA_SYNC                        |sync_signals_generator             |   854|
+|79    |          low                       |Rectangle__parameterized799        |     1|
+|80    |          rising                    |Rectangle__parameterized801        |     1|
+|81    |        \Bottom_Pulses[22].pulse_n  |Horizontal_Pulse__parameterized43  |     4|
+|82    |          falling                   |Rectangle__parameterized805        |     1|
+|83    |          high                      |Rectangle__parameterized811        |     1|
+|84    |          low                       |Rectangle__parameterized807        |     1|
+|85    |          rising                    |Rectangle__parameterized809        |     1|
+|86    |        \Bottom_Pulses[23].pulse_n  |Horizontal_Pulse__parameterized45  |     3|
+|87    |          falling                   |Rectangle__parameterized813        |     1|
+|88    |          high                      |Rectangle__parameterized819        |     1|
+|89    |          rising                    |Rectangle__parameterized817        |     1|
+|90    |        \Bottom_Pulses[24].pulse_n  |Horizontal_Pulse__parameterized47  |     2|
+|91    |          falling                   |Rectangle__parameterized821        |     1|
+|92    |          rising                    |Rectangle__parameterized825        |     1|
+|93    |        \Bottom_Pulses[25].pulse_n  |Horizontal_Pulse__parameterized49  |     1|
+|94    |          falling                   |Rectangle__parameterized829        |     1|
+|95    |        \Bottom_Pulses[26].pulse_n  |Horizontal_Pulse__parameterized51  |     3|
+|96    |          high                      |Rectangle__parameterized843        |     1|
+|97    |          low                       |Rectangle__parameterized839        |     1|
+|98    |          rising                    |Rectangle__parameterized841        |     1|
+|99    |        \Bottom_Pulses[27].pulse_n  |Horizontal_Pulse__parameterized53  |     1|
+|100   |          rising                    |Rectangle__parameterized849        |     1|
+|101   |        \Bottom_Pulses[28].pulse_n  |Horizontal_Pulse__parameterized55  |     1|
+|102   |          rising                    |Rectangle__parameterized857        |     1|
+|103   |        \Bottom_Pulses[2].pulse_n   |Horizontal_Pulse__parameterized3   |     3|
+|104   |          falling                   |Rectangle__parameterized645        |     1|
+|105   |          high                      |Rectangle__parameterized651        |     1|
+|106   |          low                       |Rectangle__parameterized647        |     1|
+|107   |        \Bottom_Pulses[30].pulse_n  |Horizontal_Pulse__parameterized59  |     3|
+|108   |          high                      |Rectangle__parameterized875        |     1|
+|109   |          low                       |Rectangle__parameterized871        |     1|
+|110   |          rising                    |Rectangle__parameterized873        |     1|
+|111   |        \Bottom_Pulses[31].pulse_n  |Horizontal_Pulse__parameterized61  |     2|
+|112   |          high                      |Rectangle__parameterized883        |     1|
+|113   |          rising                    |Rectangle__parameterized881        |     1|
+|114   |        \Bottom_Pulses[4].pulse_n   |Horizontal_Pulse__parameterized7   |     1|
+|115   |          falling                   |Rectangle__parameterized661        |     1|
+|116   |        \Bottom_Pulses[5].pulse_n   |Horizontal_Pulse__parameterized9   |     2|
+|117   |          falling                   |Rectangle__parameterized669        |     1|
+|118   |          low                       |Rectangle__parameterized671        |     1|
+|119   |        \Bottom_Pulses[6].pulse_n   |Horizontal_Pulse__parameterized11  |     4|
+|120   |          falling                   |Rectangle__parameterized677        |     1|
+|121   |          high                      |Rectangle__parameterized683        |     1|
+|122   |          low                       |Rectangle__parameterized679        |     1|
+|123   |          rising                    |Rectangle__parameterized681        |     1|
+|124   |        \Bottom_Pulses[7].pulse_n   |Horizontal_Pulse__parameterized13  |     3|
+|125   |          falling                   |Rectangle__parameterized685        |     1|
+|126   |          high                      |Rectangle__parameterized691        |     1|
+|127   |          rising                    |Rectangle__parameterized689        |     1|
+|128   |        \Bottom_Pulses[9].pulse_n   |Horizontal_Pulse__parameterized17  |     3|
+|129   |          falling                   |Rectangle__parameterized701        |     1|
+|130   |          low                       |Rectangle__parameterized703        |     1|
+|131   |          rising                    |Rectangle__parameterized705        |     1|
+|132   |        \Top_Pulses[0].pulse_n      |Horizontal_Pulse__parameterized63  |     1|
+|133   |          falling                   |Rectangle__parameterized885        |     1|
+|134   |        \Top_Pulses[10].pulse_n     |Horizontal_Pulse__parameterized83  |     4|
+|135   |          falling                   |Rectangle__parameterized965        |     1|
+|136   |          high                      |Rectangle__parameterized971        |     1|
+|137   |          low                       |Rectangle__parameterized967        |     1|
+|138   |          rising                    |Rectangle__parameterized969        |     1|
+|139   |        \Top_Pulses[11].pulse_n     |Horizontal_Pulse__parameterized85  |     4|
+|140   |          high                      |Rectangle__parameterized979        |     2|
+|141   |          rising                    |Rectangle__parameterized977        |     2|
+|142   |        \Top_Pulses[13].pulse_n     |Horizontal_Pulse__parameterized89  |     2|
+|143   |          falling                   |Rectangle__parameterized989        |     1|
+|144   |          low                       |Rectangle__parameterized991        |     1|
+|145   |        \Top_Pulses[14].pulse_n     |Horizontal_Pulse__parameterized91  |     6|
+|146   |          falling                   |Rectangle__parameterized997        |     1|
+|147   |          high                      |Rectangle__parameterized1003       |     2|
+|148   |          low                       |Rectangle__parameterized999        |     1|
+|149   |          rising                    |Rectangle__parameterized1001       |     2|
+|150   |        \Top_Pulses[15].pulse_n     |Horizontal_Pulse__parameterized93  |     4|
+|151   |          high                      |Rectangle__parameterized1011       |     2|
+|152   |          rising                    |Rectangle__parameterized1009       |     2|
+|153   |        \Top_Pulses[17].pulse_n     |Horizontal_Pulse__parameterized97  |     5|
+|154   |          falling                   |Rectangle__parameterized1021       |     2|
+|155   |          low                       |Rectangle__parameterized1023       |     2|
+|156   |          rising                    |Rectangle__parameterized1025       |     1|
+|157   |        \Top_Pulses[18].pulse_n     |Horizontal_Pulse__parameterized99  |     6|
+|158   |          falling                   |Rectangle__parameterized1029       |     1|
+|159   |          high                      |Rectangle__parameterized1035       |     1|
+|160   |          low                       |Rectangle__parameterized1031       |     2|
+|161   |          rising                    |Rectangle__parameterized1033       |     2|
+|162   |        \Top_Pulses[19].pulse_n     |Horizontal_Pulse__parameterized101 |     4|
+|163   |          high                      |Rectangle__parameterized1043       |     2|
+|164   |          rising                    |Rectangle__parameterized1041       |     2|
+|165   |        \Top_Pulses[1].pulse_n      |Horizontal_Pulse__parameterized65  |     3|
+|166   |          falling                   |Rectangle__parameterized893        |     2|
+|167   |          low                       |Rectangle__parameterized895        |     1|
+|168   |        \Top_Pulses[20].pulse_n     |Horizontal_Pulse__parameterized103 |     2|
+|169   |          falling                   |Rectangle__parameterized1045       |     1|
+|170   |          rising                    |Rectangle__parameterized1049       |     1|
+|171   |        \Top_Pulses[21].pulse_n     |Horizontal_Pulse__parameterized105 |     5|
+|172   |          falling                   |Rectangle__parameterized1053       |     2|
+|173   |          low                       |Rectangle__parameterized1055       |     2|
+|174   |          rising                    |Rectangle__parameterized1057       |     1|
+|175   |        \Top_Pulses[22].pulse_n     |Horizontal_Pulse__parameterized107 |     7|
+|176   |          falling                   |Rectangle__parameterized1061       |     1|
+|177   |          high                      |Rectangle__parameterized1067       |     2|
+|178   |          low                       |Rectangle__parameterized1063       |     2|
+|179   |          rising                    |Rectangle__parameterized1065       |     2|
+|180   |        \Top_Pulses[23].pulse_n     |Horizontal_Pulse__parameterized109 |     2|
+|181   |          high                      |Rectangle__parameterized1075       |     1|
+|182   |          rising                    |Rectangle__parameterized1073       |     1|
+|183   |        \Top_Pulses[25].pulse_n     |Horizontal_Pulse__parameterized113 |     2|
+|184   |          falling                   |Rectangle__parameterized1085       |     1|
+|185   |          low                       |Rectangle__parameterized1087       |     1|
+|186   |        \Top_Pulses[26].pulse_n     |Horizontal_Pulse__parameterized115 |     5|
+|187   |          high                      |Rectangle__parameterized1099       |     2|
+|188   |          low                       |Rectangle__parameterized1095       |     1|
+|189   |          rising                    |Rectangle__parameterized1097       |     2|
+|190   |        \Top_Pulses[27].pulse_n     |Horizontal_Pulse__parameterized117 |     4|
+|191   |          high                      |Rectangle__parameterized1107       |     2|
+|192   |          rising                    |Rectangle__parameterized1105       |     2|
+|193   |        \Top_Pulses[29].pulse_n     |Horizontal_Pulse__parameterized121 |     2|
+|194   |          low                       |Rectangle__parameterized1119       |     2|
+|195   |        \Top_Pulses[2].pulse_n      |Horizontal_Pulse__parameterized67  |     6|
+|196   |          falling                   |Rectangle__parameterized901        |     2|
+|197   |          high                      |Rectangle__parameterized907        |     2|
+|198   |          low                       |Rectangle__parameterized903        |     2|
+|199   |        \Top_Pulses[30].pulse_n     |Horizontal_Pulse__parameterized123 |     5|
+|200   |          high                      |Rectangle__parameterized1131       |     2|
+|201   |          low                       |Rectangle__parameterized1127       |     1|
+|202   |          rising                    |Rectangle__parameterized1129       |     2|
+|203   |        \Top_Pulses[31].pulse_n     |Horizontal_Pulse__parameterized125 |     3|
+|204   |          high                      |Rectangle__parameterized1139       |     1|
+|205   |          rising                    |Rectangle__parameterized1137       |     2|
+|206   |        \Top_Pulses[3].pulse_n      |Horizontal_Pulse__parameterized69  |     2|
+|207   |          high                      |Rectangle__parameterized915        |     2|
+|208   |        \Top_Pulses[4].pulse_n      |Horizontal_Pulse__parameterized71  |     1|
+|209   |          falling                   |Rectangle__parameterized917        |     1|
+|210   |        \Top_Pulses[5].pulse_n      |Horizontal_Pulse__parameterized73  |     4|
+|211   |          falling                   |Rectangle__parameterized925        |     2|
+|212   |          low                       |Rectangle__parameterized927        |     2|
+|213   |        \Top_Pulses[6].pulse_n      |Horizontal_Pulse__parameterized75  |     6|
+|214   |          falling                   |Rectangle__parameterized933        |     2|
+|215   |          high                      |Rectangle__parameterized939        |     2|
+|216   |          low                       |Rectangle__parameterized935        |     1|
+|217   |          rising                    |Rectangle__parameterized937        |     1|
+|218   |        \Top_Pulses[7].pulse_n      |Horizontal_Pulse__parameterized77  |     4|
+|219   |          high                      |Rectangle__parameterized947        |     2|
+|220   |          rising                    |Rectangle__parameterized945        |     2|
+|221   |        \Top_Pulses[9].pulse_n      |Horizontal_Pulse__parameterized81  |     4|
+|222   |          falling                   |Rectangle__parameterized957        |     2|
+|223   |          low                       |Rectangle__parameterized959        |     2|
+|224   |      Vertical                      |Vertical_Border                    |    78|
+|225   |        \Left_Pulses[0].pulse_n     |Vertical_Pulse                     |     1|
+|226   |          high                      |Rectangle__parameterized1147       |     1|
+|227   |        \Left_Pulses[10].pulse_n    |Vertical_Pulse__parameterized19    |     2|
+|228   |          high                      |Rectangle__parameterized1227       |     1|
+|229   |          low                       |Rectangle__parameterized1223       |     1|
+|230   |        \Left_Pulses[11].pulse_n    |Vertical_Pulse__parameterized21    |     3|
+|231   |          falling                   |Rectangle__parameterized1229       |     1|
+|232   |          high                      |Rectangle__parameterized1235       |     1|
+|233   |          low                       |Rectangle__parameterized1231       |     1|
+|234   |        \Left_Pulses[12].pulse_n    |Vertical_Pulse__parameterized23    |     2|
+|235   |          falling                   |Rectangle__parameterized1237       |     1|
+|236   |          rising                    |Rectangle__parameterized1241       |     1|
+|237   |        \Left_Pulses[13].pulse_n    |Vertical_Pulse__parameterized25    |     1|
+|238   |          high                      |Rectangle__parameterized1251       |     1|
+|239   |        \Left_Pulses[14].pulse_n    |Vertical_Pulse__parameterized27    |     3|
+|240   |          falling                   |Rectangle__parameterized1253       |     1|
+|241   |          high                      |Rectangle__parameterized1259       |     1|
+|242   |          low                       |Rectangle__parameterized1255       |     1|
+|243   |        \Left_Pulses[15].pulse_n    |Vertical_Pulse__parameterized29    |     2|
+|244   |          high                      |Rectangle__parameterized1267       |     1|
+|245   |          low                       |Rectangle__parameterized1263       |     1|
+|246   |        \Left_Pulses[16].pulse_n    |Vertical_Pulse__parameterized31    |     1|
+|247   |          high                      |Rectangle__parameterized1275       |     1|
+|248   |        \Left_Pulses[17].pulse_n    |Vertical_Pulse__parameterized33    |     1|
+|249   |          high                      |Rectangle__parameterized1283       |     1|
+|250   |        \Left_Pulses[18].pulse_n    |Vertical_Pulse__parameterized35    |     3|
+|251   |          high                      |Rectangle__parameterized1291       |     1|
+|252   |          low                       |Rectangle__parameterized1287       |     1|
+|253   |          rising                    |Rectangle__parameterized1289       |     1|
+|254   |        \Left_Pulses[19].pulse_n    |Vertical_Pulse__parameterized37    |     1|
+|255   |          low                       |Rectangle__parameterized1295       |     1|
+|256   |        \Left_Pulses[1].pulse_n     |Vertical_Pulse__parameterized1     |     2|
+|257   |          high                      |Rectangle__parameterized1155       |     1|
+|258   |          low                       |Rectangle__parameterized1151       |     1|
+|259   |        \Left_Pulses[20].pulse_n    |Vertical_Pulse__parameterized39    |     1|
+|260   |          high                      |Rectangle__parameterized1307       |     1|
+|261   |        \Left_Pulses[21].pulse_n    |Vertical_Pulse__parameterized41    |     2|
+|262   |          high                      |Rectangle__parameterized1315       |     1|
+|263   |          low                       |Rectangle__parameterized1311       |     1|
+|264   |        \Left_Pulses[22].pulse_n    |Vertical_Pulse__parameterized43    |     2|
+|265   |          falling                   |Rectangle__parameterized1317       |     1|
+|266   |          low                       |Rectangle__parameterized1319       |     1|
+|267   |        \Left_Pulses[2].pulse_n     |Vertical_Pulse__parameterized3     |     1|
+|268   |          low                       |Rectangle__parameterized1159       |     1|
+|269   |        \Left_Pulses[3].pulse_n     |Vertical_Pulse__parameterized5     |     1|
+|270   |          low                       |Rectangle__parameterized1167       |     1|
+|271   |        \Left_Pulses[4].pulse_n     |Vertical_Pulse__parameterized7     |     1|
+|272   |          high                      |Rectangle__parameterized1179       |     1|
+|273   |        \Left_Pulses[5].pulse_n     |Vertical_Pulse__parameterized9     |     2|
+|274   |          high                      |Rectangle__parameterized1187       |     1|
+|275   |          low                       |Rectangle__parameterized1183       |     1|
+|276   |        \Left_Pulses[6].pulse_n     |Vertical_Pulse__parameterized11    |     2|
+|277   |          high                      |Rectangle__parameterized1195       |     1|
+|278   |          low                       |Rectangle__parameterized1191       |     1|
+|279   |        \Left_Pulses[7].pulse_n     |Vertical_Pulse__parameterized13    |     1|
+|280   |          low                       |Rectangle__parameterized1199       |     1|
+|281   |        \Left_Pulses[8].pulse_n     |Vertical_Pulse__parameterized15    |     1|
+|282   |          falling                   |Rectangle__parameterized1205       |     1|
+|283   |        \Left_Pulses[9].pulse_n     |Vertical_Pulse__parameterized17    |     2|
+|284   |          high                      |Rectangle__parameterized1219       |     1|
+|285   |          low                       |Rectangle__parameterized1215       |     1|
+|286   |        \Right_Pulses[0].pulse_n    |Vertical_Pulse__parameterized45    |     1|
+|287   |          high                      |Rectangle__parameterized1331       |     1|
+|288   |        \Right_Pulses[10].pulse_n   |Vertical_Pulse__parameterized65    |     2|
+|289   |          high                      |Rectangle__parameterized1411       |     1|
+|290   |          low                       |Rectangle__parameterized1407       |     1|
+|291   |        \Right_Pulses[11].pulse_n   |Vertical_Pulse__parameterized67    |     3|
+|292   |          falling                   |Rectangle__parameterized1413       |     1|
+|293   |          high                      |Rectangle__parameterized1419       |     1|
+|294   |          low                       |Rectangle__parameterized1415       |     1|
+|295   |        \Right_Pulses[12].pulse_n   |Vertical_Pulse__parameterized69    |     2|
+|296   |          falling                   |Rectangle__parameterized1421       |     1|
+|297   |          rising                    |Rectangle__parameterized1425       |     1|
+|298   |        \Right_Pulses[13].pulse_n   |Vertical_Pulse__parameterized71    |     1|
+|299   |          high                      |Rectangle__parameterized1435       |     1|
+|300   |        \Right_Pulses[14].pulse_n   |Vertical_Pulse__parameterized73    |     3|
+|301   |          falling                   |Rectangle__parameterized1437       |     1|
+|302   |          high                      |Rectangle__parameterized1443       |     1|
+|303   |          low                       |Rectangle__parameterized1439       |     1|
+|304   |        \Right_Pulses[15].pulse_n   |Vertical_Pulse__parameterized75    |     2|
+|305   |          high                      |Rectangle__parameterized1451       |     1|
+|306   |          low                       |Rectangle__parameterized1447       |     1|
+|307   |        \Right_Pulses[16].pulse_n   |Vertical_Pulse__parameterized77    |     1|
+|308   |          high                      |Rectangle__parameterized1459       |     1|
+|309   |        \Right_Pulses[17].pulse_n   |Vertical_Pulse__parameterized79    |     2|
+|310   |          falling                   |Rectangle__parameterized1461       |     1|
+|311   |          low                       |Rectangle__parameterized1463       |     1|
+|312   |        \Right_Pulses[18].pulse_n   |Vertical_Pulse__parameterized81    |     3|
+|313   |          falling                   |Rectangle__parameterized1469       |     1|
+|314   |          high                      |Rectangle__parameterized1475       |     1|
+|315   |          rising                    |Rectangle__parameterized1473       |     1|
+|316   |        \Right_Pulses[19].pulse_n   |Vertical_Pulse__parameterized83    |     1|
+|317   |          low                       |Rectangle__parameterized1479       |     1|
+|318   |        \Right_Pulses[1].pulse_n    |Vertical_Pulse__parameterized47    |     2|
+|319   |          high                      |Rectangle__parameterized1339       |     1|
+|320   |          low                       |Rectangle__parameterized1335       |     1|
+|321   |        \Right_Pulses[20].pulse_n   |Vertical_Pulse__parameterized85    |     1|
+|322   |          high                      |Rectangle__parameterized1491       |     1|
+|323   |        \Right_Pulses[21].pulse_n   |Vertical_Pulse__parameterized87    |     2|
+|324   |          high                      |Rectangle__parameterized1499       |     1|
+|325   |          low                       |Rectangle__parameterized1495       |     1|
+|326   |        \Right_Pulses[22].pulse_n   |Vertical_Pulse__parameterized89    |     2|
+|327   |          falling                   |Rectangle__parameterized1501       |     1|
+|328   |          low                       |Rectangle__parameterized1503       |     1|
+|329   |        \Right_Pulses[2].pulse_n    |Vertical_Pulse__parameterized49    |     1|
+|330   |          low                       |Rectangle__parameterized1343       |     1|
+|331   |        \Right_Pulses[3].pulse_n    |Vertical_Pulse__parameterized51    |     1|
+|332   |          low                       |Rectangle__parameterized1351       |     1|
+|333   |        \Right_Pulses[4].pulse_n    |Vertical_Pulse__parameterized53    |     1|
+|334   |          high                      |Rectangle__parameterized1363       |     1|
+|335   |        \Right_Pulses[5].pulse_n    |Vertical_Pulse__parameterized55    |     2|
+|336   |          high                      |Rectangle__parameterized1371       |     1|
+|337   |          low                       |Rectangle__parameterized1367       |     1|
+|338   |        \Right_Pulses[6].pulse_n    |Vertical_Pulse__parameterized57    |     2|
+|339   |          high                      |Rectangle__parameterized1379       |     1|
+|340   |          low                       |Rectangle__parameterized1375       |     1|
+|341   |        \Right_Pulses[7].pulse_n    |Vertical_Pulse__parameterized59    |     1|
+|342   |          low                       |Rectangle__parameterized1383       |     1|
+|343   |        \Right_Pulses[8].pulse_n    |Vertical_Pulse__parameterized61    |     1|
+|344   |          falling                   |Rectangle__parameterized1389       |     1|
+|345   |        \Right_Pulses[9].pulse_n    |Vertical_Pulse__parameterized63    |     2|
+|346   |          high                      |Rectangle__parameterized1403       |     1|
+|347   |          low                       |Rectangle__parameterized1399       |     1|
+|348   |    CHANGE_Rectangle_Height_1       |up_down_counter                    |    37|
+|349   |    CHANGE_Rectangle_Height_2       |up_down_counter_0                  |    28|
+|350   |    CHANGE_Rectangle_Height_3       |up_down_counter_1                  |    30|
+|351   |    CHANGE_Rectangle_Height_4       |up_down_counter_2                  |    29|
+|352   |    DIVIDER                         |clock_divider_VGA                  |     6|
+|353   |      megaHzClock_25MHz             |downcounter                        |     6|
+|354   |    PlayerNo1                       |Player1_Display                    |     8|
+|355   |      Player                        |Player_Display                     |     3|
+|356   |        Letter_R                    |R                                  |     3|
+|357   |      Rectangle                     |Growing_Rectangle                  |     2|
+|358   |    PlayerNo2                       |Player1_Display__parameterized1    |     6|
+|359   |      Player                        |Player_Display__parameterized1     |     1|
+|360   |        Letter_R                    |R__parameterized1                  |     1|
+|361   |      Rectangle                     |Growing_Rectangle__parameterized1  |     2|
+|362   |    PlayerNo3                       |Player1_Display__parameterized3    |     7|
+|363   |      Player                        |Player_Display__parameterized3     |     1|
+|364   |        Letter_R                    |R__parameterized3                  |     1|
+|365   |      Rectangle                     |Growing_Rectangle__parameterized3  |     2|
+|366   |    PlayerNo4                       |Player1_Display__parameterized5    |    12|
+|367   |      Player                        |Player_Display__parameterized5     |     4|
+|368   |        Letter_R                    |R__parameterized5                  |     4|
+|369   |      Rectangle                     |Growing_Rectangle__parameterized5  |     2|
+|370   |    PlayerWinner                    |Player_Display_Winner              |    12|
+|371   |      Player                        |Player_Display__parameterized7     |     1|
+|372   |        Letter_R                    |R__parameterized7                  |     1|
+|373   |      Word_Wins                     |Wins                               |     4|
+|374   |        Letter_W                    |W                                  |     3|
+|375   |    VGA_SYNC                        |sync_signals_generator             |   925|
 +------+------------------------------------+-----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:03:31 ; elapsed = 00:04:03 . Memory (MB): peak = 979.676 ; gain = 745.027
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:12 ; elapsed = 00:03:38 . Memory (MB): peak = 988.035 ; gain = 753.457
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 31 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:34 ; elapsed = 00:03:40 . Memory (MB): peak = 979.676 ; gain = 391.016
-Synthesis Optimization Complete : Time (s): cpu = 00:03:32 ; elapsed = 00:04:03 . Memory (MB): peak = 979.676 ; gain = 745.027
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:21 ; elapsed = 00:03:18 . Memory (MB): peak = 988.035 ; gain = 398.605
+Synthesis Optimization Complete : Time (s): cpu = 00:03:12 ; elapsed = 00:03:38 . Memory (MB): peak = 988.035 ; gain = 753.457
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 150 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 154 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -14694,9 +14725,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 2323 Infos, 144 Warnings, 3 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:35 ; elapsed = 00:04:08 . Memory (MB): peak = 979.676 ; gain = 758.035
+synth_design: Time (s): cpu = 00:03:15 ; elapsed = 00:03:43 . Memory (MB): peak = 988.035 ; gain = 766.277
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Vivado_Git/VGA_Reaction_Game/Lab_5.runs/synth_1/Game_Top_Level.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Game_Top_Level_utilization_synth.rpt -pb Game_Top_Level_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 979.676 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Dec  5 16:35:27 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.170 . Memory (MB): peak = 988.035 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  5 17:37:55 2018...

@@ -263,9 +263,19 @@ Tail_4: Diagonal4
                       blue            => i_blue8,
                       green           => i_green8
             );
-        
-red   <= i_red1 and i_red2 and i_red3 and i_red4 and i_red5 and i_red6 and i_red7 and i_red8;
-green <= i_green1 and i_green2 and i_green3 and i_green4 and i_green5 and i_green6 and i_green7 and i_green8;
-blue  <= i_blue1 and i_blue2 and i_blue3 and i_blue4 and i_blue5 and i_blue6 and i_blue7 and i_blue8;
+            
+process(clk, reset, scan_line_x, scan_line_y) begin
 
+    if(reset = '1') then
+        red   <= (others => '1');
+        green <= (others => '1');
+        blue  <= (others => '1');
+    elsif(rising_edge(clk)) then
+        if((scan_line_y >= (py_offset - 1)) and (scan_line_y <= (py_offset + long + 1)) and (scan_line_x >= (px_offset - 1)) and (scan_line_x <= (px_offset + long + long + 1))) then  
+            red   <= i_red1 and i_red2 and i_red3 and i_red4 and i_red5 and i_red6 and i_red7 and i_red8;
+            green <= i_green1 and i_green2 and i_green3 and i_green4 and i_green5 and i_green6 and i_green7 and i_green8;
+            blue  <= i_blue1 and i_blue2 and i_blue3 and i_blue4 and i_blue5 and i_blue6 and i_blue7 and i_blue8;
+        end if;
+    end if;
+end process;
 end Behavioral;

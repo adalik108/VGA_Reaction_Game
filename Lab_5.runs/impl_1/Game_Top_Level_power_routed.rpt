@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Wed Dec  5 16:39:28 2018
+| Date             : Wed Dec  5 17:41:23 2018
 | Host             : Owner-VAIO running 64-bit major release  (build 9200)
 | Command          : report_power -file Game_Top_Level_power_routed.rpt -pb Game_Top_Level_power_summary_routed.pb -rpx Game_Top_Level_power_routed.rpx
 | Design           : Game_Top_Level
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.320        |
+| Total On-Chip Power (W)  | 0.319        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.247        |
+| Dynamic (W)              | 0.246        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 83.4         |
@@ -52,18 +52,18 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.012 |        6 |       --- |             --- |
-| Slice Logic             |     0.008 |     2920 |       --- |             --- |
-|   LUT as Logic          |     0.007 |     1826 |     20800 |            8.78 |
+| Clocks                  |     0.010 |        6 |       --- |             --- |
+| Slice Logic             |     0.008 |     3007 |       --- |             --- |
+|   LUT as Logic          |     0.007 |     1878 |     20800 |            9.03 |
 |   CARRY4                |    <0.001 |      122 |      8150 |            1.50 |
-|   Register              |    <0.001 |      581 |     41600 |            1.40 |
+|   Register              |    <0.001 |      586 |     41600 |            1.41 |
 |   LUT as Shift Register |    <0.001 |        1 |      9600 |            0.01 |
-|   F7/F8 Muxes           |    <0.001 |       15 |     32600 |            0.05 |
-|   Others                |     0.000 |       71 |       --- |             --- |
-| Signals                 |     0.003 |     2327 |       --- |             --- |
+|   F7/F8 Muxes           |    <0.001 |       19 |     32600 |            0.06 |
+|   Others                |     0.000 |       76 |       --- |             --- |
+| Signals                 |     0.003 |     2395 |       --- |             --- |
 | I/O                     |     0.225 |       40 |       106 |           37.74 |
 | Static Power            |     0.072 |          |           |                 |
-| Total                   |     0.320 |          |           |                 |
+| Total                   |     0.319 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.032 |       0.022 |      0.010 |
+| Vccint    |       1.000 |     0.031 |       0.021 |      0.010 |
 | Vccaux    |       1.800 |     0.021 |       0.008 |      0.013 |
 | Vcco33    |       3.300 |     0.065 |       0.064 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -145,16 +145,16 @@ Table of Contents
 +-----------------------------------+-----------+
 | Name                              | Power (W) |
 +-----------------------------------+-----------+
-| Game_Top_Level                    |     0.247 |
+| Game_Top_Level                    |     0.246 |
 |   AVERAGE                         |     0.002 |
 |     BCDConversion                 |    <0.001 |
 |       digits_mapping[1].digit_bcd |    <0.001 |
 |       digits_mapping[2].digit_bcd |    <0.001 |
 |       digits_mapping[3].digit_bcd |    <0.001 |
 |       digits_mapping[4].digit_bcd |    <0.001 |
-|   DISP                            |     0.001 |
+|   DISP                            |    <0.001 |
 |     DIGITMUX                      |    <0.001 |
-|     SELECTOR                      |     0.001 |
+|     SELECTOR                      |    <0.001 |
 |   GAME                            |    <0.001 |
 |     BCDBINARY                     |    <0.001 |
 |     CLK_DIVIDE                    |    <0.001 |
@@ -163,13 +163,13 @@ Table of Contents
 |       singleSecondsClock          |    <0.001 |
 |       tenMinutesClock             |    <0.001 |
 |       tenSecondsClock             |    <0.001 |
-|   MAINFSM                         |     0.010 |
+|   MAINFSM                         |     0.009 |
 |     Clock                         |    <0.001 |
-|     Delayer                       |     0.003 |
+|     Delayer                       |     0.002 |
 |       fourHzClock                 |     0.001 |
-|     button1counter                |     0.002 |
+|     button1counter                |     0.001 |
 |     button2counter                |     0.001 |
-|     button3counter                |     0.002 |
+|     button3counter                |     0.001 |
 |     button4counter                |     0.002 |
 |   SOUND                           |     0.002 |
 |     PWM1600Hz                     |    <0.001 |
@@ -223,6 +223,8 @@ Table of Contents
 |           rising                  |    <0.001 |
 |         Bottom_Pulses[21].pulse_n |    <0.001 |
 |           falling                 |    <0.001 |
+|           low                     |    <0.001 |
+|           rising                  |    <0.001 |
 |         Bottom_Pulses[22].pulse_n |    <0.001 |
 |           falling                 |    <0.001 |
 |           high                    |    <0.001 |
@@ -372,8 +374,8 @@ Table of Contents
 |         Left_Pulses[10].pulse_n   |    <0.001 |
 |           high                    |    <0.001 |
 |           low                     |    <0.001 |
-|           rising                  |    <0.001 |
 |         Left_Pulses[11].pulse_n   |    <0.001 |
+|           falling                 |    <0.001 |
 |           high                    |    <0.001 |
 |           low                     |    <0.001 |
 |         Left_Pulses[12].pulse_n   |    <0.001 |
@@ -391,10 +393,9 @@ Table of Contents
 |         Left_Pulses[16].pulse_n   |    <0.001 |
 |           high                    |    <0.001 |
 |         Left_Pulses[17].pulse_n   |    <0.001 |
-|           falling                 |    <0.001 |
-|           low                     |    <0.001 |
+|           high                    |    <0.001 |
 |         Left_Pulses[18].pulse_n   |    <0.001 |
-|           falling                 |    <0.001 |
+|           high                    |    <0.001 |
 |           low                     |    <0.001 |
 |           rising                  |    <0.001 |
 |         Left_Pulses[19].pulse_n   |    <0.001 |
@@ -434,8 +435,8 @@ Table of Contents
 |         Right_Pulses[10].pulse_n  |    <0.001 |
 |           high                    |    <0.001 |
 |           low                     |    <0.001 |
-|           rising                  |    <0.001 |
 |         Right_Pulses[11].pulse_n  |    <0.001 |
+|           falling                 |    <0.001 |
 |           high                    |    <0.001 |
 |           low                     |    <0.001 |
 |         Right_Pulses[12].pulse_n  |    <0.001 |
@@ -498,14 +499,24 @@ Table of Contents
 |     DIVIDER                       |    <0.001 |
 |       megaHzClock_25MHz           |    <0.001 |
 |     PlayerNo1                     |    <0.001 |
+|       Player                      |    <0.001 |
+|         Letter_R                  |    <0.001 |
 |       Rectangle                   |    <0.001 |
 |     PlayerNo2                     |    <0.001 |
+|       Player                      |    <0.001 |
+|         Letter_R                  |    <0.001 |
 |       Rectangle                   |    <0.001 |
 |     PlayerNo3                     |    <0.001 |
+|       Player                      |    <0.001 |
+|         Letter_R                  |    <0.001 |
 |       Rectangle                   |    <0.001 |
 |     PlayerNo4                     |    <0.001 |
+|       Player                      |    <0.001 |
+|         Letter_R                  |    <0.001 |
 |       Rectangle                   |    <0.001 |
 |     PlayerWinner                  |    <0.001 |
+|       Player                      |    <0.001 |
+|         Letter_R                  |    <0.001 |
 |       Word_Wins                   |    <0.001 |
 |         Letter_W                  |    <0.001 |
 |     VGA_SYNC                      |     0.002 |
