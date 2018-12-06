@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Fri Nov 30 15:24:50 2018">
+<application name="pa" timeStamp="Wed Dec  5 17:49:48 2018">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="1c4c37658551468e992fbc1dabc339cf" type="ProjectID"/>
 <property name="ProjectIteration" value="28" type="ProjectIteration"/>
@@ -28,6 +28,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="OpenHardwareManager" value="31" type="JavaHandler"/>
 <property name="OpenRecentTarget" value="8" type="JavaHandler"/>
 <property name="ProgramDevice" value="21" type="JavaHandler"/>
+<property name="ReportTimingSummary" value="1" type="JavaHandler"/>
 <property name="RunBitgen" value="29" type="JavaHandler"/>
 <property name="RunImplementation" value="2" type="JavaHandler"/>
 <property name="RunSchematic" value="6" type="JavaHandler"/>
@@ -36,7 +37,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SetSourceEnabled" value="6" type="JavaHandler"/>
 <property name="SetTopNode" value="3" type="JavaHandler"/>
 <property name="ShowSource" value="1" type="JavaHandler"/>
-<property name="ShowView" value="20" type="JavaHandler"/>
+<property name="ShowView" value="21" type="JavaHandler"/>
 <property name="TimingConstraintsWizard" value="5" type="JavaHandler"/>
 <property name="ToolsSettings" value="2" type="JavaHandler"/>
 <property name="UpdateSourceFiles" value="2" type="JavaHandler"/>
@@ -50,7 +51,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES" value="1" type="GuiHandlerData"/>
 <property name="AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES" value="1" type="GuiHandlerData"/>
 <property name="BaseDialog_CANCEL" value="22" type="GuiHandlerData"/>
-<property name="BaseDialog_OK" value="71" type="GuiHandlerData"/>
+<property name="BaseDialog_OK" value="73" type="GuiHandlerData"/>
 <property name="BaseDialog_YES" value="29" type="GuiHandlerData"/>
 <property name="ClosePlanner_YES" value="1" type="GuiHandlerData"/>
 <property name="CmdMsgDialog_MESSAGES" value="6" type="GuiHandlerData"/>
@@ -64,8 +65,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="CreateSrcFileDialog_FILE_NAME" value="6" type="GuiHandlerData"/>
 <property name="DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS" value="33" type="GuiHandlerData"/>
 <property name="DelayValuesChooser_APPLY" value="1" type="GuiHandlerData"/>
+<property name="ExpReportTreePanel_EXP_REPORT_TREE_TABLE" value="4" type="GuiHandlerData"/>
 <property name="FileSetPanel_FILE_SET_PANEL_TREE" value="737" type="GuiHandlerData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="93" type="GuiHandlerData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="94" type="GuiHandlerData"/>
 <property name="ForwardedClockTablePanel_TABLE" value="1" type="GuiHandlerData"/>
 <property name="GeneratedClockTablePanel_TABLE" value="12" type="GuiHandlerData"/>
 <property name="HCodeEditor_CLOSE" value="1" type="GuiHandlerData"/>
@@ -77,7 +79,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="MainWinMenuMgr_LAYOUT" value="4" type="GuiHandlerData"/>
 <property name="MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN" value="2" type="GuiHandlerData"/>
 <property name="MsgTreePanel_MESSAGE_SEVERITY" value="2" type="GuiHandlerData"/>
-<property name="MsgTreePanel_MESSAGE_VIEW_TREE" value="74" type="GuiHandlerData"/>
+<property name="MsgTreePanel_MESSAGE_VIEW_TREE" value="75" type="GuiHandlerData"/>
 <property name="MsgUtils_NO" value="1" type="GuiHandlerData"/>
 <property name="MsgView_CLEAR_MESSAGES_RESULTING_FROM_USER_EXECUTED" value="1" type="GuiHandlerData"/>
 <property name="MsgView_WARNING_MESSAGES" value="5" type="GuiHandlerData"/>
@@ -93,6 +95,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PACommandNames_IMPORT_SRC" value="2" type="GuiHandlerData"/>
 <property name="PACommandNames_MESSAGE_WINDOW" value="2" type="GuiHandlerData"/>
 <property name="PACommandNames_OPEN_TARGET_WIZARD" value="2" type="GuiHandlerData"/>
+<property name="PACommandNames_REPORTS_WINDOW" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_RUN_BITGEN" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_SET_AS_TOP" value="3" type="GuiHandlerData"/>
 <property name="PACommandNames_SRC_DISABLE" value="4" type="GuiHandlerData"/>
@@ -123,9 +126,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="TouchpointSurveyDialog_NO" value="2" type="GuiHandlerData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="33" type="GuiMode"/>
+<property name="GuiMode" value="14" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="26" type="TclMode"/>
+<property name="TclMode" value="4" type="TclMode"/>
 </item>
 </section>
 </application>
