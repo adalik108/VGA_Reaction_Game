@@ -358,6 +358,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aaron Modules/Rectangle.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PIPUSERFILESDIR/Aaron Modules/Player_Display.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -485,13 +492,6 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/Aaron Modules/Player_Number_Display.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/Aaron Modules/Rectangle.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>

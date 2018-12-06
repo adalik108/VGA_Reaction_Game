@@ -77,19 +77,26 @@ signal count: std_logic_vector(10 downto 0);
 signal draw_pulse: integer range 0 to numb_pulse:= 0;
 signal draw_vert_pulse: integer range 0 to numb_vert_pulse:= 0;
 
+signal scan_line_y_i:std_logic_vector(10 downto 0);
+signal scan_line_x_i:std_logic_vector(10 downto 0);
+
+
 begin
+
+scan_line_y_i<=scan_line_y;
+scan_line_x_i<=scan_line_x;
 
 Bottom_Pulses: for n in 0 to (numb_pulse - 1) generate
     pulse_n: Horizontal_Pulse Generic Map(pulse_height, pulse_width, ((2*pulse_width*n) + right_shift), 465)
-                        Port Map(clk, reset, scan_line_x, scan_line_y, border_colour, kHz, red_lines_bottom(n), blue_lines_bottom(n), green_lines_bottom(n));
+                        Port Map(clk, reset, scan_line_x_i, scan_line_y_i, border_colour, kHz, red_lines_bottom(n), blue_lines_bottom(n), green_lines_bottom(n));
     end generate;
     
 Top_Pulses: for n in 0 to (numb_pulse - 1) generate
     pulse_n: Horizontal_Pulse Generic Map(pulse_height, pulse_width, ((2*pulse_width*n) + right_shift), 5)
-                        Port Map(clk, reset, scan_line_x, scan_line_y, border_colour, kHz, red_lines_top(n), blue_lines_top(n), green_lines_top(n));
+                        Port Map(clk, reset, scan_line_x_i, scan_line_y_i, border_colour, kHz, red_lines_top(n), blue_lines_top(n), green_lines_top(n));
     end generate;
     
-    process(clk, reset, scan_line_x, scan_line_y)
+    process(clk, reset, scan_line_x_i, scan_line_y_i)
     begin
     
     if(reset = '1') then
@@ -99,12 +106,12 @@ Top_Pulses: for n in 0 to (numb_pulse - 1) generate
         count <= (others => '0');
         draw_pulse <= 0;  
     elsif(rising_edge(clk)) then
-        if(scan_line_x = 0) then
+        if(scan_line_x_i = 0) then
             count <= (others => '0');
             draw_pulse <= 0;
-        elsif((scan_line_x - count) >= ((2*pulse_width))) then
+        elsif((scan_line_x_i - count) >= ((2*pulse_width))) then
             draw_pulse <= draw_pulse + 1;
-            count <= scan_line_x;
+            count <= scan_line_x_i;
             if(draw_pulse >= numb_pulse) then
                 draw_pulse <= 0;
             end if;
@@ -117,11 +124,12 @@ Top_Pulses: for n in 0 to (numb_pulse - 1) generate
 --                red <= red_lines_i(0 + 15) and red_lines_i(1 + 15) and red_lines_i(2 + 15) and red_lines_i(3 + 15) and red_lines_i(4 + 15) and red_lines_i(5 + 15) and red_lines_i(6 + 15) and red_lines_i(7 + 15) and red_lines_i(8 + 15) and red_lines_i(9 + 15) and red_lines_i(10 + 15) and red_lines_i(11 + 15) and red_lines_i(12 + 15) and red_lines_i(13 + 15) and red_lines_i(14 + 15) and red_lines_i(15 + 15) and red_lines_i(16 + 15) and red_lines_i(17 + 15);
 --                blue <= blue_lines_i(0 + 15) and blue_lines_i(1 + 15) and blue_lines_i(2 + 15) and blue_lines_i(3 + 15) and blue_lines_i(4 + 15) and blue_lines_i(5 + 15) and blue_lines_i(6 + 15) and blue_lines_i(7 + 15) and blue_lines_i(8 + 15) and blue_lines_i(9 + 15) and blue_lines_i(10 + 15) and blue_lines_i(11 + 15) and blue_lines_i(12 + 15) and blue_lines_i(13 + 15) and blue_lines_i(14 + 15) and blue_lines_i(15 + 15) and blue_lines_i(16 + 15) and blue_lines_i(17 + 15);
 --                green <= green_lines_i(0 + 15) and green_lines_i(1 + 15) and green_lines_i(2 + 15) and green_lines_i(3 + 15) and green_lines_i(4 + 15) and green_lines_i(5 + 15) and green_lines_i(6 + 15) and green_lines_i(7 + 15) and green_lines_i(8 + 15) and green_lines_i(9 + 15) and green_lines_i(10 + 15) and green_lines_i(11 + 15) and green_lines_i(12 + 15) and green_lines_i(13 + 15) and green_lines_i(14 + 15) and green_lines_i(15 + 15) and green_lines_i(16 + 15) and green_lines_i(17 + 15);
-            if(((scan_line_y < 15) and (scan_line_x < 15)) or (scan_line_x > 625) or ((scan_line_x >= 625) and (scan_line_y >= 465))) then
-                red   <= white(11 downto 8);
-                green <= white(7 downto 4);
-                blue  <= white(3 downto 0);
-            elsif(scan_line_y < 20) then
+--            if(((scan_line_y_i < 15) and (scan_line_x_i < 15)) or (scan_line_x_i > 625) or ((scan_line_x_i >= 625) and (scan_line_y_i >= 465))) then
+--                red   <= white(11 downto 8);
+--                green <= white(7 downto 4);
+--                blue  <= white(3 downto 0);
+--            elsif(scan_line_y_i < 20) then
+            if(scan_line_y_i < 20) then
                 if(draw_pulse = 0) then
                     red <= red_lines_top(draw_pulse) and red_lines_top(draw_pulse + 1);
                     blue <= blue_lines_top(draw_pulse) and blue_lines_top(draw_pulse + 1);
@@ -132,7 +140,7 @@ Top_Pulses: for n in 0 to (numb_pulse - 1) generate
                     green <= green_lines_top(draw_pulse) and green_lines_top(draw_pulse - 1) and green_lines_top(draw_pulse + 1);
                 end if;
                 
-            elsif(scan_line_y >= 464) then
+            elsif(scan_line_y_i >= 464) then
                 if(draw_pulse = 0) then
                     red <= red_lines_bottom(draw_pulse) and red_lines_bottom(draw_pulse + 1);
                     blue <= blue_lines_bottom(draw_pulse) and blue_lines_bottom(draw_pulse + 1);

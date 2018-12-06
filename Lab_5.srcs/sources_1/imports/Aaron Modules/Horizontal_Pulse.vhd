@@ -57,8 +57,14 @@ constant long: integer:= 10;
 constant short: integer:= 5;
 constant narrow: integer:= 1;
 
+signal scan_line_y_i:std_logic_vector(10 downto 0);
+signal scan_line_x_i:std_logic_vector(10 downto 0);
+
 
 begin
+
+scan_line_y_i<=scan_line_y;
+scan_line_x_i<=scan_line_x;
 
 falling: Rectangle
       Generic Map(     
@@ -70,8 +76,8 @@ falling: Rectangle
       Port Map(     
                   clk             => clk,
                   reset           => reset,
-                  scan_line_x     => scan_line_x,
-                  scan_line_y     => scan_line_y,
+                  scan_line_x     => scan_line_x_i,
+                  scan_line_y     => scan_line_y_i,
                   rectangle_color => pulse_colour,
                   --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
                   kHz             => kHz,
@@ -90,8 +96,8 @@ low: Rectangle
       Port Map(     
                   clk             => clk,
                   reset           => reset,
-                  scan_line_x     => scan_line_x,
-                  scan_line_y     => scan_line_y,
+                  scan_line_x     => scan_line_x_i,
+                  scan_line_y     => scan_line_y_i,
                   rectangle_color => pulse_colour,
                   --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
                   kHz             => kHz,
@@ -110,8 +116,8 @@ rising: Rectangle
       Port Map(     
                   clk             => clk,
                   reset           => reset,
-                  scan_line_x     => scan_line_x,
-                  scan_line_y     => scan_line_y,
+                  scan_line_x     => scan_line_x_i,
+                  scan_line_y     => scan_line_y_i,
                   rectangle_color => pulse_colour,
                   --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
                   kHz             => kHz,
@@ -130,8 +136,8 @@ high: Rectangle
       Port Map(     
                   clk             => clk,
                   reset           => reset,
-                  scan_line_x     => scan_line_x,
-                  scan_line_y     => scan_line_y,
+                  scan_line_x     => scan_line_x_i,
+                  scan_line_y     => scan_line_y_i,
                   rectangle_color => pulse_colour,
                   --rectangle_height: in STD_LOGIC_VECTOR(8 downto 0);
                   kHz             => kHz,

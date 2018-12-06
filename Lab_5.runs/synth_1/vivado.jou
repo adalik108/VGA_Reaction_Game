@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Wed Dec  5 17:34:03 2018
-# Process ID: 61784
+# Start of session at: Wed Dec  5 20:44:47 2018
+# Process ID: 58448
 # Current directory: C:/Vivado_Git/VGA_Reaction_Game/Lab_5.runs/synth_1
 # Command line: vivado.exe -log Game_Top_Level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Game_Top_Level.tcl
 # Log file: C:/Vivado_Git/VGA_Reaction_Game/Lab_5.runs/synth_1/Game_Top_Level.vds

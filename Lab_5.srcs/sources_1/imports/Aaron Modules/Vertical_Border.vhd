@@ -58,16 +58,23 @@ signal count: std_logic_vector(10 downto 0) := (others => '0');
 signal draw_pulse: integer range 0 to numb_pulse:= 0;
 --signal draw_vert_pulse: integer range 0 to numb_vert_pulse:= 0;
 
+signal scan_line_y_i:std_logic_vector(10 downto 0);
+signal scan_line_x_i:std_logic_vector(10 downto 0);
+
+
 begin
+
+scan_line_y_i<=scan_line_y;
+scan_line_x_i<=scan_line_x;
 
 Left_Pulses: for n in 0 to (numb_pulse - 1) generate
     pulse_n: Vertical_Pulse Generic Map(pulse_height, pulse_width, 5, ((2*pulse_width*n) + 5 + pulse_height))
-                Port Map(clk, reset, scan_line_x, scan_line_y, border_colour, kHz, red_lines_left(n), blue_lines_left(n), green_lines_left(n));
+                Port Map(clk, reset, scan_line_x_i, scan_line_y_i, border_colour, kHz, red_lines_left(n), blue_lines_left(n), green_lines_left(n));
     end generate;
     
 Right_Pulses: for n in 0 to (numb_pulse - 1) generate
     pulse_n: Vertical_Pulse Generic Map(pulse_height, pulse_width, 625, ((2*pulse_width*n) + 5 + pulse_height))
-                Port Map(clk, reset, scan_line_x, scan_line_y, border_colour, kHz, red_lines_right(n), blue_lines_right(n), green_lines_right(n));
+                Port Map(clk, reset, scan_line_x_i, scan_line_y_i, border_colour, kHz, red_lines_right(n), blue_lines_right(n), green_lines_right(n));
     end generate;
     
     process(clk, reset, scan_line_x, scan_line_y)
@@ -90,15 +97,15 @@ Right_Pulses: for n in 0 to (numb_pulse - 1) generate
 ----                draw_pulse <= 0;
 ----            end if;
 --        else
-            if(((scan_line_y <= 15) and (scan_line_x > 625)) or (scan_line_y >= 465)) then
+            if(((scan_line_y_i <= 15) and (scan_line_x_i > 625)) or (scan_line_y_i >= 465)) then
                 red   <= white(11 downto 8);
                 green <= white(7 downto 4);
                 blue  <= white(3 downto 0);
-            elsif(scan_line_x < 30) then
+            elsif(scan_line_x_i < 30) then
                 red <= red_lines_left(0) and red_lines_left(1) and red_lines_left(2) and red_lines_left(3) and red_lines_left(4) and red_lines_left(5) and red_lines_left(6) and red_lines_left(7) and red_lines_left(8) and red_lines_left(9) and red_lines_left(10) and red_lines_left(11) and red_lines_left(12) and red_lines_left(13) and red_lines_left(14) and red_lines_left(15) and red_lines_left(16) and red_lines_left(17) and red_lines_left(18) and red_lines_left(19) and red_lines_left(20) and red_lines_left(21) and red_lines_left(22);
                 blue <= blue_lines_left(0) and blue_lines_left(1) and blue_lines_left(2) and blue_lines_left(3) and blue_lines_left(4) and blue_lines_left(5) and blue_lines_left(6) and blue_lines_left(7) and blue_lines_left(8) and blue_lines_left(9) and blue_lines_left(10) and blue_lines_left(11) and blue_lines_left(12) and blue_lines_left(13) and blue_lines_left(14) and blue_lines_left(15) and blue_lines_left(16) and blue_lines_left(17) and blue_lines_left(18) and blue_lines_left(19) and blue_lines_left(20) and blue_lines_left(21) and blue_lines_left(22);
                 green <= green_lines_left(0) and green_lines_left(1) and green_lines_left(2) and green_lines_left(3) and green_lines_left(4) and green_lines_left(5) and green_lines_left(6) and green_lines_left(7) and green_lines_left(8) and green_lines_left(9) and green_lines_left(10) and green_lines_left(11) and green_lines_left(12) and green_lines_left(13) and green_lines_left(14) and green_lines_left(15) and green_lines_left(16) and green_lines_left(17) and green_lines_left(18) and green_lines_left(19) and green_lines_left(20) and green_lines_left(21) and green_lines_left(22);
-            elsif(scan_line_x > 620) then
+            elsif(scan_line_x_i > 620) then
                 red <= red_lines_right(0) and red_lines_right(1) and red_lines_right(2) and red_lines_right(3) and red_lines_right(4) and red_lines_right(5) and red_lines_right(6) and red_lines_right(7) and red_lines_right(8) and red_lines_right(9) and red_lines_right(10) and red_lines_right(11) and red_lines_right(12) and red_lines_right(13) and red_lines_right(14) and red_lines_right(15) and red_lines_right(16) and red_lines_right(17) and red_lines_right(18) and red_lines_right(19) and red_lines_right(20) and red_lines_right(21) and red_lines_right(22);
                 blue <= blue_lines_right(0) and blue_lines_right(1) and blue_lines_right(2) and blue_lines_right(3) and blue_lines_right(4) and blue_lines_right(5) and blue_lines_right(6) and blue_lines_right(7) and blue_lines_right(8) and blue_lines_right(9) and blue_lines_right(10) and blue_lines_right(11) and blue_lines_right(12) and blue_lines_right(13) and blue_lines_right(14) and blue_lines_right(15) and blue_lines_right(16) and blue_lines_right(17) and blue_lines_right(18) and blue_lines_right(19) and blue_lines_right(20) and blue_lines_right(21) and blue_lines_right(22);
                 green <= green_lines_right(0) and green_lines_right(1) and green_lines_right(2) and green_lines_right(3) and green_lines_right(4) and green_lines_right(5) and green_lines_right(6) and green_lines_right(7) and green_lines_right(8) and green_lines_right(9) and green_lines_right(10) and green_lines_right(11) and green_lines_right(12) and green_lines_right(13) and green_lines_right(14) and green_lines_right(15) and green_lines_right(16) and green_lines_right(17) and green_lines_right(18) and green_lines_right(19) and green_lines_right(20) and green_lines_right(21) and green_lines_right(22);
@@ -106,42 +113,6 @@ Right_Pulses: for n in 0 to (numb_pulse - 1) generate
                 red <= white(11 downto 8);
                 blue <= white(7 downto 4);
                 green <= white(3 downto 0);
---                red <= red_lines_right(0) and red_lines_right(1) and red_lines_right(2) and red_lines_right(3) and red_lines_right(4) and red_lines_left(5) and red_lines_left(6) and red_lines_left(7) and red_lines_left(8) and red_lines_left(9);-- and red_lines_left(10) and red_lines_left(11) and red_lines_left(12) and red_lines_left(13) and red_lines_left(14) and red_lines_left(15) and red_lines_left(16) and red_lines_left(17);
---                blue <= blue_lines_left(0) and blue_lines_left(1) and blue_lines_left(2) and blue_lines_left(3) and blue_lines_left(4) and blue_lines_left(5) and blue_lines_left(6) and blue_lines_left(7) and blue_lines_left(8) and blue_lines_left(9);-- and blue_lines_left(10) and blue_lines_left(11) and blue_lines_left(12) and blue_lines_left(13) and blue_lines_left(14) and blue_lines_i(15) and blue_lines_i(16) and blue_lines_i(17);
---                green <= green_lines_left(0) and green_lines_left(1) and green_lines_left(2) and green_lines_left(3) and green_lines_left(4) and green_lines_left(5) and green_lines_left(6) and green_lines_left(7) and green_lines_left(8) and green_lines_left(9);
---                red <= red_lines_left(0 + 15) and red_lines_i(1 + 15) and red_lines_i(2 + 15) and red_lines_i(3 + 15) and red_lines_i(4 + 15) and red_lines_i(5 + 15) and red_lines_i(6 + 15) and red_lines_i(7 + 15) and red_lines_i(8 + 15) and red_lines_i(9 + 15) and red_lines_i(10 + 15) and red_lines_i(11 + 15) and red_lines_i(12 + 15) and red_lines_i(13 + 15) and red_lines_i(14 + 15) and red_lines_i(15 + 15) and red_lines_i(16 + 15) and red_lines_i(17 + 15);
---                blue <= blue_lines_i(0 + 15) and blue_lines_i(1 + 15) and blue_lines_i(2 + 15) and blue_lines_i(3 + 15) and blue_lines_i(4 + 15) and blue_lines_i(5 + 15) and blue_lines_i(6 + 15) and blue_lines_i(7 + 15) and blue_lines_i(8 + 15) and blue_lines_i(9 + 15) and blue_lines_i(10 + 15) and blue_lines_i(11 + 15) and blue_lines_i(12 + 15) and blue_lines_i(13 + 15) and blue_lines_i(14 + 15) and blue_lines_i(15 + 15) and blue_lines_i(16 + 15) and blue_lines_i(17 + 15);
---                green <= green_lines_i(0 + 15) and green_lines_i(1 + 15) and green_lines_i(2 + 15) and green_lines_i(3 + 15) and green_lines_i(4 + 15) and green_lines_i(5 + 15) and green_lines_i(6 + 15) and green_lines_i(7 + 15) and green_lines_i(8 + 15) and green_lines_i(9 + 15) and green_lines_i(10 + 15) and green_lines_i(11 + 15) and green_lines_i(12 + 15) and green_lines_i(13 + 15) and green_lines_i(14 + 15) and green_lines_i(15 + 15) and green_lines_i(16 + 15) and green_lines_i(17 + 15);
---            if(scan_line_x < 40) then
---                if(draw_pulse = 0) then
---                    red <= red_lines_left(draw_pulse) and red_lines_left(draw_pulse + 1) and red_lines_left(draw_pulse + 2);
---                    blue <= blue_lines_left(draw_pulse) and blue_lines_left(draw_pulse + 1) and blue_lines_left(draw_pulse + 2);
---                    green <= green_lines_left(draw_pulse) and green_lines_left(draw_pulse + 1) and green_lines_left(draw_pulse + 2);
---                elsif(draw_pulse = 1) then
---                    red <= red_lines_left(draw_pulse) and red_lines_left(draw_pulse - 1) and red_lines_left(draw_pulse + 1);
---                    blue <= blue_lines_left(draw_pulse) and blue_lines_left(draw_pulse - 1) and blue_lines_left(draw_pulse + 1);
---                    green <= green_lines_left(draw_pulse) and green_lines_left(draw_pulse - 1) and green_lines_left(draw_pulse + 1);
---                else
---                    red <= red_lines_left(draw_pulse) and red_lines_left(draw_pulse - 1) and red_lines_left(draw_pulse + 1) and red_lines_left(draw_pulse - 2) and red_lines_left(draw_pulse + 2);
---                    blue <= blue_lines_left(draw_pulse) and blue_lines_left(draw_pulse - 1) and blue_lines_left(draw_pulse + 1) and blue_lines_left(draw_pulse - 2) and blue_lines_left(draw_pulse + 2);
---                    green <= green_lines_left(draw_pulse) and green_lines_left(draw_pulse - 1) and green_lines_left(draw_pulse + 1) and green_lines_left(draw_pulse - 2) and green_lines_left(draw_pulse + 2);
---                end if;
-                
---            else
---                red <= white(11 downto 8);
---                blue <= white(7 downto 4);
---                green <= white(3 downto 0);
---            else
---                if(draw_pulse = 0) then
---                    red <= red_lines_right(draw_pulse) and red_lines_right(draw_pulse + 1);
---                    blue <= blue_lines_right(draw_pulse) and blue_lines_right(draw_pulse + 1);
---                    green <= green_lines_right(draw_pulse) and green_lines_right(draw_pulse + 1);
---                else
---                    red <= red_lines_right(draw_pulse) and red_lines_right(draw_pulse - 1) and red_lines_right(draw_pulse + 1);
---                    blue <= blue_lines_right(draw_pulse) and blue_lines_right(draw_pulse - 1) and blue_lines_right(draw_pulse + 1);
---                    green <= green_lines_right(draw_pulse) and green_lines_right(draw_pulse - 1) and green_lines_right(draw_pulse + 1);
---                end if;
-            --end if;
         end if;
 
 --        red <= red_lines_i(0) and red_lines_i(1) and red_lines_i(2) and red_lines_i(3) and red_lines_i(4) and red_lines_i(5) and red_lines_i(6);

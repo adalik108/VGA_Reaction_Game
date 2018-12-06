@@ -41,8 +41,15 @@ signal pixel_color: std_logic_vector(11 downto 0);
 signal rect_pos_x, rect_pos_y, rect_height: std_logic_vector(9 downto 0);
 signal box_move_dir_x, box_move_dir_y: std_logic;
 
+signal scan_line_y_i:std_logic_vector(10 downto 0);
+signal scan_line_x_i:std_logic_vector(10 downto 0);
+
 
 begin
+
+scan_line_y_i<=scan_line_y;
+scan_line_x_i<=scan_line_x;
+
 
 --process(reset)
 --begin	
@@ -59,10 +66,10 @@ begin
 rect_pos_x <= std_logic_vector(to_unsigned(x_offset, rect_pos_x'length));
 rect_pos_y <= std_logic_vector(to_unsigned(y_offset, rect_pos_y'length));
 
-pixel_color <= rectangle_color when     ((scan_line_x >= rect_pos_x) and 
-								(scan_line_y >= rect_pos_y) and 
-								(scan_line_x < rect_pos_x + rectangle_width) and 
-								(scan_line_y < rect_pos_y + rectangle_height)) 
+pixel_color <= rectangle_color when     ((scan_line_x_i >= rect_pos_x) and 
+								(scan_line_y_i >= rect_pos_y) and 
+								(scan_line_x_i < rect_pos_x + rectangle_width) and 
+								(scan_line_y_i < rect_pos_y + rectangle_height)) 
 					   else
 				                "111111111111"; -- represents WHITE
 								
