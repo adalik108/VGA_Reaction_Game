@@ -296,9 +296,6 @@ set_property IOSTANDARD LVCMOS33 [get_ports vsync]
 
 
 create_clock -period 10.000 -name sys_clk_pin -waveform {0.000 5.000} -add [get_ports clk]
-create_generated_clock -name {MAINFSM/FSM_STATE[0]} -source [get_ports clk] -divide_by 1 [get_pins {MAINFSM/FSM_sequential_FSM_STATE_reg[0]/Q}]
-create_generated_clock -name {MAINFSM/FSM_STATE[1]} -source [get_ports clk] -divide_by 1 [get_pins {MAINFSM/FSM_sequential_FSM_STATE_reg[1]/Q}]
-create_generated_clock -name {MAINFSM/FSM_STATE[2]} -source [get_ports clk] -divide_by 1 [get_pins {MAINFSM/FSM_sequential_FSM_STATE_reg[2]/Q}]
 set_input_delay -clock [get_clocks sys_clk_pin] -clock_fall -min -add_delay 2.000 [get_ports reset]
 set_input_delay -clock [get_clocks sys_clk_pin] -clock_fall -max -add_delay 2.000 [get_ports reset]
 set_input_delay -clock [get_clocks sys_clk_pin] -min -add_delay 2.000 [get_ports reset]
