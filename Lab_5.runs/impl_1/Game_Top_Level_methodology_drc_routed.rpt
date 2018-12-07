@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Thu Dec  6 11:11:33 2018
+| Date         : Fri Dec  7 15:06:16 2018
 | Host         : Owner-VAIO running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Game_Top_Level_methodology_drc_routed.rpt -pb Game_Top_Level_methodology_drc_routed.pb -rpx Game_Top_Level_methodology_drc_routed.rpx
 | Design       : Game_Top_Level
@@ -37,7 +37,7 @@ Table of Contents
 -----------------
 LUTAR-1#1 Warning
 LUT drives async reset alert  
-LUT cell MAINFSM/Clock/enable_Q_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) VGA/CHANGE_Rectangle_Height_1/current_val_reg[2]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[3]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[4]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[5]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[6]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[7]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[8]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[9]/CLR, VGA/CHANGE_Rectangle_Height_1/enable_Q_reg/CLR, VGA/CHANGE_Rectangle_Height_2/current_val_reg[2]/CLR, VGA/CHANGE_Rectangle_Height_2/current_val_reg[3]/CLR, VGA/CHANGE_Rectangle_Height_2/current_val_reg[4]/CLR, VGA/CHANGE_Rectangle_Height_2/current_val_reg[5]/CLR, VGA/CHANGE_Rectangle_Height_2/current_val_reg[6]/CLR, VGA/CHANGE_Rectangle_Height_2/current_val_reg[7]/CLR (the first 15 of 36 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell MAINFSM/Clock/enable_Q_i_2__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) VGA/CHANGE_Rectangle_Height_1/current_val_reg[2]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[3]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[4]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[5]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[6]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[7]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[8]/CLR, VGA/CHANGE_Rectangle_Height_1/current_val_reg[9]/CLR, VGA/CHANGE_Rectangle_Height_1/enable_Q_reg/CLR, VGA/CHANGE_Rectangle_Height_2/current_val_reg[2]/CLR, VGA/CHANGE_Rectangle_Height_2/current_val_reg[3]/CLR, VGA/CHANGE_Rectangle_Height_2/current_val_reg[4]/CLR, VGA/CHANGE_Rectangle_Height_2/current_val_reg[5]/CLR, VGA/CHANGE_Rectangle_Height_2/current_val_reg[6]/CLR, VGA/CHANGE_Rectangle_Height_2/current_val_reg[7]/CLR (the first 15 of 36 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#2 Warning

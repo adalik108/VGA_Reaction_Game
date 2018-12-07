@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Thu Dec  6 11:11:36 2018
+| Date             : Fri Dec  7 15:06:19 2018
 | Host             : Owner-VAIO running 64-bit major release  (build 9200)
 | Command          : report_power -file Game_Top_Level_power_routed.rpt -pb Game_Top_Level_power_summary_routed.pb -rpx Game_Top_Level_power_routed.rpx
 | Design           : Game_Top_Level
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.319        |
+| Total On-Chip Power (W)  | 0.320        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.246        |
+| Dynamic (W)              | 0.247        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 83.4         |
@@ -52,18 +52,18 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.010 |        6 |       --- |             --- |
-| Slice Logic             |     0.008 |     3007 |       --- |             --- |
-|   LUT as Logic          |     0.007 |     1878 |     20800 |            9.03 |
+| Clocks                  |     0.011 |        6 |       --- |             --- |
+| Slice Logic             |     0.008 |     3113 |       --- |             --- |
+|   LUT as Logic          |     0.007 |     1994 |     20800 |            9.59 |
 |   CARRY4                |    <0.001 |      122 |      8150 |            1.50 |
-|   Register              |    <0.001 |      586 |     41600 |            1.41 |
+|   Register              |    <0.001 |      611 |     41600 |            1.47 |
 |   LUT as Shift Register |    <0.001 |        1 |      9600 |            0.01 |
-|   F7/F8 Muxes           |    <0.001 |       19 |     32600 |            0.06 |
-|   Others                |     0.000 |       76 |       --- |             --- |
-| Signals                 |     0.003 |     2395 |       --- |             --- |
+|   F7/F8 Muxes           |    <0.001 |       13 |     32600 |            0.04 |
+|   Others                |     0.000 |      101 |       --- |             --- |
+| Signals                 |     0.003 |     2456 |       --- |             --- |
 | I/O                     |     0.225 |       40 |       106 |           37.74 |
 | Static Power            |     0.072 |          |           |                 |
-| Total                   |     0.319 |          |           |                 |
+| Total                   |     0.320 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.031 |       0.021 |      0.010 |
+| Vccint    |       1.000 |     0.032 |       0.022 |      0.010 |
 | Vccaux    |       1.800 |     0.021 |       0.008 |      0.013 |
 | Vcco33    |       3.300 |     0.065 |       0.064 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -145,16 +145,16 @@ Table of Contents
 +-----------------------------------+-----------+
 | Name                              | Power (W) |
 +-----------------------------------+-----------+
-| Game_Top_Level                    |     0.246 |
+| Game_Top_Level                    |     0.247 |
 |   AVERAGE                         |     0.002 |
 |     BCDConversion                 |    <0.001 |
 |       digits_mapping[1].digit_bcd |    <0.001 |
 |       digits_mapping[2].digit_bcd |    <0.001 |
 |       digits_mapping[3].digit_bcd |    <0.001 |
 |       digits_mapping[4].digit_bcd |    <0.001 |
-|   DISP                            |    <0.001 |
+|   DISP                            |     0.001 |
 |     DIGITMUX                      |    <0.001 |
-|     SELECTOR                      |    <0.001 |
+|     SELECTOR                      |     0.001 |
 |   GAME                            |    <0.001 |
 |     BCDBINARY                     |    <0.001 |
 |     CLK_DIVIDE                    |    <0.001 |
@@ -189,6 +189,8 @@ Table of Contents
 |           low                     |    <0.001 |
 |           rising                  |    <0.001 |
 |         Bottom_Pulses[11].pulse_n |    <0.001 |
+|           falling                 |    <0.001 |
+|           high                    |    <0.001 |
 |           rising                  |    <0.001 |
 |         Bottom_Pulses[12].pulse_n |    <0.001 |
 |           falling                 |    <0.001 |
@@ -214,6 +216,8 @@ Table of Contents
 |           low                     |    <0.001 |
 |           rising                  |    <0.001 |
 |         Bottom_Pulses[19].pulse_n |    <0.001 |
+|           falling                 |    <0.001 |
+|           high                    |    <0.001 |
 |           rising                  |    <0.001 |
 |         Bottom_Pulses[1].pulse_n  |    <0.001 |
 |           falling                 |    <0.001 |
@@ -244,8 +248,12 @@ Table of Contents
 |           low                     |    <0.001 |
 |           rising                  |    <0.001 |
 |         Bottom_Pulses[27].pulse_n |    <0.001 |
+|           high                    |    <0.001 |
 |           rising                  |    <0.001 |
 |         Bottom_Pulses[28].pulse_n |    <0.001 |
+|           rising                  |    <0.001 |
+|         Bottom_Pulses[29].pulse_n |    <0.001 |
+|           low                     |    <0.001 |
 |           rising                  |    <0.001 |
 |         Bottom_Pulses[2].pulse_n  |    <0.001 |
 |           falling                 |    <0.001 |
@@ -258,6 +266,9 @@ Table of Contents
 |         Bottom_Pulses[31].pulse_n |    <0.001 |
 |           high                    |    <0.001 |
 |           rising                  |    <0.001 |
+|         Bottom_Pulses[3].pulse_n  |    <0.001 |
+|           falling                 |    <0.001 |
+|           high                    |    <0.001 |
 |         Bottom_Pulses[4].pulse_n  |    <0.001 |
 |           falling                 |    <0.001 |
 |         Bottom_Pulses[5].pulse_n  |    <0.001 |
@@ -272,10 +283,11 @@ Table of Contents
 |           falling                 |    <0.001 |
 |           high                    |    <0.001 |
 |           rising                  |    <0.001 |
-|         Bottom_Pulses[9].pulse_n  |    <0.001 |
+|         Bottom_Pulses[8].pulse_n  |    <0.001 |
 |           falling                 |    <0.001 |
-|           low                     |    <0.001 |
 |           rising                  |    <0.001 |
+|         Bottom_Pulses[9].pulse_n  |    <0.001 |
+|           low                     |    <0.001 |
 |         Top_Pulses[0].pulse_n     |    <0.001 |
 |           falling                 |    <0.001 |
 |         Top_Pulses[10].pulse_n    |    <0.001 |
@@ -307,6 +319,7 @@ Table of Contents
 |           low                     |    <0.001 |
 |           rising                  |    <0.001 |
 |         Top_Pulses[19].pulse_n    |    <0.001 |
+|           falling                 |    <0.001 |
 |           high                    |    <0.001 |
 |           rising                  |    <0.001 |
 |         Top_Pulses[1].pulse_n     |    <0.001 |
@@ -332,7 +345,6 @@ Table of Contents
 |           low                     |    <0.001 |
 |         Top_Pulses[26].pulse_n    |    <0.001 |
 |           high                    |    <0.001 |
-|           low                     |    <0.001 |
 |           rising                  |    <0.001 |
 |         Top_Pulses[27].pulse_n    |    <0.001 |
 |           high                    |    <0.001 |
@@ -351,6 +363,7 @@ Table of Contents
 |           high                    |    <0.001 |
 |           rising                  |    <0.001 |
 |         Top_Pulses[3].pulse_n     |    <0.001 |
+|           falling                 |    <0.001 |
 |           high                    |    <0.001 |
 |         Top_Pulses[4].pulse_n     |    <0.001 |
 |           falling                 |    <0.001 |
@@ -376,10 +389,10 @@ Table of Contents
 |           low                     |    <0.001 |
 |         Left_Pulses[11].pulse_n   |    <0.001 |
 |           falling                 |    <0.001 |
-|           high                    |    <0.001 |
 |           low                     |    <0.001 |
 |         Left_Pulses[12].pulse_n   |    <0.001 |
 |           falling                 |    <0.001 |
+|           high                    |    <0.001 |
 |           rising                  |    <0.001 |
 |         Left_Pulses[13].pulse_n   |    <0.001 |
 |           high                    |    <0.001 |
@@ -426,7 +439,7 @@ Table of Contents
 |         Left_Pulses[7].pulse_n    |    <0.001 |
 |           low                     |    <0.001 |
 |         Left_Pulses[8].pulse_n    |    <0.001 |
-|           falling                 |    <0.001 |
+|           high                    |    <0.001 |
 |         Left_Pulses[9].pulse_n    |    <0.001 |
 |           high                    |    <0.001 |
 |           low                     |    <0.001 |
@@ -437,10 +450,10 @@ Table of Contents
 |           low                     |    <0.001 |
 |         Right_Pulses[11].pulse_n  |    <0.001 |
 |           falling                 |    <0.001 |
-|           high                    |    <0.001 |
 |           low                     |    <0.001 |
 |         Right_Pulses[12].pulse_n  |    <0.001 |
 |           falling                 |    <0.001 |
+|           high                    |    <0.001 |
 |           rising                  |    <0.001 |
 |         Right_Pulses[13].pulse_n  |    <0.001 |
 |           high                    |    <0.001 |
@@ -454,11 +467,10 @@ Table of Contents
 |         Right_Pulses[16].pulse_n  |    <0.001 |
 |           high                    |    <0.001 |
 |         Right_Pulses[17].pulse_n  |    <0.001 |
-|           falling                 |    <0.001 |
-|           low                     |    <0.001 |
-|         Right_Pulses[18].pulse_n  |    <0.001 |
-|           falling                 |    <0.001 |
 |           high                    |    <0.001 |
+|         Right_Pulses[18].pulse_n  |    <0.001 |
+|           high                    |    <0.001 |
+|           low                     |    <0.001 |
 |           rising                  |    <0.001 |
 |         Right_Pulses[19].pulse_n  |    <0.001 |
 |           low                     |    <0.001 |
@@ -488,7 +500,7 @@ Table of Contents
 |         Right_Pulses[7].pulse_n   |    <0.001 |
 |           low                     |    <0.001 |
 |         Right_Pulses[8].pulse_n   |    <0.001 |
-|           falling                 |    <0.001 |
+|           high                    |    <0.001 |
 |         Right_Pulses[9].pulse_n   |    <0.001 |
 |           high                    |    <0.001 |
 |           low                     |    <0.001 |
@@ -500,23 +512,48 @@ Table of Contents
 |       megaHzClock_25MHz           |    <0.001 |
 |     PlayerNo1                     |    <0.001 |
 |       Player                      |    <0.001 |
+|         Letter_A                  |    <0.001 |
+|         Letter_E                  |    <0.001 |
+|         Letter_L                  |    <0.001 |
+|         Letter_P                  |    <0.001 |
 |         Letter_R                  |    <0.001 |
+|         Letter_Y                  |    <0.001 |
 |       Rectangle                   |    <0.001 |
 |     PlayerNo2                     |    <0.001 |
 |       Player                      |    <0.001 |
+|         Letter_A                  |    <0.001 |
+|         Letter_E                  |    <0.001 |
+|         Letter_L                  |    <0.001 |
+|         Letter_P                  |    <0.001 |
 |         Letter_R                  |    <0.001 |
+|         Letter_Y                  |    <0.001 |
 |       Rectangle                   |    <0.001 |
 |     PlayerNo3                     |    <0.001 |
 |       Player                      |    <0.001 |
+|         Letter_A                  |    <0.001 |
+|         Letter_E                  |    <0.001 |
+|         Letter_L                  |    <0.001 |
+|         Letter_P                  |    <0.001 |
 |         Letter_R                  |    <0.001 |
+|         Letter_Y                  |    <0.001 |
 |       Rectangle                   |    <0.001 |
 |     PlayerNo4                     |    <0.001 |
 |       Player                      |    <0.001 |
+|         Letter_A                  |    <0.001 |
+|         Letter_E                  |    <0.001 |
+|         Letter_L                  |    <0.001 |
+|         Letter_P                  |    <0.001 |
 |         Letter_R                  |    <0.001 |
+|         Letter_Y                  |    <0.001 |
 |       Rectangle                   |    <0.001 |
 |     PlayerWinner                  |    <0.001 |
 |       Player                      |    <0.001 |
+|         Letter_A                  |    <0.001 |
+|         Letter_E                  |    <0.001 |
+|         Letter_L                  |    <0.001 |
+|         Letter_P                  |    <0.001 |
 |         Letter_R                  |    <0.001 |
+|         Letter_Y                  |    <0.001 |
 |       Word_Wins                   |    <0.001 |
 |         Letter_W                  |    <0.001 |
 |     VGA_SYNC                      |     0.002 |
