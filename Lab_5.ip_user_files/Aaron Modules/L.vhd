@@ -162,8 +162,21 @@ Bottom: Rectangle
                   green           => i_green2
         );
         
-red   <= i_red1 and i_red2;-- and i_red3 and i_red4;
-green <= i_green1 and i_green2;-- and i_green3 and i_green4;
-blue  <= i_blue1 and i_blue2;--and i_blue3 and i_blue4;
+process(clk, reset, scan_line_x, scan_line_y) begin
+        
+    if(reset = '1') then
+        red   <= (others => '1');
+        green <= (others => '1');
+        blue  <= (others => '1');
+    elsif(rising_edge(clk)) then
+        if((scan_line_y >= (py_offset - 1)) and (scan_line_y <= (py_offset + long + long + 1)) and (scan_line_x >= (px_offset - 1)) and (scan_line_x <= (px_offset + long + long + 1))) then  
+            red   <= i_red1 and i_red2;
+            green <= i_green1 and i_green2;
+            blue  <= i_blue1 and i_blue2;
+        end if;
+    end if;
+end process;
+        
+--and i_blue3 and i_blue4;
 
 end Behavioral;
